@@ -342,5 +342,42 @@ body {
 }
 
 .how-it-works-btn {
-  margin: 0 auto;
+  margin: 0 auto 101px;
+}
+
+// what-is-inspiring-us
+
+.what-is-inspiring-us {
+  background-color: $grey_6;
+  padding-top: 100px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 380px;
+  margin-bottom: 100px;
+
+  &__icon {    
+    margin-bottom: 15px;
+    flex: 0 0 20px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  &__text {
+    margin-bottom: 32px;
+  }
 }

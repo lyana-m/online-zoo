@@ -37,7 +37,6 @@ body {
   margin: 0 auto;
 }
 
-
 // header style
 
 .header {
@@ -160,6 +159,7 @@ body {
 .btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 245px;
   height: 55px;
   font-size: 18px;
@@ -177,6 +177,7 @@ body {
 }
 
 .watch-btn {
+  justify-content: start;
   padding-left: 76px;
   background: url("../assets/icons/watch-btn.svg") no-repeat 39px center, linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
 }
@@ -196,7 +197,6 @@ body {
       margin-bottom: 0;
     }
   }
-
 }
 
 // slider
@@ -220,7 +220,6 @@ body {
     padding-left: 135px;
     display: flex;
     align-items: center;
-
   }
 
   &__item {
@@ -265,14 +264,14 @@ body {
       appearance: none;
       width: 30px;
       height: 10px;
-      background: $base;
+      background: $grey_1;
       cursor: pointer;
     }
 
     &::-moz-range-thumb {
       width: 30px;
       height: 10px;
-      background: $base;
+      background: $grey_1;
       cursor: pointer;
     }
   }
@@ -287,7 +286,21 @@ body {
   &__value {
     font-size: 24px;
     line-height: 28px;
+    color: $grey_1;
+  }
+}
+
+.first-screen-range {
+  .range__value {
     color: $base;
+  }
+
+  .range__input::-webkit-slider-thumb {
+    background: $base;
+  }
+
+  .range__input::-moz-range-thumb {
+    background: $base;
   }
 }
 
@@ -317,7 +330,7 @@ body {
   }
 }
 
-.how-it-works__range {
+.how-it-works-range {
   margin-bottom: 32px;
 
   .range__input {
@@ -325,19 +338,13 @@ body {
 
     &::-webkit-slider-thumb {
       width: 62px;
-      height: 10px;
       background: $grey_1;
-      cursor: pointer;
     }
 
     &::-moz-range-thumb {
       width: 62px;
       background: $grey_1;
     }
-  }
-
-  .range__value {
-    color: $grey_1;
   }
 }
 
@@ -355,7 +362,7 @@ body {
 .row {
   display: flex;
   justify-content: space-between;
-  
+
 }
 
 .card {
@@ -365,7 +372,7 @@ body {
   max-width: 380px;
   margin-bottom: 100px;
 
-  &__icon {    
+  &__icon {
     margin-bottom: 15px;
     flex: 0 0 20px;
   }
@@ -380,4 +387,39 @@ body {
   &__text {
     margin-bottom: 32px;
   }
+}
+
+// pets in zoo
+
+.pets-in-zoo {
+  padding-top: 100px;
+}
+
+.pets-in-zoo-title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.pets-in-zoo-slider {
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 30px;  
+
+  &__item {
+    margin-right: 30px;
+  }
+
+  &__picture {
+    width: 277px;
+    height: 399px;
+    border-radius: 5px;
+  }
+}
+
+.pets-in-zoo-range {
+  margin-bottom: 30px;
+}
+
+.pets-in-zoo-btn {
+  margin: 0 auto 100px;  
 }

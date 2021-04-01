@@ -67,10 +67,32 @@ body {
 }
 
 .nav__link {
+  display: block;
+  padding-bottom: 3px;
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
   color: #333333;
+  position: relative;
+}
+
+.nav__link::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #333333;
+  height: 1px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.nav__link:hover::after {
+  width: 100%;
 }
 
 .nav__link_active {
@@ -173,10 +195,33 @@ body {
   border: none;
   border-radius: 3px;
   outline: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
 }
 
 .btn:focus, .btn:active {
   outline: none;
+}
+
+.btn::before {
+  border-radius: inherit;
+  background-image: linear-gradient(160deg, #44cbd4, #2881ef);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  z-index: -100;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+.btn:hover::before {
+  opacity: 1;
 }
 
 .watch-btn {
@@ -185,6 +230,10 @@ body {
           justify-content: start;
   padding-left: 76px;
   background: url("../assets/icons/watch-btn.svg") no-repeat 39px center, linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+}
+
+.watch-btn::before {
+  background: url("../assets/icons/watch-btn.svg") no-repeat 39px center, linear-gradient(160deg, #44cbd4, #2881ef);
 }
 
 .first-watch-btn {
@@ -210,6 +259,16 @@ body {
 
 .social__item:last-child {
   margin-bottom: 0;
+}
+
+.social__icon {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.social__icon:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 
 .slider {
@@ -803,6 +862,10 @@ body {
 
 .footer__nav .nav__link {
   color: #FEFEFE;
+}
+
+.footer__nav .nav__link::after {
+  background: #FEFEFE;
 }
 
 .footer__nav .nav__item {

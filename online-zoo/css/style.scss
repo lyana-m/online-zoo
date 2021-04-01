@@ -64,10 +64,31 @@ body {
   }
 
   &__link {
+    display: block;
+    padding-bottom: 3px;
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
     color: $grey_1;
+    position: relative;    
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: '.';
+      color: transparent;
+      background: $grey_1;
+      height: 1px;
+      transition: all .4s;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
 
     &_active {
       padding-bottom: 3px;
@@ -163,7 +184,6 @@ body {
   width: 245px;
   height: 55px;
   margin: 0 auto;
-  ;
   font-size: 18px;
   color: $base;
   text-transform: uppercase;
@@ -171,10 +191,32 @@ body {
   border: none;
   border-radius: 3px;
   outline: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
 
   &:focus,
   &:active {
     outline: none;
+  }
+
+  &::before {
+    border-radius: inherit;
+    background-image: linear-gradient(160deg, #44cbd4, #2881ef);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: -100;
+    transition: opacity .3s;
+  }
+
+  &:hover::before {
+    opacity: 1;
   }
 }
 
@@ -182,6 +224,10 @@ body {
   justify-content: start;
   padding-left: 76px;
   background: url("../assets/icons/watch-btn.svg") no-repeat 39px center, linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+
+  &::before {
+    background: url("../assets/icons/watch-btn.svg") no-repeat 39px center, linear-gradient(160deg, #44cbd4, #2881ef);
+  }
 }
 
 .first-watch-btn {
@@ -197,10 +243,18 @@ body {
   }
 
   &__item {
-    margin-bottom: 15px;
+    margin-bottom: 15px;    
 
     &:last-child {
       margin-bottom: 0;
+    }    
+  }
+
+  &__icon {
+    transition: all .3s;
+
+    &:hover {
+      transform: scale(1.4);
     }
   }
 }
@@ -715,6 +769,10 @@ body {
 
   .nav__link {
     color: $base;
+
+    &::after {
+      background: $base;
+    }
   }
 
   .nav__item {

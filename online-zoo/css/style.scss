@@ -162,7 +162,8 @@ body {
   justify-content: center;
   width: 245px;
   height: 55px;
-  margin: 0 auto;;
+  margin: 0 auto;
+  ;
   font-size: 18px;
   color: $base;
   text-transform: uppercase;
@@ -260,7 +261,7 @@ body {
     appearance: none;
     width: 245px;
     height: 5px;
-    margin-top: 11px;
+    margin-top: 14px;
     background: rgba(189, 189, 189, 0.57);
     outline: none;
 
@@ -372,6 +373,12 @@ body {
 
 }
 
+.subtitle {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -386,9 +393,6 @@ body {
 
   &__title {
     margin-bottom: 15px;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 23px;
   }
 
   &__text {
@@ -464,9 +468,6 @@ body {
 
   &__text {
     max-width: 136px;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 23px;
     text-align: center;
   }
 }
@@ -492,4 +493,56 @@ body {
   border-radius: 50%;
 }
 
+// Testimonials
 
+.testimonials {
+  padding: 100px 0;
+
+  &__title {
+    margin-bottom: 61px;
+  }
+}
+
+.testimonials-slider {
+  display: flex;
+  margin-bottom: 49px;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+  padding: 47px 72px 106px;
+  box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.1);
+  border-radius: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__photo {
+    width: 68px;
+    height: 68px;
+    margin-bottom: 17px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 1px #BDBDBD inset;
+
+    &-1 {
+      background: url("../assets/icons/user.svg") center no-repeat;
+    }
+
+    &-2 {
+      background: url("../assets/images/user.jpg") center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__author {
+    margin-bottom: 17px;
+  }
+}
+
+.testimonials-range {
+  margin-bottom: 30px;
+}

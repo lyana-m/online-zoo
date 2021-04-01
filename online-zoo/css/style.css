@@ -279,7 +279,7 @@ body {
           appearance: none;
   width: 245px;
   height: 5px;
-  margin-top: 11px;
+  margin-top: 14px;
   background: rgba(189, 189, 189, 0.57);
   outline: none;
 }
@@ -385,6 +385,12 @@ body {
           justify-content: space-between;
 }
 
+.subtitle {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+}
+
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -409,9 +415,6 @@ body {
 
 .card__title {
   margin-bottom: 15px;
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 23px;
 }
 
 .card__text {
@@ -496,9 +499,6 @@ body {
 
 .step__text {
   max-width: 136px;
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 23px;
   text-align: center;
 }
 
@@ -536,5 +536,68 @@ body {
   height: 239px;
   background: #F2F2F2 center;
   border-radius: 50%;
+}
+
+.testimonials {
+  padding: 100px 0;
+}
+
+.testimonials__title {
+  margin-bottom: 61px;
+}
+
+.testimonials-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 49px;
+}
+
+.testimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+  padding: 47px 72px 106px;
+  -webkit-box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.1);
+          box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.1);
+  border-radius: 5px;
+}
+
+.testimonial:last-child {
+  margin-right: 0;
+}
+
+.testimonial__photo {
+  width: 68px;
+  height: 68px;
+  margin-bottom: 17px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 0px 1px #BDBDBD inset;
+          box-shadow: 0px 0px 0px 1px #BDBDBD inset;
+}
+
+.testimonial__photo-1 {
+  background: url("../assets/icons/user.svg") center no-repeat;
+}
+
+.testimonial__photo-2 {
+  background: url("../assets/images/user.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.testimonial__author {
+  margin-bottom: 17px;
+}
+
+.testimonials-range {
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=style.css.map */

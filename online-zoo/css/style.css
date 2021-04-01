@@ -600,4 +600,17 @@ body {
 .testimonials-range {
   margin-bottom: 30px;
 }
+
+.map-section {
+  padding: 100px 0;
+  background: #F2F2F2;
+}
+
+.map-section__title {
+  margin-bottom: 60px;
+}
+
+.map {
+  margin-bottom: 35px;
+}
 /*# sourceMappingURL=style.css.map */

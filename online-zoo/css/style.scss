@@ -546,3 +546,18 @@ body {
 .testimonials-range {
   margin-bottom: 30px;
 }
+
+// map
+
+.map-section {
+  padding: 100px 0;
+  background: $grey_6;
+
+  &__title {
+    margin-bottom: 60px;
+  }
+}
+
+.map {
+  margin-bottom: 35px;
+}

@@ -162,6 +162,7 @@ body {
   justify-content: center;
   width: 245px;
   height: 55px;
+  margin: 0 auto;;
   font-size: 18px;
   color: $base;
   text-transform: uppercase;
@@ -180,6 +181,10 @@ body {
   justify-content: start;
   padding-left: 76px;
   background: url("../assets/icons/watch-btn.svg") no-repeat 39px center, linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+}
+
+.first-watch-btn {
+  margin: 0;
 }
 
 .social {
@@ -306,22 +311,24 @@ body {
 
 // How it works
 
+.title {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+}
+
 .how-it-works {
   padding-top: 100px;
 
   &__title {
     margin-bottom: 30px;
+    text-align: left;
   }
 
   &__text {
     margin-bottom: 30px;
   }
-}
-
-.title {
-  font-weight: 900;
-  font-size: 48px;
-  line-height: 56px;
 }
 
 .how-it-works-slider {
@@ -349,7 +356,7 @@ body {
 }
 
 .how-it-works-btn {
-  margin: 0 auto 101px;
+  margin-bottom: 101px;
 }
 
 // what-is-inspiring-us
@@ -396,14 +403,13 @@ body {
 }
 
 .pets-in-zoo-title {
-  text-align: center;
   margin-bottom: 35px;
 }
 
 .pets-in-zoo-slider {
   display: flex;
   overflow: hidden;
-  margin-bottom: 30px;  
+  margin-bottom: 30px;
 
   &__item {
     margin-right: 30px;
@@ -421,5 +427,69 @@ body {
 }
 
 .pets-in-zoo-btn {
-  margin: 0 auto 100px;  
+  margin-bottom: 100px;
 }
+
+// pay and feed
+
+.pay-and-feed {
+  background: $grey_6;
+  padding-bottom: 100px;
+
+  &__title {
+    padding-top: 100px;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    text-align: center;
+    margin-bottom: 92px;
+  }
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+
+  &__icon {
+    margin-bottom: 18px;
+  }
+
+  &__text {
+    max-width: 136px;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+  }
+}
+
+.gradient-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 245px;
+  height: 245px;
+  background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+  border-radius: 50%;
+}
+
+.white-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 239px;
+  height: 239px;
+  background: $grey_6 center;
+  border-radius: 50%;
+}
+
+

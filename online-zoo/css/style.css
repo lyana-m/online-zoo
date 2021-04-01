@@ -165,6 +165,7 @@ body {
           justify-content: center;
   width: 245px;
   height: 55px;
+  margin: 0 auto;
   font-size: 18px;
   color: #FEFEFE;
   text-transform: uppercase;
@@ -184,6 +185,10 @@ body {
           justify-content: start;
   padding-left: 76px;
   background: url("../assets/icons/watch-btn.svg") no-repeat 39px center, linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+}
+
+.first-watch-btn {
+  margin: 0;
 }
 
 .social__list {
@@ -320,22 +325,24 @@ body {
   background: #FEFEFE;
 }
 
+.title {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+}
+
 .how-it-works {
   padding-top: 100px;
 }
 
 .how-it-works__title {
   margin-bottom: 30px;
+  text-align: left;
 }
 
 .how-it-works__text {
   margin-bottom: 30px;
-}
-
-.title {
-  font-weight: 900;
-  font-size: 48px;
-  line-height: 56px;
 }
 
 .how-it-works-slider__container {
@@ -361,7 +368,7 @@ body {
 }
 
 .how-it-works-btn {
-  margin: 0 auto 101px;
+  margin-bottom: 101px;
 }
 
 .what-is-inspiring-us {
@@ -416,7 +423,6 @@ body {
 }
 
 .pets-in-zoo-title {
-  text-align: center;
   margin-bottom: 35px;
 }
 
@@ -443,6 +449,92 @@ body {
 }
 
 .pets-in-zoo-btn {
-  margin: 0 auto 100px;
+  margin-bottom: 100px;
+}
+
+.pay-and-feed {
+  background: #F2F2F2;
+  padding-bottom: 100px;
+}
+
+.pay-and-feed__title {
+  padding-top: 100px;
+  margin-bottom: 30px;
+}
+
+.pay-and-feed__text {
+  text-align: center;
+  margin-bottom: 92px;
+}
+
+.steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+
+.step__icon {
+  margin-bottom: 18px;
+}
+
+.step__text {
+  max-width: 136px;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+}
+
+.gradient-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 245px;
+  height: 245px;
+  background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+  border-radius: 50%;
+}
+
+.white-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 239px;
+  height: 239px;
+  background: #F2F2F2 center;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */

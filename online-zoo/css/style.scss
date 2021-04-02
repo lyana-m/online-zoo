@@ -37,6 +37,15 @@ body {
   margin: 0 auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  opacity: 0;
+}
+
 // header style
 
 .header {
@@ -70,7 +79,7 @@ body {
     font-weight: 500;
     text-decoration: none;
     color: $grey_1;
-    position: relative;    
+    position: relative;
 
     &::after {
       position: absolute;
@@ -86,8 +95,13 @@ body {
       transition: all .4s;
     }
 
-    &:hover::after {
+    &:not(.nav__link_active):hover::after {
       width: 100%;
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
     }
 
     &_active {
@@ -107,6 +121,12 @@ body {
     display: inline-block;
     width: 54px;
     height: 30px;
+    border-radius: 190px;
+    transition: all .4s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   &__input {
@@ -243,11 +263,11 @@ body {
   }
 
   &__item {
-    margin-bottom: 15px;    
+    margin-bottom: 15px;
 
     &:last-child {
       margin-bottom: 0;
-    }    
+    }
   }
 
   &__icon {
@@ -257,43 +277,108 @@ body {
       transform: scale(1.4);
     }
   }
+
+  &__link {
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
 }
 
 // slider
 
-.slider {
+.slider-wrapper {
   position: absolute;
   top: 500px;
-  left: 50%;
+  left: 51%;
   right: 0;
-  overflow: hidden;
   z-index: 1000;
 
   &::before {
-    content: url("../assets/icons/line.svg");
     position: absolute;
     top: 50%;
-    z-index: -1;
+    left: -135px;
+    content: "";
+    width: 13px;
+    height: 13px;
+    border: 1px solid $base;
+    border-radius: 50%;
+    background-color: $base;
+    padding: 3px;
+    background-clip: content-box;
   }
 
+  &::after {
+    position: absolute;
+    top: calc(50% + 6px);
+    left: -130px;
+    right: 0;
+    content: "";
+    z-index: -1;
+
+    height: 1px;
+    background-color: $base;
+  }
+}
+
+.slider {
+  // position: absolute;
+  // top: 500px;
+  // left: 51%;
+  // right: 0;
+  overflow: hidden;
+  // z-index: 1000;
+
+  // &::before {
+  //   content: url("../assets/icons/line.svg");
+  //   position: absolute;
+  //   top: 50%;
+  //   z-index: -1;
+  // }
+
   &__container {
-    padding-left: 135px;
+    // padding-left: 135px;
     display: flex;
     align-items: center;
   }
 
   &__item {
-    padding-right: 46px;
+    margin-right: 46px;
 
     &:last-child {
       margin-right: 0;
     }
 
     &_active {
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(348.75deg, #000000 10.15%, rgba(0, 0, 0, 0) 59%);
+        border-radius: 5px;
+        opacity: 0;
+        transition: all .4s;
+      }
+  
+      &:hover::after {
+        opacity: 1;
+        z-index: 10;
+      }
+  
+      &:hover {
+        .description {
+          transform: translateY(-120px);        
+        }
+      }
       .slider__picture {
         width: 245px;
         height: 352px;
-        margin-bottom: 20px;
       }
     }
   }
@@ -304,6 +389,54 @@ body {
     border-radius: 5px;
     box-shadow: 5px 4px 50px rgba(152, 157, 198, 0.25);
   }
+}
+
+.description {
+  position: absolute;
+  // top: 400px;
+  top: 352px;  
+  left: 22px;  
+  z-index: 100;
+  transition: all .4s;
+
+  &__text {
+    color: $base;
+    font-size: 14px;
+    line-height: 16px;
+    max-width: 185px;
+    margin-bottom: 16px;
+  }
+
+  &__btn {
+    position: relative;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+    color: $base;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 6px 0 4px 26px;
+    transition: all .4s;    
+
+    &:hover {
+        text-decoration: underline;      
+      }
+
+    &:active, &:focus {
+      outline: none;
+    }
+
+    &_watch {
+      margin-right: 10px;
+      color: #4BD8B5;
+      background: url(../assets/icons/watch-btn-green.svg) left center no-repeat;
+      
+    }
+
+    &_donate {
+      background: url(../assets/icons/dollar.svg) left center no-repeat;
+    }
+  }  
 }
 
 .range {
@@ -326,6 +459,11 @@ body {
       height: 10px;
       background: $grey_1;
       cursor: pointer;
+      transition: transform .2s;
+    }
+
+    &::-webkit-slider-thumb:hover {
+      transform: scale(1.1);
     }
 
     &::-moz-range-thumb {
@@ -351,6 +489,9 @@ body {
 }
 
 .first-screen-range {
+
+  position: absolute;
+
   .range__value {
     color: $base;
   }
@@ -463,6 +604,27 @@ body {
 .pets-in-zoo-title {
   margin-bottom: 35px;
 }
+.pets-in-zoo-slider-container {
+  position: relative;  
+}
+
+.arrow {
+  position: absolute;
+  top: calc(50% - 15px);
+  transition: all .4s, all .4s,;
+
+  &:hover {
+    transform: scale(1.4);
+  }
+}
+
+.left-arrow {
+  left: -44px;    
+}
+
+.right-arrow {
+  right: -44px;    
+}
 
 .pets-in-zoo-slider {
   display: flex;
@@ -470,7 +632,32 @@ body {
   margin-bottom: 30px;
 
   &__item {
+    position: relative;
     margin-right: 30px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(348.75deg, #000000 10.15%, rgba(0, 0, 0, 0) 59%);
+      border-radius: 5px;
+      opacity: 0;
+      transition: all .4s;
+    }
+
+    &:hover::after {
+      opacity: 1;
+      z-index: 10;
+    }
+
+    &:hover {
+      .description {
+        transform: translateY(-130px);        
+      }
+    }
   }
 
   &__picture {
@@ -479,6 +666,55 @@ body {
     border-radius: 5px;
   }
 }
+.pets-in-zoo-slider__description {
+  top: 400px;
+}
+// .description {
+//   position: absolute;
+//   top: 400px;  
+//   left: 22px;  
+//   z-index: 100;
+//   transition: all .4s;
+
+//   &__text {
+//     color: $base;
+//     font-size: 14px;
+//     line-height: 16px;
+//     max-width: 185px;
+//     margin-bottom: 16px;
+//   }
+
+//   &__btn {
+//     position: relative;
+//     font-size: 12px;
+//     line-height: 14px;
+//     font-weight: 500;
+//     color: $base;
+//     text-transform: uppercase;
+//     text-decoration: none;
+//     padding: 6px 0 4px 26px;
+//     transition: all .4s;    
+
+//     &:hover {
+//         text-decoration: underline;      
+//       }
+
+//     &:active, &:focus {
+//       outline: none;
+//     }
+
+//     &_watch {
+//       margin-right: 10px;
+//       color: #4BD8B5;
+//       background: url(../assets/icons/watch-btn-green.svg) left center no-repeat;
+      
+//     }
+
+//     &_donate {
+//       background: url(../assets/icons/dollar.svg) left center no-repeat;
+//     }
+//   }  
+// }
 
 .pets-in-zoo-range {
   margin-bottom: 30px;
@@ -508,20 +744,22 @@ body {
 .steps {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
 .step {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 60px;
+  
 
   &__icon {
     margin-bottom: 18px;
   }
 
   &__text {
-    max-width: 136px;
+    max-width: 135px;
     text-align: center;
   }
 }
@@ -555,6 +793,10 @@ body {
   &__title {
     margin-bottom: 61px;
   }
+}
+
+.testimonials-slider-contaiter {
+  position: relative;
 }
 
 .testimonials-slider {

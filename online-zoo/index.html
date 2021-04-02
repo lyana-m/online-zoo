@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+  <h1 class="visually-hidden">Online Zoo</h1>
   <header class="header">
     <div class="big-wrapper">
       <div class="header__inner">
@@ -39,10 +39,11 @@
               <a href="#" class="nav__link">Map</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Contact Us</a>
+              <a href="#footer" class="nav__link">Contact Us</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Design</a>
+              <a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp" class="nav__link"
+                target="_blank">Design</a>
             </li>
           </ul>
         </nav>
@@ -66,55 +67,65 @@
       <div class="social">
         <ul class="social__list">
           <li class="social__item">
-            <a href="https://www.instagram.com/?hl=ru"><img class="social__icon" src="./assets/icons/instagram.svg"
-                alt="instagram"></a>
+            <a href="https://www.instagram.com/?hl=ru" target="_blank" class="social__link"><img class="social__icon"
+                src="./assets/icons/instagram.svg" alt="instagram"></a>
           </li>
           <li class="social__item">
-            <a href="https://twitter.com/?lang=ru"><img class="social__icon" src="./assets/icons/twitter.svg"
-                alt="twitter"></a>
+            <a href="https://twitter.com/?lang=ru" target="_blank" class="social__link"><img class="social__icon"
+                src="./assets/icons/twitter.svg" alt="twitter"></a>
           </li>
           <li class="social__item">
-            <a href="https://www.youtube.com/"><img class="social__icon" src="./assets/icons/youtube.svg"
-                alt="youtube"></a>
+            <a href="https://www.youtube.com/" target="_blank" class="social__link"><img class="social__icon"
+                src="./assets/icons/youtube.svg" alt="youtube"></a>
           </li>
           <li class="social__item">
-            <a href="https://vk.com/"><img class="social__icon" src="./assets/icons/vk.svg" alt="vk"></a>
+            <a href="https://vk.com/" target="_blank" class="social__link"><img class="social__icon"
+                src="./assets/icons/vk.svg" alt="vk"></a>
           </li>
         </ul>
       </div>
     </div>
 
-    <div class="main-slider slider">
-      <div class="slider__container">
-        <div class="slider__item">
-          <img src="./assets/images/eagle.jpg" alt="eagle" class="slider__picture">
-        </div>
-        <div class="slider__item slider__item_active">
-          <img src="./assets/images/panda.jpg" alt="panda" class="slider__picture">
-          <div class="first-screen-range range">
-            <label for="range" class="range__max"><span class="range__value">2/</span>8</label>
-            <input type="range" min="1" max="8" step="1" value="2" class="range__input" id="range">
+    <div class="slider-wrapper">
+      <div class="main-slider slider">
+        <div class="slider__container">
+          <div class="slider__item">
+            <img src="./assets/images/eagle.jpg" alt="eagle" class="slider__picture">
+          </div>
+          <div class="slider__item slider__item_active">
+            <img src="./assets/images/panda.jpg" alt="panda" class="slider__picture">
+            <div class="main-slider__description description">
+              <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
+                bamboos.</p>
+              <a href="#" class="description__btn description__btn_watch">watch online</a>
+              <a href="#" class="description__btn description__btn_donate">Donate</a>
+            </div>
+            <!-- <div class="first-screen-range range">
+              <label for="range" class="range__max"><span class="range__value">02/</span>08</label>
+              <input type="range" min="1" max="8" step="1" value="2" class="range__input" id="range">
+            </div> -->
+          </div>
+          <div class="slider__item">
+            <img src="./assets/images/gorilla.jpg" alt="gorilla" class="slider__picture">
+          </div>
+          <div class="slider__item">
+            <img src="./assets/images/crocodile.jpg" alt="crocodile" class="slider__picture">
+          </div>
+          <div class="slider__item">
+            <img src="./assets/images/fox.jpg" alt="fox" class="slider__picture">
+          </div>
+          <div class="slider__item">
+            <img src="./assets/images/sloth.jpg" alt="sloth" class="slider__picture">
+          </div>
+          <div class="slider__item">
+            <img src="./assets/images/elephant.jpg" alt="elephant" class="slider__picture">
+          </div>
+          <div class="slider__item">
+            <img src="./assets/images/leopard.jpg" alt="leopard" class="slider__picture">
           </div>
         </div>
-        <div class="slider__item">
-          <img src="./assets/images/gorilla.jpg" alt="gorilla" class="slider__picture">
-        </div>
-        <div class="slider__item">
-          <img src="./assets/images/crocodile.jpg" alt="crocodile" class="slider__picture">
-        </div>
-        <div class="slider__item">
-          <img src="./assets/images/fox.jpg" alt="fox" class="slider__picture">
-        </div>
-        <div class="slider__item">
-          <img src="./assets/images/sloth.jpg" alt="sloth" class="slider__picture">
-        </div>
-        <div class="slider__item">
-          <img src="./assets/images/elephant.jpg" alt="elephant" class="slider__picture">
-        </div>
-        <div class="slider__item">
-          <img src="./assets/images/leopard.jpg" alt="leopard" class="slider__picture">
-        </div>
       </div>
+
     </div>
   </section>
 
@@ -135,7 +146,7 @@
           </div>
         </div>
         <div class="how-it-works-range range">
-          <label for="range" class="range__max"><span class="range__value">1/</span>4</label>
+          <label for="range" class="range__max"><span class="range__value">01/</span>04</label>
           <input type="range" min="1" max="4" step="1" value="1" class="range__input" id="range">
         </div>
         <a class="btn watch-btn how-it-works-btn">watch online</a>
@@ -173,19 +184,44 @@
   <section class="pets-in-zoo">
     <div class="medium-wrapper">
       <h3 class="pets-in-zoo-title title">Pets in Zoo</h3>
-      <div class="slider-container">
+      <div class="pets-in-zoo-slider-container">
+        <img src="./assets/icons/left-arrow.svg" alt="" class="arrow left-arrow">
         <div class="pets-in-zoo-slider">
           <div class="pets-in-zoo-slider__item">
             <img src="./assets/images/panda.jpg" alt="panda" class="pets-in-zoo-slider__picture">
+            <div class="pets-in-zoo-slider__description description">
+              <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
+                bamboos.</p>
+              <a href="#" class="description__btn description__btn_watch">watch online</a>
+              <a href="#" class="description__btn description__btn_donate">Donate</a>
+            </div>
           </div>
           <div class="pets-in-zoo-slider__item">
             <img src="./assets/images/eagle.jpg" alt="eagle" class="pets-in-zoo-slider__picture">
+            <div class="pets-in-zoo-slider__description description">
+              <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
+                bamboos.</p>
+              <a href="#" class="description__btn description__btn_watch">watch online</a>
+              <a href="#" class="description__btn description__btn_donate">Donate</a>
+            </div>
           </div>
           <div class="pets-in-zoo-slider__item">
             <img src="./assets/images/gorilla2.jpg" alt="gorilla" class="pets-in-zoo-slider__picture">
+            <div class="pets-in-zoo-slider__description description">
+              <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
+                bamboos.</p>
+              <a href="#" class="description__btn description__btn_watch">watch online</a>
+              <a href="#" class="description__btn description__btn_donate">Donate</a>
+            </div>
           </div>
           <div class="pets-in-zoo-slider__item">
             <img src="./assets/images/crocodile2.jpg" alt="crocodile" class="pets-in-zoo-slider__picture">
+            <div class="pets-in-zoo-slider__description description">
+              <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
+                bamboos.</p>
+              <a href="#" class="description__btn description__btn_watch">watch online</a>
+              <a href="#" class="description__btn description__btn_donate">Donate</a>
+            </div>
           </div>
           <div class="pets-in-zoo-slider__item">
             <img src="./assets/images/fox.jpg" alt="fox" class="pets-in-zoo-slider__picture">
@@ -200,9 +236,10 @@
             <img src="./assets/images/leopard.jpg" alt="leopard" class="pets-in-zoo-slider__picture">
           </div>
         </div>
+        <img src="./assets/icons/right-arrow.svg" alt="" class="arrow right-arrow">
       </div>
       <div class="pets-in-zoo-range range">
-        <label for="range" class="range__max"><span class="range__value">1/</span>8</label>
+        <label for="range" class="range__max"><span class="range__value">01/</span>08</label>
         <input type="range" min="1" max="8" step="1" value="1" class="range__input" id="range">
       </div>
       <a class="pets-in-zoo-btn btn">Choose your favorite</a>
@@ -225,7 +262,9 @@
             </div>
           </div>
         </div>
-        <div class="step-arrow"></div>
+        <div class="step-arrow">
+          <img src="./assets/icons/arrow.svg" alt="" class="step-arrow_icon">
+        </div>
         <div class="step">
           <div class="gradient-circle">
             <div class="white-circle">
@@ -236,7 +275,9 @@
             </div>
           </div>
         </div>
-        <div class="step-arrow"></div>
+        <div class="step-arrow">
+          <img src="./assets/icons/arrow.svg" alt="" class="step-arrow_icon">
+        </div>
         <div class="step">
           <div class="gradient-circle">
             <div class="white-circle">
@@ -255,22 +296,26 @@
   <section class="testimonials">
     <div class="medium-wrapper">
       <h3 class="testimonials__title title">Testimonials</h3>
-      <div class="testimonials-slider">
-        <div class="testimonials-slider__item testimonial">
-          <div class="testimonial__photo testimonial__photo-1"></div>
-          <h4 class="testimonial__author subtitle">Nastya Sidorova</h4>
-          <p class="testimonial__text">As a voice for wildlife, we are devastated by the impact of the 2020 Australian
-            bushfires on precious species and their habitat.</p>
+      <div class="testimonials-slider-contaiter">
+        <img src="./assets/icons/left-arrow.svg" alt="" class="arrow left-arrow">
+        <div class="testimonials-slider">
+          <div class="testimonials-slider__item testimonial">
+            <div class="testimonial__photo testimonial__photo-1"></div>
+            <h4 class="testimonial__author subtitle">Nastya Sidorova</h4>
+            <p class="testimonial__text">As a voice for wildlife, we are devastated by the impact of the 2020 Australian
+              bushfires on precious species and their habitat.</p>
+          </div>
+          <div class="testimonials-slider__item testimonial">
+            <div class="testimonial__photo testimonial__photo-2"></div>
+            <h4 class="testimonial__author subtitle">Vlad Kim</h4>
+            <p class="testimonial__text">As a voice for wildlife, we are devastated by the impact of the 2020 Australian
+              bushfires on precious species and their habitat.</p>
+          </div>
         </div>
-        <div class="testimonials-slider__item testimonial">
-          <div class="testimonial__photo testimonial__photo-2"></div>
-          <h4 class="testimonial__author subtitle">Vlad Kim</h4>
-          <p class="testimonial__text">As a voice for wildlife, we are devastated by the impact of the 2020 Australian
-            bushfires on precious species and their habitat.</p>
-        </div>
+        <img src="./assets/icons/right-arrow.svg" alt="" class="arrow right-arrow">
       </div>
       <div class="testimonials-range range">
-        <label for="range" class="range__max"><span class="range__value">1/</span>8</label>
+        <label for="range" class="range__max"><span class="range__value">01/</span>08</label>
         <input type="range" min="1" max="8" step="1" value="1" class="range__input" id="range">
       </div>
       <a class="pay-and-feed-btn btn">Leave feedback</a>
@@ -816,7 +861,7 @@
     <a class="watch-btn btn">watch online</a>
   </section>
 
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="big-wrapper">
       <div class="footer__inner">
         <div class="footer__left">
@@ -849,7 +894,7 @@
           <nav class="footer__nav nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="#" class="nav__link nav__link_active">About</a>
+                <a href="#" class="nav__link">About</a>
               </li>
               <li class="nav__item">
                 <a href="#" class="nav__link">Zoos</a>
@@ -858,7 +903,8 @@
                 <a href="#" class="nav__link">Map</a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link">Design</a>
+                <a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp" target="_blank"
+                  class="nav__link">Design</a>
               </li>
             </ul>
           </nav>
@@ -872,18 +918,20 @@
           <div class="footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a href="https://www.instagram.com/?hl=ru"><img class="social__icon" src="./assets/icons/instagram.svg"
-                    alt="instagram"></a>
+                <a href="https://www.instagram.com/?hl=ru" target="_blank" class="social__link"><img
+                    class="social__icon" src="./assets/icons/instagram.svg" alt="instagram"></a>
               </li>
               <li class="social__item">
-                <a href="https://twitter.com/?lang=ru"><img class="social__icon" src="./assets/icons/twitter.svg"
-                    alt="twitter"></a>
+                <a href="https://twitter.com/?lang=ru" target="_blank" class="social__link"><img class="social__icon"
+                    src="./assets/icons/twitter.svg" alt="twitter"></a>
               </li>
               <li class="social__item">
-                <a href="https://vk.com/"><img class="social__icon" src="./assets/icons/vk.svg" alt="vk"></a>
+                <a href="https://vk.com/" target="_blank" class="social__link"><img class="social__icon"
+                    src="./assets/icons/vk.svg" alt="vk"></a>
               </li>
               <li class="social__item">
-                <a href="https://www.youtube.com/"><img class="social__icon" src="./assets/icons/youtube.svg" alt="youtube"></a>
+                <a href="https://www.youtube.com/" target="_blank" class="social__link"><img class="social__icon"
+                    src="./assets/icons/youtube.svg" alt="youtube"></a>
               </li>
             </ul>
           </div>

@@ -15,7 +15,7 @@ body {
   font-family: 'Roboto';
   font-style: normal;
   font-size: 14px;
-  line-height: 117%;
+  line-height: 16px;
   font-weight: 400;
   color: #333333;
 }
@@ -862,8 +862,134 @@ body {
   margin-bottom: 60px;
 }
 
+.tooltip {
+  position: absolute;
+  width: 436px;
+  display: none;
+}
+
+.tooltip__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 0 44px 44px;
+  background: #FEFEFE;
+  border-radius: 8px;
+  -webkit-box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
+          box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
+}
+
+.tooltip__picture {
+  margin-right: 20px;
+}
+
+.tooltip__title {
+  margin-bottom: 7px;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.tooltip__text {
+  color: #4F4F4F;
+}
+
+.tooltip__text_margin {
+  margin-bottom: 7px;
+}
+
+.tooltip__text span {
+  font-weight: 500;
+}
+
+.tooltip-eagle {
+  top: 76px;
+  right: 33px;
+}
+
+.tooltip-crocodile {
+  top: 76px;
+  right: 33px;
+}
+
+.tooltip-gorilla {
+  top: 76px;
+  left: 33px;
+}
+
+.tooltip-panda {
+  top: 76px;
+  left: 33px;
+}
+
+.map__pin:hover .tooltip {
+  display: block;
+}
+
 .map {
+  position: relative;
   margin-bottom: 35px;
+}
+
+.map__pin {
+  position: relative;
+  background: url(../assets/icons/pin-green.svg) no-repeat;
+  width: 70px;
+  height: 94px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.map__pin_eagle {
+  position: absolute;
+  top: 16%;
+  left: 10%;
+}
+
+.map__pin_crocodile {
+  position: absolute;
+  top: 21%;
+  left: 20%;
+}
+
+.map__pin_gorilla {
+  position: absolute;
+  top: 38%;
+  left: 47.5%;
+}
+
+.map__pin_panda {
+  position: absolute;
+  top: 19%;
+  left: 74%;
+}
+
+.map__pin:hover {
+  background: url(../assets/icons/pin-red.svg) no-repeat;
+}
+
+.map__picture {
+  position: absolute;
+  top: 12.47px;
+  left: 12px;
+  width: 43px;
+  height: 43px;
+}
+
+.map__picture_eagle {
+  background: url(../assets/images/pin-eagle.png) no-repeat;
+}
+
+.map__picture_crocodile {
+  background: url(../assets/images/pin-crocodile.png) no-repeat;
+}
+
+.map__picture_gorilla {
+  background: url(../assets/images/pin-gorilla.png) no-repeat;
+}
+
+.map__picture_panda {
+  background: url(../assets/images/pin-panda.png) no-repeat;
 }
 
 .footer {

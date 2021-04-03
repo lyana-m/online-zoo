@@ -1,0 +1,10 @@
+.broadcast {
+  background: #FEFEFE;
+}
+
+.broadcast__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=panda.css.map */

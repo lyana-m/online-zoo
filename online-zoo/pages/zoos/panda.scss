@@ -1,0 +1,10 @@
+@import '../../css/variables';
+
+.broadcast {
+  background: $base;
+
+  &__inner {
+    display: flex;
+  }
+}
+

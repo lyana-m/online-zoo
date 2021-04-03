@@ -1,0 +1,123 @@
+.map-block {
+  background: #FEFEFE;
+}
+
+.map-block__inner {
+  padding: 60px 0 100px 0;
+}
+
+.map-block__title {
+  margin-bottom: 20px;
+}
+
+.map-block__text {
+  display: block;
+  max-width: 790px;
+  margin: 0 auto 64px;
+}
+
+.carousel {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1074px;
+  margin: 0 auto 42px;
+}
+
+.carousel__item {
+  position: relative;
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.carousel__item_active {
+  width: 137px;
+  height: 137px;
+}
+
+.carousel__item_active::before {
+  position: absolute;
+  content: "";
+  width: 158px;
+  height: 157px;
+  top: calc(50% - 79px);
+  left: calc(50% - 79px);
+  background: url(../../assets/icons/gradient-border.svg) no-repeat;
+}
+
+.carousel__item:hover:not(.carousel__item_active) {
+  -webkit-transform: scale(1.27);
+          transform: scale(1.27);
+}
+
+.carousel__item_gorilla {
+  background: url(../../assets/images/gorilla-opt.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.carousel__item_panda {
+  background: url(../../assets/images/panda-opt.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.carousel__item_crocodile {
+  background: url(../../assets/images/crocodile-opt.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.carousel__item_eagle {
+  background: url(../../assets/images/eagle-opt.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.carousel__item_tiger {
+  background: url(../../assets/images/tiger-opt.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.carousel__item_elephant {
+  background: url(../../assets/images/elephant-opt.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.carousel__item_lion {
+  background: url(../../assets/images/lion-opt.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.carousel__item_zebra {
+  background: url(../../assets/images/zebra-opt.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.carousel__range {
+  margin-bottom: 80px;
+}
+
+.left-arrow-map {
+  left: -38px;
+}
+
+.right-arrow-map {
+  right: -38px;
+}
+
+.map_page {
+  margin-bottom: 46px;
+}
+
+.map__pin_panda {
+  background: url(../../assets/icons/pin-red.svg) no-repeat;
+}
+/*# sourceMappingURL=map.css.map */

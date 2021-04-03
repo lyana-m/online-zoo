@@ -1,0 +1,115 @@
+@import '../../css/variables';
+
+.map-block {
+  background: $base;
+
+  &__inner {
+    padding: 60px 0 100px 0;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    display: block;
+    max-width: 790px;
+    margin: 0 auto 64px;
+  }
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1074px;
+  margin: 0 auto 42px;
+
+  &__item {
+    position: relative;
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .4s;
+
+    &_active {
+      width: 137px;
+      height: 137px;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 158px;
+        height: 157px;
+        top: calc(50% - 79px);
+        left: calc(50% - 79px);
+        background: url(../../assets/icons/gradient-border.svg) no-repeat;
+      }
+    }
+
+    &:hover:not(.carousel__item_active) {
+      transform: scale(1.27);
+    }
+
+    &_gorilla {
+      background: url(../../assets/images/gorilla-opt.jpg) no-repeat center;
+      background-size: cover;
+    }
+
+    &_panda {
+      background: url(../../assets/images/panda-opt.jpg) no-repeat center;
+      background-size: cover;
+    }
+
+    &_crocodile {
+      background: url(../../assets/images/crocodile-opt.jpg) no-repeat center;
+      background-size: cover;
+    }
+
+    &_eagle {
+      background: url(../../assets/images/eagle-opt.jpg) no-repeat center;
+      background-size: cover;
+    }
+
+    &_tiger {
+      background: url(../../assets/images/tiger-opt.jpg) no-repeat center;
+      background-size: cover;
+    }
+
+    &_elephant {
+      background: url(../../assets/images/elephant-opt.jpg) no-repeat center;
+      background-size: cover;
+    }
+
+    &_lion {
+      background: url(../../assets/images/lion-opt.jpg) no-repeat center;
+      background-size: cover;
+    }
+
+    &_zebra {
+      background: url(../../assets/images/zebra-opt.jpg) no-repeat center;
+      background-size: cover;
+    }
+  }
+  &__range {
+    margin-bottom: 80px;
+  }
+}
+
+.left-arrow-map {
+  left: -38px;
+}
+
+.right-arrow-map {
+  right: -38px;
+}
+
+.map_page {
+  margin-bottom: 46px;
+}
+
+.map__pin_panda {
+  background: url(../../assets/icons/pin-red.svg) no-repeat;
+}

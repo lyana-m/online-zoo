@@ -861,24 +861,30 @@
           <div class="map__picture map__picture_eagle"></div>
           <div class="tooltip tooltip-eagle">
             <div class="tooltip__inner">
-              <img src="./assets/images/tooltip-eagle.png" alt="" class="tooltip__picture">
+              <div>
+                <img src="./assets/images/tooltip-eagle.png" alt="" class="tooltip__picture">
+              </div>
               <div>
                 <p class="tooltip__title">West End Bald Eagle</p>
                 <p class="tooltip__text tooltip__text_margin"><span>Region: </span>on an island near Los Angeles</p>
                 <p class="tooltip__text"><span>Population: </span>more than 270 pairs in 2013</p>
+                <a href="#" class="tooltip-btn">Watch online</a>
               </div>
             </div>
           </div>
-        </div>        
+        </div>
         <div class="map__pin map__pin_crocodile">
           <div class="map__picture map__picture_crocodile"></div>
           <div class="tooltip tooltip-crocodile">
             <div class="tooltip__inner">
-              <img src="./assets/images/tooltip-eagle.png" alt="" class="tooltip__picture">
+              <div>
+                <img src="./assets/images/tooltip-crocodile.png" alt="" class="tooltip__picture">
+              </div>
               <div>
                 <p class="tooltip__title">West End Bald Eagle</p>
                 <p class="tooltip__text tooltip__text_margin"><span>Region: </span>on an island near Los Angeles</p>
                 <p class="tooltip__text"><span>Population: </span>more than 270 pairs in 2013</p>
+                <a href="#" class="tooltip-btn">Watch online</a>
               </div>
             </div>
           </div>
@@ -887,11 +893,14 @@
           <div class="map__picture map__picture_gorilla"></div>
           <div class="tooltip tooltip-gorilla">
             <div class="tooltip__inner">
-              <img src="./assets/images/tooltip-eagle.png" alt="" class="tooltip__picture">
+              <div>
+                <img src="./assets/images/tooltip-gorilla.png" alt="" class="tooltip__picture">
+              </div>
               <div>
                 <p class="tooltip__title">West End Bald Eagle</p>
                 <p class="tooltip__text tooltip__text_margin"><span>Region: </span>on an island near Los Angeles</p>
                 <p class="tooltip__text"><span>Population: </span>more than 270 pairs in 2013</p>
+                <a href="#" class="tooltip-btn">Watch online</a>
               </div>
             </div>
           </div>
@@ -900,15 +909,18 @@
           <div class="map__picture map__picture_panda"></div>
           <div class="tooltip tooltip-panda">
             <div class="tooltip__inner">
-              <img src="./assets/images/tooltip-eagle.png" alt="" class="tooltip__picture">
+              <div>
+                <img src="./assets/images/tooltip-panda.png" alt="" class="tooltip__picture">
+              </div>
               <div>
                 <p class="tooltip__title">West End Bald Eagle</p>
                 <p class="tooltip__text tooltip__text_margin"><span>Region: </span>on an island near Los Angeles</p>
                 <p class="tooltip__text"><span>Population: </span>more than 270 pairs in 2013</p>
+                <a href="#" class="tooltip-btn">Watch online</a>
               </div>
             </div>
           </div>
-        </div>        
+        </div>
       </div>
     </div>
     <a class="watch-btn btn">watch online</a>
@@ -932,13 +944,13 @@
           </div>
           <form action="" class="form">
             <h4 class="form__title subtitle">Contact us</h4>
-            <input type="text" class="form__input form__name" placeholder="Name">
-            <input type="email" class="form__input form__email" placeholder="Email">
+            <input type="text" class="form__input form__name" placeholder="Name" required>
+            <input type="email" class="form__input form__email" placeholder="Email" required>
             <fieldset class="form__fieldset">
               <legend for="message" class="form__legend footer__text">Please enter your message</legend>
-              <textarea name="message" id="message" class="form__textarea"></textarea>
+              <textarea name="message" id="message" class="form__textarea" maxlength="280" required></textarea>
             </fieldset>
-            <input type="checkbox" class="form__checkbox" id="agreement">
+            <input type="checkbox" class="form__checkbox" id="agreement" required>
             <label class="form__label footer__text" for="agreement">I agree to the processing of Personal Data</label>
             <input type="submit" class="form__submit" value="send">
           </form>

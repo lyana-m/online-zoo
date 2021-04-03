@@ -854,6 +854,7 @@ body {
 .map-section {
   padding: 100px 0;
   background: $grey_6;
+  transition: all .4s;
 
   &__title {
     margin-bottom: 60px;
@@ -862,7 +863,7 @@ body {
 
 .tooltip {
   position: absolute;
-  width: 436px;  
+  width: 436px;
   display: none;
 
   &__inner {
@@ -875,6 +876,8 @@ body {
 
   &__picture {
     margin-right: 20px;
+    border-radius: 50%;
+    flex: 0 0 65px;
   }
 
   &__title {
@@ -897,18 +900,41 @@ body {
   }
 }
 
+.tooltip-btn {
+  display: none;
+  min-width: 115px;
+  height: 29px;  
+  margin-top: 15px;
+  padding: 7px 9px 7px 29px;
+  font-weight: 900;
+  font-size: 13px;
+  color: #4BD8B5;
+  text-decoration: none;
+  line-height: 15px;
+  background: url(../assets/icons/tooltip-btn-icon.svg) 9px center no-repeat;
+  border: 1px solid #4BD8B5; 
+  border-radius: 3px;
+}
+
+.tooltip:hover .tooltip-btn {
+  display: inline-block;  
+}
+
 .tooltip-eagle {
   top: 76px;
   right: 33px;
 }
+
 .tooltip-crocodile {
   top: 76px;
   right: 33px;
 }
+
 .tooltip-gorilla {
   top: 76px;
   left: 33px;
 }
+
 .tooltip-panda {
   top: 76px;
   left: 33px;
@@ -956,7 +982,7 @@ body {
 
     &:hover {
       background: url(../assets/icons/pin-red.svg) no-repeat;
-    }    
+    }
   }
 
   &__picture {
@@ -1042,6 +1068,7 @@ body {
     display: block;
     width: 100%;
     padding-bottom: 9px;
+    color: $base;
     background: none;
     border: none;
     border-bottom: 1px solid $grey_4;
@@ -1078,9 +1105,11 @@ body {
 
   &__textarea {
     width: 100%;
+    height: 120px;
     resize: none;
     background: none;
     border: none;
+    color: $base;
   }
 
   &__submit {

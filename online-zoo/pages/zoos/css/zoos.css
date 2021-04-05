@@ -1,0 +1,149 @@
+.zoos {
+  background: #FEFEFE;
+  position: relative;
+}
+
+.zoos__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sidebar {
+  padding-top: 103px;
+  padding-bottom: 103px;
+}
+
+.carousel-zoos {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 103px;
+  bottom: 103px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 200px;
+  height: 511px;
+}
+
+.up-arrow {
+  top: -38px;
+  left: calc(50% - 11px);
+}
+
+.down-arrow {
+  bottom: -38px;
+  left: calc(50% - 11px);
+}
+
+.main {
+  padding: 60px 0 100px 153px;
+}
+
+.main__title {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.broadcast {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.broadcast__video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 790px;
+  height: 100%;
+  margin-right: 30px;
+}
+
+.broadcast__main-video {
+  margin-bottom: 25px;
+}
+
+.broadcast__preview-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.preview-video__item {
+  position: relative;
+  border-radius: 5px;
+}
+
+.preview-video__item::after {
+  content: '';
+  top: 0;
+  right: 0;
+  position: absolute;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+.broadcast__description {
+  max-width: 380px;
+}
+
+.broadcast__subtitle {
+  margin-bottom: 6px;
+}
+
+.broadcast__text {
+  margin-bottom: 13px;
+}
+
+.broadcast__text_last {
+  margin-bottom: 35px;
+}
+
+.broadcast__btn {
+  max-width: 194px;
+  margin-left: 0;
+  font-weight: 900px;
+}
+
+.switcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 37px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.switcher__dot {
+  width: 8px;
+  height: 8px;
+  background: #C4C4C4;
+  border-radius: 50%;
+}
+
+.switcher__dot_active {
+  width: 11px;
+  height: 11px;
+  background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+}
+/*# sourceMappingURL=zoos.css.map */

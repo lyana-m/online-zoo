@@ -617,7 +617,7 @@ body {
 
 .arrow {
   position: absolute;
-  top: calc(50% - 15px);
+  // top: calc(50% - 15px);
   transition: all .4s, all .4s, ;
 
   &:hover {
@@ -627,10 +627,12 @@ body {
 
 .left-arrow {
   left: -44px;
+  top: calc(50% - 15px)
 }
 
 .right-arrow {
   right: -44px;
+  top: calc(50% - 15px)
 }
 
 .pets-in-zoo-slider {

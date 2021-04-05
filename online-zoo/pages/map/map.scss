@@ -14,7 +14,7 @@
   &__text {
     display: block;
     max-width: 790px;
-    margin: 0 auto 64px;
+    margin: 0 auto 54px;
   }
 }
 
@@ -24,86 +24,98 @@
   justify-content: space-between;
   align-items: center;
   max-width: 1074px;
-  margin: 0 auto 42px;
+  // margin: 0 auto 42px;
+}
 
-  &__item {
-    position: relative;
-    width: 108px;
-    height: 108px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all .4s;
+.carousel__border {
+  position: relative;
+  width: 157px;
+  height: 157px;
+  border: double 3px transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(white, white), linear-gradient(103.3deg, #07EEE0 -15.1%, #DF496D 92.15%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
 
-    &_active {
-      width: 137px;
-      height: 137px;
+.carousel__item {
+  position: relative;
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all .4s; 
 
-      &::before {
-        position: absolute;
-        content: "";
-        width: 158px;
-        height: 157px;
-        top: calc(50% - 79px);
-        left: calc(50% - 79px);
-        background: url(../../assets/icons/gradient-border.svg) no-repeat;
-      }
-    }
-
-    &:hover:not(.carousel__item_active) {
-      transform: scale(1.27);
-    }
-
-    &_gorilla {
-      background: url(../../assets/images/gorilla-opt.jpg) no-repeat center;
-      background-size: cover;
-    }
-
-    &_panda {
-      background: url(../../assets/images/panda-opt.jpg) no-repeat center;
-      background-size: cover;
-    }
-
-    &_crocodile {
-      background: url(../../assets/images/crocodile-opt.jpg) no-repeat center;
-      background-size: cover;
-    }
-
-    &_eagle {
-      background: url(../../assets/images/eagle-opt.jpg) no-repeat center;
-      background-size: cover;
-    }
-
-    &_tiger {
-      background: url(../../assets/images/tiger-opt.jpg) no-repeat center;
-      background-size: cover;
-    }
-
-    &_elephant {
-      background: url(../../assets/images/elephant-opt.jpg) no-repeat center;
-      background-size: cover;
-    }
-
-    &_lion {
-      background: url(../../assets/images/lion-opt.jpg) no-repeat center;
-      background-size: cover;
-    }
-
-    &_zebra {
-      background: url(../../assets/images/zebra-opt.jpg) no-repeat center;
-      background-size: cover;
-    }
+  &_gorilla {
+    background: url(../../assets/images/gorilla-opt.jpg) no-repeat center center;
+    background-size: cover;
   }
-  &__range {
-    margin-bottom: 80px;
+
+  &_panda {
+    background: url(../../assets/images/panda-opt.jpg) no-repeat center center;
+    background-size: cover;
   }
+
+  &_crocodile {
+    background: url(../../assets/images/crocodile-opt.jpg) no-repeat center center;
+    background-size: cover;
+  }
+
+  &_eagle {
+    background: url(../../assets/images/eagle-opt.jpg) no-repeat center center;
+    background-size: cover;
+  }
+
+  &_tiger {
+    background: url(../../assets/images/tiger-opt.jpg) no-repeat center center;
+    background-size: cover;
+  }
+
+  &_elephant {
+    background: url(../../assets/images/elephant-opt.jpg) no-repeat center center;
+    background-size: cover;
+  }
+
+  &_lion {
+    background: url(../../assets/images/lion-opt.jpg) no-repeat center center;
+    background-size: cover;
+  }
+
+  &_zebra {
+    background: url(../../assets/images/zebra-opt.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+
+.carousel__item_active {
+  position: absolute;
+  width: 137px;
+  height: 137px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: default;
+}
+
+.carousel__item:hover:not(.carousel__item_active) {
+  transform: scale(1.27);
+}
+
+.carousel__range {
+  margin-bottom: 80px;
+}
+
+.carousel-map {
+  max-width: 1074px;
+  margin: 0 auto 32px;
 }
 
 .left-arrow-map {
-  left: -38px;
+  left: -56px;
 }
 
 .right-arrow-map {
-  right: -38px;
+  right: -56px;
 }
 
 .map_page {

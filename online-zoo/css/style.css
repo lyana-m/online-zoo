@@ -631,7 +631,6 @@ body {
 
 .arrow {
   position: absolute;
-  top: calc(50% - 15px);
   -webkit-transition: all 0.4s, all 0.4s;
   transition: all 0.4s, all 0.4s;
 }
@@ -643,10 +642,12 @@ body {
 
 .left-arrow {
   left: -44px;
+  top: calc(50% - 15px);
 }
 
 .right-arrow {
   right: -44px;
+  top: calc(50% - 15px);
 }
 
 .pets-in-zoo-slider {

@@ -139,11 +139,18 @@
   height: 8px;
   background: #C4C4C4;
   border-radius: 50%;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .switcher__dot_active {
   width: 11px;
   height: 11px;
   background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+}
+
+.switcher__dot:not(.switcher__dot_active):hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 /*# sourceMappingURL=zoos.css.map */

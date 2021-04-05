@@ -9,15 +9,16 @@
   <link rel="stylesheet" href="../../../css/style.css">
   <link rel="stylesheet" href="../../map/map.css">
   <link rel="stylesheet" href="../css/zoos.css">
-  <title>Panda</title>
+  <title>Online Zoo | Panda</title>
 </head>
 
 <body>
+  <h1 class="visually-hidden">Online Zoo</h1>
   <header class="header">
     <div class="big-wrapper">
       <div class="header__inner">
         <div class="header__logo logo">
-          <a href="../../index.html" class="logo__link">
+          <a href="../../../index.html" class="logo__link">
             <svg width="59" height="42" viewBox="0 0 59 42" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M8.64844 18.4297H17.3145V23H1.16016V19.6953L9.59766 8.55078H1.5293V3.98047H17.1211V7.17969L8.64844 18.4297ZM19.1602 13.3145C19.1602 11.416 19.5293 9.72852 20.2676 8.25195C21.0059 6.76367 22.0664 5.62109 23.4492 4.82422C24.832 4.02734 26.4551 3.62891 28.3184 3.62891C31.166 3.62891 33.4102 4.51367 35.0508 6.2832C36.6914 8.04102 37.5117 10.4375 37.5117 13.4727V13.6836C37.5117 16.6484 36.6855 19.0039 35.0332 20.75C33.3926 22.4844 31.166 23.3516 28.3535 23.3516C25.6465 23.3516 23.4727 22.543 21.832 20.9258C20.1914 19.2969 19.3066 17.0938 19.1777 14.3164L19.1602 13.3145ZM25.084 13.6836C25.084 15.4414 25.3594 16.7305 25.9102 17.5508C26.4609 18.3711 27.2754 18.7812 28.3535 18.7812C30.4629 18.7812 31.541 17.1582 31.5879 13.9121V13.3145C31.5879 9.9043 30.498 8.19922 28.3184 8.19922C26.3379 8.19922 25.2656 9.66992 25.1016 12.6113L25.084 13.6836ZM39.375 13.3145C39.375 11.416 39.7441 9.72852 40.4824 8.25195C41.2207 6.76367 42.2812 5.62109 43.6641 4.82422C45.0469 4.02734 46.6699 3.62891 48.5332 3.62891C51.3809 3.62891 53.625 4.51367 55.2656 6.2832C56.9062 8.04102 57.7266 10.4375 57.7266 13.4727V13.6836C57.7266 16.6484 56.9004 19.0039 55.248 20.75C53.6074 22.4844 51.3809 23.3516 48.5684 23.3516C45.8613 23.3516 43.6875 22.543 42.0469 20.9258C40.4062 19.2969 39.5215 17.0938 39.3926 14.3164L39.375 13.3145ZM45.2988 13.6836C45.2988 15.4414 45.5742 16.7305 46.125 17.5508C46.6758 18.3711 47.4902 18.7812 48.5684 18.7812C50.6777 18.7812 51.7559 17.1582 51.8027 13.9121V13.3145C51.8027 9.9043 50.7129 8.19922 48.5332 8.19922C46.5527 8.19922 45.4805 9.66992 45.3164 12.6113L45.2988 13.6836Z"
@@ -31,13 +32,13 @@
         <nav class="header__nav nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="../../index.html" class="nav__link">About</a>
+              <a href="../../../index.html" class="nav__link">About</a>
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link nav__link_active">Zoos</a>
             </li>
             <li class="nav__item">
-              <a href="../map/map.html" class="nav__link">Map</a>
+              <a href="../../map/map.html" class="nav__link">Map</a>
             </li>
             <li class="nav__item">
               <a href="#footer" class="nav__link">Contact Us</a>
@@ -64,11 +65,11 @@
         <div class="carousel carousel-zoos">
           <img src="../../../assets/icons/up-arrow.svg" alt="" class="arrow up-arrow">
           <div class="carousel__border">
-            <div class="carousel__item carousel__item_active carousel__item_panda"></div>
+            <div class="carousel__item carousel__item_active carousel__item_panda" title="Panda"></div>
           </div>
-          <div class="carousel__item carousel__item_crocodile"></div>
-          <div class="carousel__item carousel__item_eagle"></div>
-          <div class="carousel__item carousel__item_gorilla"></div>
+          <div title="Alligator" class="carousel__item carousel__item_crocodile"></div>
+          <div class="carousel__item carousel__item_eagle" title="Eagle"></div>
+          <div class="carousel__item carousel__item_gorilla" title="Gorilla"></div>
           <!-- <div class="carousel__item carousel__item_tiger"></div>
             <div class="carousel__item carousel__item_elephant"></div>
             <div class="carousel__item carousel__item_lion"></div>
@@ -136,7 +137,7 @@
       <div class="footer__inner">
         <div class="footer__left">
           <div class="footer__logo logo">
-            <a href="#" class="logo__link">
+            <a href="../../../index.html" class="logo__link">
               <svg width="59" height="42" viewBox="0 0 59 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M8.64844 18.4297H17.3145V23H1.16016V19.6953L9.59766 8.55078H1.5293V3.98047H17.1211V7.17969L8.64844 18.4297ZM19.1602 13.3145C19.1602 11.416 19.5293 9.72852 20.2676 8.25195C21.0059 6.76367 22.0664 5.62109 23.4492 4.82422C24.832 4.02734 26.4551 3.62891 28.3184 3.62891C31.166 3.62891 33.4102 4.51367 35.0508 6.2832C36.6914 8.04102 37.5117 10.4375 37.5117 13.4727V13.6836C37.5117 16.6484 36.6855 19.0039 35.0332 20.75C33.3926 22.4844 31.166 23.3516 28.3535 23.3516C25.6465 23.3516 23.4727 22.543 21.832 20.9258C20.1914 19.2969 19.3066 17.0938 19.1777 14.3164L19.1602 13.3145ZM25.084 13.6836C25.084 15.4414 25.3594 16.7305 25.9102 17.5508C26.4609 18.3711 27.2754 18.7812 28.3535 18.7812C30.4629 18.7812 31.541 17.1582 31.5879 13.9121V13.3145C31.5879 9.9043 30.498 8.19922 28.3184 8.19922C26.3379 8.19922 25.2656 9.66992 25.1016 12.6113L25.084 13.6836ZM39.375 13.3145C39.375 11.416 39.7441 9.72852 40.4824 8.25195C41.2207 6.76367 42.2812 5.62109 43.6641 4.82422C45.0469 4.02734 46.6699 3.62891 48.5332 3.62891C51.3809 3.62891 53.625 4.51367 55.2656 6.2832C56.9062 8.04102 57.7266 10.4375 57.7266 13.4727V13.6836C57.7266 16.6484 56.9004 19.0039 55.248 20.75C53.6074 22.4844 51.3809 23.3516 48.5684 23.3516C45.8613 23.3516 43.6875 22.543 42.0469 20.9258C40.4062 19.2969 39.5215 17.0938 39.3926 14.3164L39.375 13.3145ZM45.2988 13.6836C45.2988 15.4414 45.5742 16.7305 46.125 17.5508C46.6758 18.3711 47.4902 18.7812 48.5684 18.7812C50.6777 18.7812 51.7559 17.1582 51.8027 13.9121V13.3145C51.8027 9.9043 50.7129 8.19922 48.5332 8.19922C46.5527 8.19922 45.4805 9.66992 45.3164 12.6113L45.2988 13.6836Z"
@@ -164,13 +165,13 @@
           <nav class="footer__nav nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="#" class="nav__link">About</a>
+                <a href="../../../index.html" class="nav__link">About</a>
               </li>
               <li class="nav__item">
                 <a href="#" class="nav__link">Zoos</a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link">Map</a>
+                <a href="../../map/map.html" class="nav__link">Map</a>
               </li>
               <li class="nav__item">
                 <a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp" target="_blank"

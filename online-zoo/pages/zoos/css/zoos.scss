@@ -117,6 +117,7 @@
     height: 8px;
     background: $grey_5;
     border-radius: 50%;
+    transition: all .4s;
 
     &_active {
       width: 11px;
@@ -124,4 +125,8 @@
       background: $base_gradient;
     }
   }
+}
+
+.switcher__dot:not(.switcher__dot_active):hover {
+  transform: scale(1.5);
 }

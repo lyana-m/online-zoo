@@ -64,7 +64,7 @@ body {
 
 .nav {
   &__list {
-    display: flex;
+    display: flex;            
   }
 
   &__item {
@@ -75,10 +75,10 @@ body {
     }
   }
 
-  &__link {
+  &__link {    
     display: block;
-    padding-bottom: 3px;
     font-size: 16px;
+    line-height: 19px;
     font-weight: 500;
     text-decoration: none;
     color: $grey_1;
@@ -107,13 +107,16 @@ body {
       outline: none;
     }
 
-    &_active {
-      padding-bottom: 3px;
+    &_active {      
       font-weight: 900;
       border-bottom: 1px solid $grey_1;
       cursor: default;
     }
   }
+}
+
+.header__nav .nav__list {
+  padding-top: 10px;
 }
 
 // switcher
@@ -210,6 +213,7 @@ body {
   font-size: 18px;
   color: $base;
   text-transform: uppercase;
+  text-decoration: none;
   background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
   border: none;
   border-radius: 3px;
@@ -258,7 +262,6 @@ body {
 }
 
 .social {
-
   &__list {
     display: flex;
     flex-direction: column;
@@ -282,7 +285,6 @@ body {
   }
 
   &__link {
-
     &:active,
     &:focus {
       outline: none;
@@ -295,13 +297,13 @@ body {
 .slider-wrapper {
   position: absolute;
   top: 500px;
-  left: 51%;
+  left: 50.7%;
   right: 0;
   z-index: 1000;
 
   &::before {
     position: absolute;
-    top: 50%;
+    top: calc(50% + 7px);
     left: -135px;
     content: "";
     width: 13px;
@@ -315,40 +317,27 @@ body {
 
   &::after {
     position: absolute;
-    top: calc(50% + 6px);
+    top: calc(50% + 13px);
     left: -130px;
     right: 0;
     content: "";
     z-index: -1;
-
     height: 1px;
     background-color: $base;
   }
 }
 
 .slider {
-  // position: absolute;
-  // top: 500px;
-  // left: 51%;
-  // right: 0;
   overflow: hidden;
-  // z-index: 1000;
-
-  // &::before {
-  //   content: url("../assets/icons/line.svg");
-  //   position: absolute;
-  //   top: 50%;
-  //   z-index: -1;
-  // }
-
+  
   &__container {
-    // padding-left: 135px;
     display: flex;
     align-items: center;
   }
 
-  &__item {
+  &__item {    
     margin-right: 46px;
+    margin-top: 30px;
 
     &:last-child {
       margin-right: 0;
@@ -356,6 +345,7 @@ body {
 
     &_active {
       position: relative;
+      margin-top: 0;               
 
       &::after {
         content: '';
@@ -497,6 +487,8 @@ body {
 .first-screen-range {
 
   position: absolute;
+  left: 186px;
+  margin-top: 20px;
 
   .range__value {
     color: $base;
@@ -680,58 +672,13 @@ body {
   top: 400px;
 }
 
-// .description {
-//   position: absolute;
-//   top: 400px;  
-//   left: 22px;  
-//   z-index: 100;
-//   transition: all .4s;
-
-//   &__text {
-//     color: $base;
-//     font-size: 14px;
-//     line-height: 16px;
-//     max-width: 185px;
-//     margin-bottom: 16px;
-//   }
-
-//   &__btn {
-//     position: relative;
-//     font-size: 12px;
-//     line-height: 14px;
-//     font-weight: 500;
-//     color: $base;
-//     text-transform: uppercase;
-//     text-decoration: none;
-//     padding: 6px 0 4px 26px;
-//     transition: all .4s;    
-
-//     &:hover {
-//         text-decoration: underline;      
-//       }
-
-//     &:active, &:focus {
-//       outline: none;
-//     }
-
-//     &_watch {
-//       margin-right: 10px;
-//       color: #4BD8B5;
-//       background: url(../assets/icons/watch-btn-green.svg) left center no-repeat;
-
-//     }
-
-//     &_donate {
-//       background: url(../assets/icons/dollar.svg) left center no-repeat;
-//     }
-//   }  
-// }
 
 .pets-in-zoo-range {
   margin-bottom: 30px;
 }
 
 .pets-in-zoo-btn {
+  text-decoration: none;
   margin-bottom: 100px;
 }
 
@@ -766,7 +713,7 @@ body {
 
 
   &__icon {
-    margin-bottom: 18px;
+    margin-bottom: 25px;
   }
 
   &__text {
@@ -959,6 +906,7 @@ body {
     // box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
     width: 70px;
     height: 94px;
+    cursor: pointer;
     transition: all .4s;
 
     &_eagle {
@@ -1167,7 +1115,10 @@ body {
 }
 
 .footer__nav {
+  padding-top: 0;
   margin-bottom: 73px;
+
+
 
   .nav__link {
     color: $base;

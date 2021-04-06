@@ -1,6 +1,5 @@
 //подключаем шрифты
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@400;500;700;900&display=swap');
-
 @import 'variables';
 
 html {
@@ -45,14 +44,13 @@ body {
   margin: -1px;
   opacity: 0;
 }
-
-// header style
+// ***** HEADER STYLE *****
 
 .header {
   position: relative;
   background-color: $white;
   box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
-  z-index: 10000;
+  z-index: 1;
 
   &__inner {
     display: flex;
@@ -62,18 +60,14 @@ body {
   }
 }
 
+// navigation
+
 .nav {
   &__list {
-    display: flex;            
-  }
-
-  &__item {
-    margin-right: 83px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
+    display: flex;
+    justify-content: space-between;
+    width: 572px;       
+  } 
 
   &__link {    
     display: block;
@@ -181,10 +175,10 @@ body {
   }
 }
 
-// first-screen style
+// ***** FIRST SCREEN STYLE *****
 
-.first-screen {
-  height: 940px;
+.first-screen {  
+  padding-bottom: 105px;
   background: url("../assets/images/main-bg.jpg") no-repeat;
   background-size: cover;
 
@@ -203,6 +197,8 @@ body {
   }
 }
 
+// button
+
 .btn {
   display: flex;
   align-items: center;
@@ -211,6 +207,7 @@ body {
   height: 55px;
   margin: 0 auto;
   font-size: 18px;
+  line-height: 21px;
   color: $base;
   text-transform: uppercase;
   text-decoration: none;
@@ -261,6 +258,8 @@ body {
   margin: 0;
 }
 
+// social networks
+
 .social {
   &__list {
     display: flex;
@@ -292,7 +291,7 @@ body {
   }
 }
 
-// slider
+// first screen slider
 
 .slider-wrapper {
   position: absolute;
@@ -394,8 +393,7 @@ body {
 }
 
 .description {
-  position: absolute;
-  // top: 400px;
+  position: absolute;  
   top: 352px;
   left: 22px;
   z-index: 100;
@@ -433,7 +431,6 @@ body {
       margin-right: 10px;
       color: #4BD8B5;
       background: url(../assets/icons/watch-btn-green.svg) left center no-repeat;
-
     }
 
     &_donate {
@@ -441,6 +438,8 @@ body {
     }
   }
 }
+
+// range input
 
 .range {
   display: flex;
@@ -510,7 +509,7 @@ body {
   }
 }
 
-// How it works
+// ***** HOW IT WORKS STYLE *****
 
 .title {
   font-weight: 900;
@@ -520,7 +519,7 @@ body {
 }
 
 .how-it-works {
-  padding-top: 100px;
+  padding: 100px 0;
 
   &__title {
     margin-bottom: 30px;
@@ -532,7 +531,7 @@ body {
   }
 }
 
-.how-it-works-slider {
+.how-it-works-slider {  
   &__container {
     margin-bottom: 30px;
   }
@@ -545,32 +544,25 @@ body {
     margin-top: 14px;
 
     &::-webkit-slider-thumb {
-      width: 62px;
-      background: $grey_1;
+      width: 62px;      
     }
 
     &::-moz-range-thumb {
-      width: 62px;
-      background: $grey_1;
+      width: 62px;     
     }
   }
 }
 
-.how-it-works-btn {
-  margin-bottom: 101px;
-}
-
-// what-is-inspiring-us
+// ***** WHAT IS INSPIRING US STYLE *****
 
 .what-is-inspiring-us {
   background-color: $grey_6;
-  padding-top: 100px;
+  padding: 100px 0;
 }
 
 .row {
   display: flex;
   justify-content: space-between;
-
 }
 
 .subtitle {
@@ -583,8 +575,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 380px;
-  margin-bottom: 100px;
+  max-width: 380px;  
 
   &__icon {
     margin-bottom: 15px;
@@ -600,23 +591,24 @@ body {
   }
 }
 
-// pets in zoo
+// ***** PETS IN ZOO STYLE *****
 
 .pets-in-zoo {
-  padding-top: 100px;
+  padding: 100px 0 100px 0;
 }
 
 .pets-in-zoo-title {
   margin-bottom: 35px;
 }
 
+// pets in zoo slider
+
 .pets-in-zoo-slider-container {
   position: relative;
 }
 
 .arrow {
-  position: absolute;
-  // top: calc(50% - 15px);
+  position: absolute;  
   transition: all .4s, all .4s, ;
 
   &:hover {
@@ -679,24 +671,17 @@ body {
   top: 400px;
 }
 
-
 .pets-in-zoo-range {
   margin-bottom: 30px;
 }
 
-.pets-in-zoo-btn {
-  text-decoration: none;
-  margin-bottom: 100px;
-}
-
-// pay and feed
+// ***** PAY AND FEED STYLE *****
 
 .pay-and-feed {
   background: $grey_6;
-  padding-bottom: 100px;
+  padding: 100px 0;
 
-  &__title {
-    padding-top: 100px;
+  &__title {    
     margin-bottom: 30px;
   }
 
@@ -717,7 +702,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 
   &__icon {
     margin-bottom: 25px;
@@ -750,7 +734,7 @@ body {
   border-radius: 50%;
 }
 
-// Testimonials
+// ***** TESTIMONIALS STYLE *****
 
 .testimonials {
   padding: 100px 0;
@@ -808,7 +792,7 @@ body {
   margin-bottom: 30px;
 }
 
-// map
+// ***** MAP STYLE *****
 
 .map-section {
   padding: 100px 0;
@@ -909,8 +893,7 @@ body {
 
   &__pin {
     position: relative;
-    background: url(../assets/icons/pin-green.svg) no-repeat;
-    // box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
+    background: url(../assets/icons/pin-green.svg) no-repeat;    
     width: 70px;
     height: 94px;
     cursor: pointer;
@@ -970,7 +953,7 @@ body {
   }
 }
 
-// footer
+// ***** FOOTER STYLE *****
 
 .footer {
   padding: 99px 0 72px;
@@ -1123,9 +1106,11 @@ body {
 
 .footer__nav {
   padding-top: 0;
-  margin-bottom: 73px;
+  margin-bottom: 73px; 
 
-
+  .nav__list {
+    width: 380px;
+  }
 
   .nav__link {
     color: $base;
@@ -1134,10 +1119,7 @@ body {
       background: $base;
     }
   }
-
-  .nav__item {
-    margin-right: 73px;
-  }
+  
 }
 
 .footer__text_uppercase {

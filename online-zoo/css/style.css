@@ -49,7 +49,7 @@ body {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
           box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
-  z-index: 10000;
+  z-index: 1;
 }
 
 .header__inner {
@@ -69,14 +69,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.nav__item {
-  margin-right: 83px;
-}
-
-.nav__item:last-child {
-  margin-right: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 572px;
 }
 
 .nav__link {
@@ -184,7 +180,7 @@ body {
 }
 
 .first-screen {
-  height: 940px;
+  padding-bottom: 105px;
   background: url("../assets/images/main-bg.jpg") no-repeat;
   background-size: cover;
 }
@@ -217,6 +213,7 @@ body {
   height: 55px;
   margin: 0 auto;
   font-size: 18px;
+  line-height: 21px;
   color: #FEFEFE;
   text-transform: uppercase;
   text-decoration: none;
@@ -547,7 +544,7 @@ body {
 }
 
 .how-it-works {
-  padding-top: 100px;
+  padding: 100px 0;
 }
 
 .how-it-works__title {
@@ -573,21 +570,15 @@ body {
 
 .how-it-works-range .range__input::-webkit-slider-thumb {
   width: 62px;
-  background: #333333;
 }
 
 .how-it-works-range .range__input::-moz-range-thumb {
   width: 62px;
-  background: #333333;
-}
-
-.how-it-works-btn {
-  margin-bottom: 101px;
 }
 
 .what-is-inspiring-us {
   background-color: #F2F2F2;
-  padding-top: 100px;
+  padding: 100px 0;
 }
 
 .row {
@@ -617,7 +608,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   max-width: 380px;
-  margin-bottom: 100px;
 }
 
 .card__icon {
@@ -636,7 +626,7 @@ body {
 }
 
 .pets-in-zoo {
-  padding-top: 100px;
+  padding: 100px 0 100px 0;
 }
 
 .pets-in-zoo-title {
@@ -719,18 +709,12 @@ body {
   margin-bottom: 30px;
 }
 
-.pets-in-zoo-btn {
-  text-decoration: none;
-  margin-bottom: 100px;
-}
-
 .pay-and-feed {
   background: #F2F2F2;
-  padding-bottom: 100px;
+  padding: 100px 0;
 }
 
 .pay-and-feed__title {
-  padding-top: 100px;
   margin-bottom: 30px;
 }
 
@@ -1234,16 +1218,16 @@ body {
   margin-bottom: 73px;
 }
 
+.footer__nav .nav__list {
+  width: 380px;
+}
+
 .footer__nav .nav__link {
   color: #FEFEFE;
 }
 
 .footer__nav .nav__link::after {
   background: #FEFEFE;
-}
-
-.footer__nav .nav__item {
-  margin-right: 73px;
 }
 
 .footer__text_uppercase {

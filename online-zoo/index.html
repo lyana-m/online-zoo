@@ -60,10 +60,10 @@
 
   <section class="first-screen">
     <div class="big-wrapper">
-      <div class="medium-wrapper first-screen__medium-wrapper">
+      <!-- <div class="medium-wrapper first-screen__medium-wrapper"> -->
         <h2 class="first-screen__title">Watch your favorite animal online</h2>
         <a class="btn watch-btn first-watch-btn">watch online</a>
-      </div>
+      <!-- </div> -->
       <div class="social">
         <ul class="social__list">
           <li class="social__item">
@@ -114,7 +114,7 @@
             <img src="./assets/images/sloth.jpg" alt="sloth" class="slider__picture">
           </div>
           <div class="slider__item">
-            <img src="./assets/images/elephant.jpg" alt="elephant" class="slider__picture">
+            <img src="./assets/images/map-slider-elephant.jpg" alt="elephant" class="slider__picture">
           </div>
           <div class="slider__item">
             <img src="./assets/images/leopard.jpg" alt="leopard" class="slider__picture">
@@ -230,7 +230,7 @@
             <img src="./assets/images/sloth.jpg" alt="sloth" class="pets-in-zoo-slider__picture">
           </div>
           <div class="pets-in-zoo-slider__item">
-            <img src="./assets/images/elephant.jpg" alt="elephant" class="pets-in-zoo-slider__picture">
+            <img src="./assets/images/map-slider-elephant.jpg" alt="elephant" class="pets-in-zoo-slider__picture">
           </div>
           <div class="pets-in-zoo-slider__item">
             <img src="./assets/images/leopard.jpg" alt="leopard" class="pets-in-zoo-slider__picture">
@@ -255,16 +255,18 @@
         <div class="step">
           <div class="gradient-circle">
             <div class="white-circle">
-              <div class="step__icon">
+              <picture class="step__icon">
                 <img src="./assets/icons/credit-cards.svg" alt="credit-cards">
-              </div>
+              </picture>
               <h4 class="step__text subtitle">You pay with a VISA card</h4>
             </div>
           </div>
         </div>
-        <div class="step-arrow">
+        <picture class="step-arrow">
+          <source srcset="./assets/icons/arrow-small.svg" media="(max-width: 1200px)" class="step-arrow_icon">
+          <source srcset="./assets/icons/arrow.svg" media="(max-width: 1920px)" class="step-arrow_icon">          
           <img src="./assets/icons/arrow.svg" alt="" class="step-arrow_icon">
-        </div>
+        </picture>
         <div class="step">
           <div class="gradient-circle">
             <div class="white-circle">
@@ -275,9 +277,11 @@
             </div>
           </div>
         </div>
-        <div class="step-arrow">
+        <picture class="step-arrow">
+          <source srcset="./assets/icons/arrow-small.svg" media="(max-width: 1200px)" class="step-arrow_icon">
+          <source srcset="./assets/icons/arrow.svg" media="(max-width: 1920px)" class="step-arrow_icon">          
           <img src="./assets/icons/arrow.svg" alt="" class="step-arrow_icon">
-        </div>
+        </picture>
         <div class="step">
           <div class="gradient-circle">
             <div class="white-circle">
@@ -326,8 +330,7 @@
     <div class="medium-wrapper">
       <h3 class="map-section__title title">Map</h3>
       <div class="map">
-
-        <svg width="1200" height="498" viewBox="0 0 1200 498" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="svg-map" width="1200" height="498" viewBox="0 0 1200 498" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M742.625 212.977L743.227 212.795L743.438 213.779L746.131 213.219L749.036 213.31L751.157 213.415L753.339 210.995L755.747 208.711L757.748 206.518L758.515 207.743L759.252 210.556L757.477 210.572L757.387 212.886L758.049 213.385L756.529 214.081L756.634 215.533L755.747 217.016L755.762 218.438L755.115 219.194L744.446 217.409L742.821 213.794L742.625 212.977Z"
             fill="#333333" />

@@ -19,10 +19,10 @@
 }
 
 .carousel {
-  // position: relative;
   display: flex;
   align-items: center;
   margin: 0 -15px;
+  overflow: hidden;
 }
 
 .carousel__item {
@@ -161,7 +161,7 @@
 // }
 
 .carousel__item:hover:not(.carousel__item_active) {
-  transform: scale(1.15);
+  transform: scale(1.05);
 }
 
 .carousel__range {

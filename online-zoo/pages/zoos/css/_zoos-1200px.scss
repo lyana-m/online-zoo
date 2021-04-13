@@ -1,0 +1,89 @@
+@media (max-width: 1200px) {
+
+  .big-wrapper {
+    max-width: 900px;
+  }
+
+  .sidebar {    
+    left: -147px;
+  }
+  
+  .carousel {        
+    margin: -5px 0;    
+  }
+
+  .carousel-zoos {
+    height: 450px;
+    width: 152px;
+  }
+  
+  .carousel__item {    
+    width: 96px;
+    height: 96px;
+    margin: 5px 0;    
+  }
+  
+  .carousel__image {    
+    width: 96px;
+    height: 96px;    
+  }
+  
+  .carousel__item_active {
+    width: 120px;
+    height: 120px;    
+  
+    .carousel__image {
+      width: 104px;
+      height: 104px;  
+    }
+  
+    &::before {      
+      width: 120px;
+      height: 120px;      
+    }
+  
+    &::after {
+      width: 114px;
+      height: 114px;      
+    }
+  }
+
+  .main {
+    margin-left: -100px;
+  }
+
+  .broadcast__video {    
+    margin-right: 20px;
+  }
+
+  .broadcast__main-video {
+    max-width: 527px;
+    max-height: 297px;      
+  }
+  
+  .broadcast__preview-video {    
+    margin: 0 -9px 28px;  
+  }
+  
+  .preview-video__item {    
+    width: 164px;
+    height: 94px;
+    margin: 0 9px;
+  }
+
+  .broadcast__description {
+    max-width: 253px;
+  }
+
+  .broadcast__text {
+    margin-bottom: 17px;
+  
+    &_last {
+      margin-bottom: 20px;
+    }
+  }
+
+  .broadcast__btn {
+    max-width: 185px;    
+  }
+} 

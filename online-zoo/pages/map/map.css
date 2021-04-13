@@ -24,6 +24,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 0 -15px;
+  overflow: hidden;
 }
 
 .carousel__item {
@@ -96,8 +97,8 @@
 }
 
 .carousel__item:hover:not(.carousel__item_active) {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .carousel__range {
@@ -161,9 +162,6 @@
   .carousel-map {
     max-width: 685px;
     margin: 0 auto 24px;
-  }
-  .carousel {
-    overflow: hidden;
   }
   .carousel__item {
     border-radius: 50%;

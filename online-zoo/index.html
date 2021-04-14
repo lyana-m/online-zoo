@@ -53,6 +53,9 @@
             <span class="switch__slider round"></span>
           </label>
         </div>
+        <div class="header__menu">
+          <span></span>
+        </div>
       </div>
     </div>
 
@@ -263,6 +266,7 @@
           </div>
         </div>
         <picture class="step-arrow">
+          <source srcset="./assets/icons/arrow-down.svg" media="(max-width: 640px)" class="step-arrow_icon">
           <source srcset="./assets/icons/arrow-small.svg" media="(max-width: 1200px)" class="step-arrow_icon">
           <source srcset="./assets/icons/arrow.svg" media="(max-width: 1920px)" class="step-arrow_icon">          
           <img src="./assets/icons/arrow.svg" alt="" class="step-arrow_icon">
@@ -278,6 +282,7 @@
           </div>
         </div>
         <picture class="step-arrow">
+          <source srcset="./assets/icons/arrow-down.svg" media="(max-width: 640px)" class="step-arrow_icon">
           <source srcset="./assets/icons/arrow-small.svg" media="(max-width: 1200px)" class="step-arrow_icon">
           <source srcset="./assets/icons/arrow.svg" media="(max-width: 1920px)" class="step-arrow_icon">          
           <img src="./assets/icons/arrow.svg" alt="" class="step-arrow_icon">
@@ -306,6 +311,12 @@
           <div class="testimonials-slider__item testimonial">
             <div class="testimonial__photo testimonial__photo-1"></div>
             <h4 class="testimonial__author subtitle">Nastya Sidorova</h4>
+            <p class="testimonial__text">As a voice for wildlife, we are devastated by the impact of the 2020 Australian
+              bushfires on precious species and their habitat.</p>
+          </div>
+          <div class="testimonials-slider__item testimonial">
+            <div class="testimonial__photo testimonial__photo-2"></div>
+            <h4 class="testimonial__author subtitle">Vlad Kim</h4>
             <p class="testimonial__text">As a voice for wildlife, we are devastated by the impact of the 2020 Australian
               bushfires on precious species and their habitat.</p>
           </div>
@@ -932,8 +943,8 @@
   <footer class="footer" id="footer">
     <div class="big-wrapper">
       <div class="footer__inner">
-        <div class="footer__left">
-          <div class="footer__logo logo">
+        <div class="footer__top">
+          <div class="footer__logo logo footer__left">
             <a href="#" class="logo__link">
               <svg width="59" height="42" viewBox="0 0 59 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -945,21 +956,7 @@
               </svg>
             </a>
           </div>
-          <form action="#" class="form">
-            <h4 class="form__title subtitle">Contact us</h4>
-            <input type="text" class="form__input form__name" placeholder="Name" required>
-            <input type="email" class="form__input form__email" placeholder="Email" required>
-            <fieldset class="form__fieldset">
-              <legend for="message" class="form__legend footer__text">Please enter your message</legend>
-              <textarea name="message" id="message" class="form__textarea" maxlength="280" required></textarea>
-            </fieldset>
-            <input type="checkbox" class="form__checkbox" id="agreement" required>
-            <label class="form__label footer__text" for="agreement">I agree to the processing of Personal Data</label>
-            <input type="submit" class="form__submit" value="send">
-          </form>
-        </div>
-        <div class="footer__right">
-          <nav class="footer__nav nav">
+          <nav class="footer__nav nav footer__right">
             <ul class="nav__list">
               <li class="nav__item">
                 <a href="#" class="nav__link">About</a>
@@ -976,41 +973,59 @@
               </li>
             </ul>
           </nav>
-          <p class="footer__text footer__text_uppercase footer__text_base">ZOO Online Centre</p>
-          <address class="address">
-            <p class="footer__text_base street">132, Address District, Street</p>
-            <p class="footer__text_base open-hours">Open Daily 10:00 am - 5:00 pm</p>
-            <a href="tel:(702) 163-3433" class="footer__text_base phone">T(702) 163-3433</a><br>
-            <a href="mailto:zoo.online@gmail.com" class="footer__text_base email">zoo.online@gmail.com</a>
-          </address>
-          <div class="footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a href="https://www.instagram.com/?hl=ru" target="_blank" class="social__link"><img
-                    class="social__icon" src="./assets/icons/instagram.svg" alt="instagram"></a>
-              </li>
-              <li class="social__item">
-                <a href="https://twitter.com/?lang=ru" target="_blank" class="social__link"><img class="social__icon"
-                    src="./assets/icons/twitter.svg" alt="twitter"></a>
-              </li>
-              <li class="social__item">
-                <a href="https://vk.com/" target="_blank" class="social__link"><img class="social__icon"
-                    src="./assets/icons/vk.svg" alt="vk"></a>
-              </li>
-              <li class="social__item">
-                <a href="https://www.youtube.com/" target="_blank" class="social__link"><img class="social__icon"
-                    src="./assets/icons/youtube.svg" alt="youtube"></a>
-              </li>
-            </ul>
-          </div>
-          <a class="btn footer-btn">donate for volunteers</a>
         </div>
+        <div class="footer__bottom">
+          <div class="footer__left">          
+            <form action="#" class="form">
+              <h4 class="form__title subtitle">Contact us</h4>
+              <input type="text" class="form__input form__name" placeholder="Name" required>
+              <input type="email" class="form__input form__email" placeholder="Email" required>
+              <fieldset class="form__fieldset">
+                <legend for="message" class="form__legend footer__text">Please enter your message</legend>
+                <textarea name="message" id="message" class="form__textarea" maxlength="280" required></textarea>
+              </fieldset>
+              <input type="checkbox" class="form__checkbox" id="agreement" required>
+              <label class="form__label footer__text" for="agreement">I agree to the processing of Personal Data</label>
+              <input type="submit" class="form__submit" value="send">
+            </form>
+          </div>
+          <div class="footer__right">            
+            <p class="footer__text footer__text_uppercase footer__text_base">ZOO Online Centre</p>
+            <address class="address">
+              <p class="footer__text_base street">132, Address District, Street</p>
+              <p class="footer__text_base open-hours">Open Daily 10:00 am - 5:00 pm</p>
+              <a href="tel:(702) 163-3433" class="footer__text_base phone">T(702) 163-3433</a><br>
+              <a href="mailto:zoo.online@gmail.com" class="footer__text_base email">zoo.online@gmail.com</a>
+            </address>
+            <div class="footer__social social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a href="https://www.instagram.com/?hl=ru" target="_blank" class="social__link"><img
+                      class="social__icon" src="./assets/icons/instagram.svg" alt="instagram"></a>
+                </li>
+                <li class="social__item">
+                  <a href="https://twitter.com/?lang=ru" target="_blank" class="social__link"><img class="social__icon"
+                      src="./assets/icons/twitter.svg" alt="twitter"></a>
+                </li>
+                <li class="social__item">
+                  <a href="https://vk.com/" target="_blank" class="social__link"><img class="social__icon"
+                      src="./assets/icons/vk.svg" alt="vk"></a>
+                </li>
+                <li class="social__item">
+                  <a href="https://www.youtube.com/" target="_blank" class="social__link"><img class="social__icon"
+                      src="./assets/icons/youtube.svg" alt="youtube"></a>
+                </li>
+              </ul>
+            </div>            
+          </div>
+        </div>
+        <a class="btn footer-btn">donate for volunteers</a>
       </div>
       <hr class="line">
       <p class="footer__text designer">©Noora Sagnayeva</p>
       <p class="footer__text">©RSSchool and ©Yem Digital - 2021</p>
   </footer>
-
+<script src="./script.js"></script>
 </body>
 
 </html>

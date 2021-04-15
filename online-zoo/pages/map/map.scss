@@ -21,7 +21,7 @@
 .carousel {
   display: flex;
   align-items: center;
-  margin: 0 -15px;
+  // margin: 0 -15px;
   overflow: hidden;
 }
 
@@ -217,4 +217,5 @@
   }
 }
 
-@import 'map-1200px'
+@import 'map-1200px';
+@import 'map-640px';

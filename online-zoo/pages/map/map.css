@@ -23,7 +23,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 -15px;
   overflow: hidden;
 }
 
@@ -161,7 +160,7 @@
   }
   .carousel-map {
     max-width: 685px;
-    margin: 0 auto 24px;
+    margin-bottom: 24px;
   }
   .carousel__item {
     border-radius: 50%;
@@ -203,6 +202,54 @@
   }
   .right-arrow-map {
     right: 55px;
+  }
+}
+
+@media (max-width: 640px) {
+  .big-wrapper,
+  .medium-wrapper,
+  .small-wrapper {
+    max-width: 600px;
+  }
+  .carousel-map {
+    max-width: 530px;
+    margin-bottom: 23px;
+  }
+  .carousel__item {
+    margin: 0 7.5px;
+  }
+  .carousel__item_active {
+    margin: 0;
+  }
+  .carousel__range {
+    margin-bottom: 38px;
+  }
+  .map_page .svg-map {
+    width: 600px;
+    height: 290px;
+  }
+  .map_page .map__pin {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .map_page .map__pin_eagle {
+    top: 3%;
+    left: 8.5%;
+  }
+  .map_page .map__pin_crocodile {
+    top: 5%;
+    left: 17.5%;
+  }
+  .map_page .map__pin_gorilla {
+    top: 24%;
+    left: 45%;
+  }
+  .map_page .map__pin_panda {
+    top: 5%;
+    left: 71%;
+  }
+  .map-block__inner {
+    padding-bottom: 80px;
   }
 }
 /*# sourceMappingURL=map.css.map */

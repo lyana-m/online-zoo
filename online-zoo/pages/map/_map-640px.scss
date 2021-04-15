@@ -1,0 +1,61 @@
+@media (max-width: 640px) {
+
+
+  .big-wrapper,
+  .medium-wrapper,
+  .small-wrapper {
+    max-width: 600px;
+  }
+
+  .carousel-map {
+    max-width: 530px;
+    margin-bottom: 23px;
+  }
+
+  .carousel__item {
+    margin: 0 7.5px;
+  }
+
+  .carousel__item_active {
+    margin: 0;
+  }
+
+  .carousel__range {
+    margin-bottom: 38px;
+  }
+
+  .map_page {
+    .svg-map {
+      width: 600px;
+      height: 290px;
+    }
+
+    .map__pin {
+      transform: scale(1);
+
+      &_eagle {
+        top: 3%;
+        left: 8.5%;
+      }
+
+      &_crocodile {
+        top: 5%;
+        left: 17.5%;
+      }
+
+      &_gorilla {
+        top: 24%;
+        left: 45%;
+      }
+
+      &_panda {
+        top: 5%;
+        left: 71%;
+      }
+    }
+  }
+
+  .map-block__inner {
+    padding-bottom: 80px;
+  }
+}

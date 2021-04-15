@@ -1738,4 +1738,268 @@ body {
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: 320px) {
+  .big-wrapper,
+  .medium-wrapper,
+  .small-wrapper {
+    max-width: 300px;
+  }
+  .switch {
+    margin-right: 65px;
+  }
+  .header__menu {
+    right: 11px;
+    top: 25px;
+  }
+  .first-screen__title {
+    padding-top: 92px;
+    margin-bottom: 15px;
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .slider-wrapper {
+    top: calc(45% + 5px);
+    left: 7.5%;
+  }
+  .slider-wrapper::before {
+    top: calc(44% + 7px);
+    left: -21px;
+  }
+  .slider-wrapper::after {
+    top: calc(44% + 13px);
+    left: -13px;
+  }
+  .slider__picture {
+    width: 113px;
+    height: 164px;
+  }
+  .slider__item {
+    margin-right: 9px;
+  }
+  .slider__item_active .slider__picture {
+    width: 140px;
+    height: 202px;
+  }
+  .first-screen-range {
+    left: 123px;
+    margin-top: 19px;
+  }
+  .first-screen-range .range__input {
+    width: 140px;
+    margin-top: 0;
+  }
+  .first-screen-range .range__input::-webkit-slider-thumb {
+    width: 17px;
+  }
+  .first-watch-btn {
+    margin-bottom: 238px;
+  }
+  .first-screen .social {
+    display: none;
+  }
+  .title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .how-it-works {
+    padding: 50px 0;
+  }
+  .how-it-works__title {
+    margin-bottom: 20px;
+  }
+  .how-it-works-slider__picture {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: left;
+       object-position: left;
+  }
+  .how-it-works-slider__container {
+    margin-bottom: 20px;
+  }
+  .how-it-works-range {
+    margin-bottom: 22px;
+  }
+  .what-is-inspiring-us {
+    padding: 50px 0;
+  }
+  .row {
+    margin: -15px 0;
+  }
+  .card {
+    margin: 15px 0;
+    max-width: 100%;
+  }
+  .pets-in-zoo {
+    padding-bottom: 50px;
+  }
+  .pets-in-zoo-title {
+    margin-bottom: 30px;
+  }
+  .pets-in-zoo-slider {
+    margin-bottom: 30px;
+  }
+  .pets-in-zoo-slider__item {
+    margin: 0 16px 0 0;
+  }
+  .pets-in-zoo-range {
+    margin-bottom: 30px;
+  }
+  .pay-and-feed {
+    padding: 50px 0;
+  }
+  .pay-and-feed__title {
+    margin-bottom: 28px;
+  }
+  .pay-and-feed__text {
+    display: none;
+  }
+  .steps {
+    margin-bottom: 40px;
+  }
+  .testimonials {
+    padding: 50px 0;
+  }
+  .testimonials__title {
+    margin-bottom: 21px;
+  }
+  .testimonials-slider {
+    margin-bottom: 24px;
+  }
+  .testimonial {
+    height: 363px;
+    padding-left: 14px;
+    padding-right: 14px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 300px;
+            flex: 0 0 300px;
+    margin: 0 10px;
+  }
+  .testimonial__photo {
+    margin-bottom: 50px;
+  }
+  .testimonial__author {
+    margin-bottom: 19px;
+  }
+  .testimonial .subtitle {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .testimonials-range {
+    margin-bottom: 24px;
+  }
+  .map-section {
+    padding: 50px 0 60px;
+  }
+  .map-section__title {
+    margin-bottom: 30px;
+  }
+  .svg-map {
+    width: 300px;
+    height: 146px;
+  }
+  .tooltip {
+    width: 238px;
+  }
+  .tooltip__inner {
+    padding: 16px 15px 19px;
+  }
+  .tooltip__picture {
+    margin-right: 8px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40px;
+            flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+  }
+  .tooltip__title {
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .tooltip__text {
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .tooltip__text_margin {
+    margin-bottom: 5px;
+  }
+  .tooltip__text span {
+    font-weight: 500;
+  }
+  .tooltip-eagle {
+    top: 76px;
+    right: 33px;
+  }
+  .tooltip-crocodile {
+    top: 76px;
+    right: 33px;
+  }
+  .tooltip-gorilla {
+    top: 76px;
+    left: 33px;
+  }
+  .tooltip-panda {
+    top: 76px;
+    left: 33px;
+  }
+  .map__pin {
+    background: url(../assets/icons/pin-320-green.svg) no-repeat;
+    width: 33px;
+    height: 46px;
+  }
+  .map__pin_eagle {
+    top: 1%;
+    left: 9%;
+  }
+  .map__pin_crocodile {
+    top: 6%;
+    left: 18%;
+  }
+  .map__pin_gorilla {
+    top: 24%;
+    left: 44%;
+  }
+  .map__pin_panda {
+    top: 4%;
+    left: 72%;
+  }
+  .map__pin_hover:hover {
+    background: url(../assets/icons/pin-320-red.svg) no-repeat;
+  }
+  .map__picture {
+    background-size: contain;
+    top: 6.76px;
+    left: 5.5px;
+    width: 22px;
+    height: 22px;
+  }
+  .map {
+    margin-bottom: 25px;
+  }
+  .footer {
+    padding: 50px 0 27px 0;
+  }
+  .footer__logo {
+    margin-bottom: 40px;
+  }
+  .footer__inner {
+    margin-bottom: 160px;
+  }
+  .footer__right {
+    width: 100%;
+  }
+  .form {
+    width: 300px;
+    margin-bottom: 55px;
+  }
+  .form__submit {
+    margin-right: 0;
+  }
+  .footer-btn {
+    top: auto;
+    bottom: -80px;
+    right: calc(50% - 137.5px);
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,12 +1,9 @@
 @import '../../css/variables';
 
 .map-block {
+  padding: 60px 0 100px 0;
   background: $base;
-
-  &__inner {
-    padding: 60px 0 100px 0;
-  }
-
+  
   &__title {
     margin-bottom: 20px;
   }
@@ -16,6 +13,10 @@
     max-width: 790px;
     margin: 0 auto 50px;
   }
+}
+
+.header__nav .nav__list {
+  padding-top: 0px;
 }
 
 .carousel {
@@ -219,3 +220,4 @@
 
 @import 'map-1200px';
 @import 'map-640px';
+@import 'map-320px';

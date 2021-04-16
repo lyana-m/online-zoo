@@ -1,0 +1,21 @@
+@media (max-width: 320px) {
+
+  .big-wrapper,
+  .medium-wrapper,
+  .small-wrapper {
+    max-width: 280px;
+  }
+
+  .map-block {
+    padding: 35px 0 60px;
+  }
+
+
+  .map_page {
+    .svg-map {
+      width: 300px;
+      height: 146px;
+    }
+  }
+
+}

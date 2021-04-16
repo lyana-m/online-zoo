@@ -1,6 +1,6 @@
 @import 'variables';
 
-@media (max-width: 640px) {
+@media (max-width: 1199px) {
 
 
   .big-wrapper,
@@ -38,9 +38,7 @@
   }
 
   .header__menu {
-    display: block;
-    right: 20px;
-    top: 29px;
+    display: inline-block;  
   }
 
   .first-screen {

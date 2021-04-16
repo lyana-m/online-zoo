@@ -7,6 +7,10 @@
     max-width: 600px;
   }
 
+  .map-block {
+    padding-bottom: 80px;
+  }
+
   .carousel-map {
     max-width: 530px;
     margin-bottom: 23px;
@@ -53,9 +57,5 @@
         left: 71%;
       }
     }
-  }
-
-  .map-block__inner {
-    padding-bottom: 80px;
-  }
+  }  
 }

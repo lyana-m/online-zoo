@@ -1,9 +1,6 @@
 .map-block {
-  background: #FEFEFE;
-}
-
-.map-block__inner {
   padding: 60px 0 100px 0;
+  background: #FEFEFE;
 }
 
 .map-block__title {
@@ -14,6 +11,10 @@
   display: block;
   max-width: 790px;
   margin: 0 auto 50px;
+}
+
+.header__nav .nav__list {
+  padding-top: 0px;
 }
 
 .carousel {
@@ -211,6 +212,9 @@
   .small-wrapper {
     max-width: 600px;
   }
+  .map-block {
+    padding-bottom: 80px;
+  }
   .carousel-map {
     max-width: 530px;
     margin-bottom: 23px;
@@ -248,8 +252,20 @@
     top: 5%;
     left: 71%;
   }
-  .map-block__inner {
-    padding-bottom: 80px;
+}
+
+@media (max-width: 320px) {
+  .big-wrapper,
+  .medium-wrapper,
+  .small-wrapper {
+    max-width: 280px;
+  }
+  .map-block {
+    padding: 35px 0 60px;
+  }
+  .map_page .svg-map {
+    width: 300px;
+    height: 146px;
   }
 }
 /*# sourceMappingURL=map.css.map */

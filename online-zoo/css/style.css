@@ -45,7 +45,6 @@ body {
 }
 
 .header {
-  position: relative;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
           box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
@@ -53,6 +52,7 @@ body {
 }
 
 .header__inner {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,10 +180,10 @@ body {
 }
 
 .header__menu {
-  display: none;
   position: absolute;
-  right: 10px;
-  top: 10px;
+  top: 25px;
+  right: 0;
+  display: none;
   width: 40px;
   height: 40px;
   cursor: pointer;
@@ -623,12 +623,16 @@ body {
 
 .how-it-works-slider__container {
   margin-bottom: 30px;
+}
+
+.how-it-works-slider__item {
   max-width: 790px;
+  height: 323px;
 }
 
 .how-it-works-slider__picture {
   width: 100%;
-  height: 323px;
+  height: 100%;
   border-radius: 5px;
 }
 
@@ -1383,7 +1387,7 @@ body {
   margin-bottom: 5px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1919px) {
   .big-wrapper,
   .medium-wrapper {
     max-width: 900px;
@@ -1525,7 +1529,7 @@ body {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1199px) {
   .big-wrapper,
   .medium-wrapper,
   .small-wrapper {
@@ -1556,9 +1560,7 @@ body {
     margin-right: 75px;
   }
   .header__menu {
-    display: block;
-    right: 20px;
-    top: 29px;
+    display: inline-block;
   }
   .first-screen {
     padding-bottom: 100px;
@@ -1739,7 +1741,7 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 639px) {
   .big-wrapper,
   .medium-wrapper,
   .small-wrapper {
@@ -1780,6 +1782,30 @@ body {
   .slider__item_active .slider__picture {
     width: 140px;
     height: 202px;
+  }
+  .first-screen .description {
+    top: 202px;
+    left: 8px;
+    z-index: 100;
+  }
+  .first-screen .description__text {
+    font-size: 12px;
+    line-height: 14px;
+    max-width: 128px;
+    margin-bottom: 6px;
+  }
+  .first-screen .description__btn {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 6px 0 6px 26px;
+  }
+  .first-screen .description__btn_watch {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .first-screen .slider__item_active:hover .description {
+    -webkit-transform: translateY(-130px);
+            transform: translateY(-130px);
   }
   .first-screen-range {
     left: 123px;
@@ -1979,6 +2005,9 @@ body {
   }
   .footer {
     padding: 50px 0 27px 0;
+  }
+  .footer .nav__list {
+    width: 100%;
   }
   .footer__logo {
     margin-bottom: 40px;

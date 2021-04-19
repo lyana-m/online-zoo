@@ -128,15 +128,21 @@
 
   .svg-map {    
     max-height: 500px;
-    min-height: 436px;
-    
+    min-height: 436px;    
   }
 
   //delete after cross-check
   .map__pin_crocodile {
     bottom: calc(60% + 10px);
-  }  
+  }
 
+  //delete after cross-check
+  .map__pin_panda {
+    position: absolute;
+    bottom: 63%;
+    left: calc(77% - #{$pin_width} / 2);
+}
+  
   .tooltip-eagle {
     left: 33px;
   }
@@ -155,6 +161,10 @@
   }
 
   // footer
+
+  .footer {
+    padding-bottom: 52px;    
+  }
 
   .footer__right {
     padding-left: 12px;

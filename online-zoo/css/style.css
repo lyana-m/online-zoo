@@ -921,6 +921,7 @@ body {
   width: 68px;
   height: 68px;
   border-radius: 50%;
+  margin-bottom: 17px;
 }
 
 .testimonial__avatar {
@@ -936,7 +937,7 @@ body {
 }
 
 .testimonial__author {
-  margin-bottom: 17px;
+  margin-bottom: 18px;
 }
 
 .testimonials-range {
@@ -1487,6 +1488,11 @@ body {
   .map__pin_crocodile {
     bottom: calc(60% + 10px);
   }
+  .map__pin_panda {
+    position: absolute;
+    bottom: 63%;
+    left: calc(77% - 70px / 2);
+  }
   .tooltip-eagle {
     left: 33px;
   }
@@ -1499,6 +1505,9 @@ body {
   .tooltip-panda {
     right: 33px;
     left: auto;
+  }
+  .footer {
+    padding-bottom: 52px;
   }
   .footer__right {
     padding-left: 12px;

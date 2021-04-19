@@ -1567,7 +1567,7 @@ body {
     margin-bottom: 370px;
   }
   .slider-wrapper {
-    top: calc(50% + 5px);
+    top: 502px;
     left: 19%;
   }
   .slider-wrapper::before {
@@ -1702,6 +1702,9 @@ body {
   .footer .nav__item {
     margin-bottom: 5px;
   }
+  .footer .nav__link {
+    display: inline-block;
+  }
   .footer .social__list {
     height: auto;
     margin-bottom: 20px;
@@ -1733,7 +1736,7 @@ body {
     line-height: 56px;
   }
   .slider-wrapper {
-    top: calc(45% + 5px);
+    top: 459px;
     left: 7.5%;
   }
   .slider-wrapper::before {

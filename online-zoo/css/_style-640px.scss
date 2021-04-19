@@ -56,7 +56,8 @@
   }
 
   .slider-wrapper {
-    top: calc(50% + 5px);
+    // top: calc(50% + 5px);
+    top: 502px;
     left: 19%;
 
     &::before {
@@ -251,6 +252,10 @@
 
     .nav__item {
       margin-bottom: 5px;
+    }
+
+    .nav__link {
+      display: inline-block;
     }
 
     .social__list {

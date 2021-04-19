@@ -2,7 +2,7 @@
 
   .big-wrapper,
   .medium-wrapper {
-    max-width: 900px;
+    width: 75%;
   }
 
   .small-wrapper {
@@ -120,38 +120,21 @@
   .testimonial {
     margin: 0 10px;
     padding: 47px 56px 89px;
-    flex: 0 0 440px;   
+    min-width: calc(100% / 2 - 20px);   
   }
 
   // map
 
-  .svg-map {
-    width: 900px;
-    height: 436px;
+  .svg-map {    
+    max-height: 500px;
+    min-height: 436px;
+    
   }
 
-  .map__pin {
-
-    &_eagle {
-      top: 13%;
-      left: 9.5%;
-    }
-
-    &_crocodile {
-      top: 16%;
-      left: 19.5%;
-    }
-
-    &_gorilla {
-      top: 36%;
-      left: 47%;
-    }
-
-    &_panda {
-      top: 16%;
-      left: 73%;
-    }
-  }
+  //delete after cross-check
+  .map__pin_crocodile {
+    bottom: calc(60% + 10px);
+  }  
 
   .tooltip-eagle {
     left: 33px;

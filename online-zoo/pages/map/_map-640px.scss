@@ -1,20 +1,22 @@
-@media (max-width: 640px) {
+@media (max-width: 1199px) {
 
+  .big-wrapper {
+    width: 93.75%;
+  }
 
-  .big-wrapper,
-  .medium-wrapper,
-  .small-wrapper {
-    max-width: 600px;
+  .medium-wrapper {
+    padding: 0;
   }
 
   .map-block {
     padding-bottom: 80px;
   }
+  
 
-  .carousel-map {
-    max-width: 530px;
+  .carousel-container {
+    width: 88%;
     margin-bottom: 23px;
-  }
+  }  
 
   .carousel__item {
     margin: 0 7.5px;
@@ -24,38 +26,41 @@
     margin: 0;
   }
 
+  .left-arrow-map {
+    left: -30px;
+  }
+
+  .right-arrow-map {
+    right: -30px;
+  }
+
   .carousel__range {
     margin-bottom: 38px;
   }
 
-  .map_page {
-    .svg-map {
-      width: 600px;
-      height: 290px;
-    }
+  .svg-map {
+    max-height: 387px;
+    min-height: 290px;
+    width: 100%;
+  }
 
-    .map__pin {
-      transform: scale(1);
+  .map__pin {
+    //delete after cross-check
+    background: url(../../assets/icons/pin-green.svg) no-repeat;
+    width: 70px;
+    height: 94px;
+  }
 
-      &_eagle {
-        top: 3%;
-        left: 8.5%;
-      }
+  .map__pin_panda {
+    background: url(../../assets/icons/pin-red.svg) no-repeat;
+  }
 
-      &_crocodile {
-        top: 5%;
-        left: 17.5%;
-      }
+  .map__picture {
+    position: absolute;
+    top: 12.47px;
+    left: 12px;
+    width: 43px;
+    height: 43px;
+  }
 
-      &_gorilla {
-        top: 24%;
-        left: 45%;
-      }
-
-      &_panda {
-        top: 5%;
-        left: 71%;
-      }
-    }
-  }  
 }

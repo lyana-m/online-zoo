@@ -2,11 +2,10 @@
 
 @media (max-width: 1199px) {
 
-
   .big-wrapper,
   .medium-wrapper,
   .small-wrapper {
-    max-width: 600px;
+    width: 93.75%;
   } 
 
   .header__nav {
@@ -156,12 +155,11 @@
     }
   }
 
-  .testimonial {
-    height: 310px;
+  .testimonial {  
     padding-left: 72px;
-    padding-right: 72px;
-    flex: 0 0 585px;
+    padding-right: 72px;    
     margin: 0 15px;
+    min-width: calc(100% / 2 - 30px);
   }
 
   // map
@@ -175,32 +173,37 @@
   }
 
   .svg-map {
-    width: 600px;
-    height: 290px;
+    max-height: 436px;
+    min-height: 290px;   
   }
 
-  .map__pin {
-
-    &_eagle {
-      top: 3%;
-      left: 8.5%;
-    }
-
-    &_crocodile {
-      top: 5%;
-      left: 17.5%;
-    }
-
-    &_gorilla {
-      top: 24%;
-      left: 45%;
-    }
-
-    &_panda {
-      top: 5%;
-      left: 71%;
-    }
+  //delete after cross-check
+  .map__pin_eagle {
+    left: calc(13% - #{$pin_width} / 2 + 10px);
   }
+
+  // .map__pin {
+
+  //   &_eagle {
+  //     top: 3%;
+  //     left: 8.5%;
+  //   }
+
+  //   &_crocodile {
+  //     top: 5%;
+  //     left: 17.5%;
+  //   }
+
+  //   &_gorilla {
+  //     top: 24%;
+  //     left: 45%;
+  //   }
+
+  //   &_panda {
+  //     top: 5%;
+  //     left: 71%;
+  //   }
+  // }
 
   .tooltip-gorilla {
     left: -175px;

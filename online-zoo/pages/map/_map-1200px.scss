@@ -1,17 +1,26 @@
-@media (max-width: 1200px) {
+@media (max-width: 1919px) {
 
   .big-wrapper {
-    max-width: 900px;
+    width: 75%;
+  }
+
+  .medium-wrapper {
+    width: 100%;
+    padding: 0 48px;
   }
 
   .map-block__text {
     margin-bottom: 36px;
   }
 
-  .carousel-map {
-    max-width: 685px;
+  .carousel-map {    
     margin-bottom: 24px;
-  }  
+  }
+
+  .carousel-container {
+    width: 76.33%;
+    margin: 0 auto;
+  }
 
   .carousel__item {
     border-radius: 50%;
@@ -23,43 +32,52 @@
 
   .map_page {
     margin-bottom: 35px;
+  }
 
-    .svg-map {
-      width: 798px;
-      height: 387px;
-      display: block;
-      margin: 0 auto;
-    }
+  .svg-map {
+    max-height: 500px;
+    min-height: 387px;
+    display: block;
+    margin: 0 auto;
+  }
 
-    .map__pin {
-      transform: scale(0.85);
+  .map__pin {
+    //delete after cross-check
+    $pin_width: 59px;
+    background: url(../../assets/icons/pin-1200-green.svg) no-repeat;
+    width: 59px;
+    height: 83px;
 
-      &_eagle {
-        top: 11%;
-        left: 13.5%;
-      }
-
-      &_crocodile {
-        top: 14%;
-        left: 22.5%;
-      }
-
-      &_gorilla {
-        top: 34%;
-        left: 47%;
-      }
-
-      &_panda {
-        top: 14%;
-        left: 70%;
-      }
+    //delete after cross-check
+    &_eagle {
+      bottom: 66%;
+      left: calc(13.5% - #{$pin_width} / 2);
     }    
+
+    //delete after cross-check
+    &_panda {
+      bottom: 63%;
+      left: calc(76.5% - #{$pin_width} / 2);
+    }
   }
+
+  .map__picture {
+    background-size: contain;
+    top: 12.47px;
+    left: 12px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .map__pin_panda {
+    background: url(../../assets/icons/pin-1200-red.svg) no-repeat;
+  }
+
   .left-arrow-map {
-    left: 55px;
+    left: -50px;
   }
-  
+
   .right-arrow-map {
-    right: 55px;
+    right: -50px;
   }
 }

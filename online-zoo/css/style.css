@@ -882,13 +882,15 @@ body {
 
 .testimonials-slider-contaiter {
   position: relative;
+  margin-bottom: 34px;
+  width: 100%;
 }
 
 .testimonials-slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 -15px 34px;
+  margin: 0 -15px;
   overflow: hidden;
   padding: 15px 0;
 }
@@ -904,10 +906,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 310px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 585px;
-          flex: 0 0 585px;
+  min-height: 310px;
+  min-width: 585px;
   margin: 0 15px;
   padding: 47px 106px;
   -webkit-box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.1);
@@ -916,21 +916,23 @@ body {
 }
 
 .testimonial__photo {
+  position: relative;
+  overflow: hidden;
   width: 68px;
   height: 68px;
-  margin-bottom: 17px;
   border-radius: 50%;
-  -webkit-box-shadow: 0px 0px 0px 1px #BDBDBD inset;
-          box-shadow: 0px 0px 0px 1px #BDBDBD inset;
 }
 
-.testimonial__photo-1 {
-  background: url("../assets/icons/user.svg") center no-repeat;
-}
-
-.testimonial__photo-2 {
-  background: url("../assets/images/user.jpg") center no-repeat;
-  background-size: cover;
+.testimonial__avatar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 68px;
+  height: 68px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .testimonial__author {
@@ -1041,6 +1043,11 @@ body {
   z-index: 10;
 }
 
+.svg-map {
+  width: 100%;
+  height: auto;
+}
+
 .map {
   position: relative;
   margin-bottom: 35px;
@@ -1058,26 +1065,26 @@ body {
 
 .map__pin_eagle {
   position: absolute;
-  top: 16%;
-  left: 10%;
+  bottom: 66%;
+  left: calc(13% - 70px / 2);
 }
 
 .map__pin_crocodile {
   position: absolute;
-  top: 21%;
-  left: 20%;
+  bottom: 60%;
+  left: calc(23.5% - 70px / 2);
 }
 
 .map__pin_gorilla {
   position: absolute;
-  top: 38%;
-  left: 47.5%;
+  bottom: 43%;
+  left: calc(51% - 70px / 2);
 }
 
 .map__pin_panda {
   position: absolute;
-  top: 19%;
-  left: 74%;
+  bottom: 63%;
+  left: calc(77.5% - 70px / 2);
 }
 
 .map__pin_hover:hover {
@@ -1390,7 +1397,7 @@ body {
 @media (max-width: 1919px) {
   .big-wrapper,
   .medium-wrapper {
-    max-width: 900px;
+    width: 75%;
   }
   .small-wrapper {
     max-width: 746px;
@@ -1471,29 +1478,14 @@ body {
   .testimonial {
     margin: 0 10px;
     padding: 47px 56px 89px;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 440px;
-            flex: 0 0 440px;
+    min-width: calc(100% / 2 - 20px);
   }
   .svg-map {
-    width: 900px;
-    height: 436px;
-  }
-  .map__pin_eagle {
-    top: 13%;
-    left: 9.5%;
+    max-height: 500px;
+    min-height: 436px;
   }
   .map__pin_crocodile {
-    top: 16%;
-    left: 19.5%;
-  }
-  .map__pin_gorilla {
-    top: 36%;
-    left: 47%;
-  }
-  .map__pin_panda {
-    top: 16%;
-    left: 73%;
+    bottom: calc(60% + 10px);
   }
   .tooltip-eagle {
     left: 33px;
@@ -1533,7 +1525,7 @@ body {
   .big-wrapper,
   .medium-wrapper,
   .small-wrapper {
-    max-width: 600px;
+    width: 93.75%;
   }
   .header__nav {
     position: absolute;
@@ -1649,13 +1641,10 @@ body {
     display: none;
   }
   .testimonial {
-    height: 310px;
     padding-left: 72px;
     padding-right: 72px;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 585px;
-            flex: 0 0 585px;
     margin: 0 15px;
+    min-width: calc(100% / 2 - 30px);
   }
   .map-section {
     padding-bottom: 80px;
@@ -1664,24 +1653,11 @@ body {
     margin-bottom: 50px;
   }
   .svg-map {
-    width: 600px;
-    height: 290px;
+    max-height: 436px;
+    min-height: 290px;
   }
   .map__pin_eagle {
-    top: 3%;
-    left: 8.5%;
-  }
-  .map__pin_crocodile {
-    top: 5%;
-    left: 17.5%;
-  }
-  .map__pin_gorilla {
-    top: 24%;
-    left: 45%;
-  }
-  .map__pin_panda {
-    top: 5%;
-    left: 71%;
+    left: calc(13% - 70px / 2 + 10px);
   }
   .tooltip-gorilla {
     left: -175px;
@@ -1745,14 +1721,10 @@ body {
   .big-wrapper,
   .medium-wrapper,
   .small-wrapper {
-    max-width: 300px;
+    width: 93.75%;
   }
   .switch {
     margin-right: 65px;
-  }
-  .header__menu {
-    right: 11px;
-    top: 25px;
   }
   .first-screen__title {
     padding-top: 92px;
@@ -1896,10 +1868,8 @@ body {
     height: 363px;
     padding-left: 14px;
     padding-right: 14px;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 300px;
-            flex: 0 0 300px;
     margin: 0 10px;
+    min-width: calc(100% - 20px);
   }
   .testimonial__photo {
     margin-bottom: 50px;
@@ -1921,8 +1891,8 @@ body {
     margin-bottom: 30px;
   }
   .svg-map {
-    width: 300px;
-    height: 146px;
+    max-height: 290px;
+    min-height: 146px;
   }
   .tooltip {
     width: 238px;
@@ -1975,20 +1945,16 @@ body {
     height: 46px;
   }
   .map__pin_eagle {
-    top: 1%;
-    left: 9%;
+    left: calc(13% - 33px / 2);
   }
   .map__pin_crocodile {
-    top: 6%;
-    left: 18%;
+    left: calc(23.5% - 33px / 2);
   }
   .map__pin_gorilla {
-    top: 24%;
-    left: 44%;
+    left: calc(51% - 33px / 2);
   }
   .map__pin_panda {
-    top: 4%;
-    left: 72%;
+    left: calc(77.5% - 33px / 2);
   }
   .map__pin_hover:hover {
     background: url(../assets/icons/pin-320-red.svg) no-repeat;

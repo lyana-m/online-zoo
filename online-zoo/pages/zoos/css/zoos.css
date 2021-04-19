@@ -251,6 +251,9 @@
   .big-wrapper {
     width: 93.75%;
   }
+  .zoos {
+    padding-top: 94px;
+  }
   .broadcast {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

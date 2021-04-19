@@ -215,6 +215,7 @@
     padding: 0;
   }
   .map-block {
+    padding-top: 154px;
     padding-bottom: 80px;
   }
   .carousel-container {
@@ -263,7 +264,7 @@
     width: 93.75%;
   }
   .map-block {
-    padding: 35px 0 60px;
+    padding: 129px 0 60px;
   }
   .map-block__title {
     margin-bottom: 10px;
@@ -276,11 +277,8 @@
     padding: 0 10px;
   }
   .carousel-container {
-    width: 75%;
+    width: 78%;
     margin-bottom: 23px;
-  }
-  .carousel {
-    margin: 0 -5px;
   }
   .carousel__item {
     width: 60px;

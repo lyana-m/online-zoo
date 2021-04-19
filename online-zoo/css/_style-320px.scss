@@ -19,6 +19,7 @@
     margin-bottom: 15px;
     font-size: 48px;
     line-height: 56px;
+    max-width: 400px;
   }
 
   .slider-wrapper {
@@ -201,7 +202,7 @@
   }
 
   .testimonials-slider {
-    margin-bottom: 24px;
+    margin-bottom: -10px;
   }
 
   .testimonial {
@@ -223,6 +224,10 @@
       font-size: 16px;
       line-height: 19px;
     }
+
+    &:first-child {
+      display: flex;
+    }
   }
 
   .testimonials-range {
@@ -238,10 +243,7 @@
   .map-section__title {
     margin-bottom: 30px;
   }
-
-  // .map {
-  //   margin-bottom: 30px;
-  // }
+  
 
   .svg-map {
     max-height: 290px;
@@ -250,7 +252,7 @@
 
   .tooltip {
     width: 238px;
-    // display: none;
+    display: none;
 
     &__inner {
       padding: 16px 15px 19px;
@@ -284,23 +286,26 @@
   }
 
   .tooltip-eagle {
-    top: 76px;
-    right: 33px;
+    top: 44px;
+    right: auto;
+    left: 5px;
   }
 
   .tooltip-crocodile {
-    top: 76px;
-    right: 33px;
+    top: 44px;
+    right: auto;
+    left: 5px;
   }
 
   .tooltip-gorilla {
-    top: 76px;
-    left: 33px;
+    top: 44px;
+    left: -105px;
   }
 
   .tooltip-panda {
-    top: 76px;
-    left: 33px;
+    top: 44px;
+    left: auto;
+    right: 5px;
   }
 
 

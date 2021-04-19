@@ -6,7 +6,13 @@
   .medium-wrapper,
   .small-wrapper {
     width: 93.75%;
-  } 
+  }
+  
+  .header {
+    position: fixed;
+    width: 100%;
+    z-index: 3000;
+  }
 
   .header__nav {
     position: absolute;
@@ -41,6 +47,7 @@
   }
 
   .first-screen {
+    padding-top: 94px;
     padding-bottom: 100px;
   }
 
@@ -154,13 +161,29 @@
     .arrow {
       display: none;
     }
-  }
+  }  
 
-  .testimonial {  
+  .testimonial {   
+    
     padding-left: 72px;
     padding-right: 72px;    
     margin: 0 15px;
-    min-width: calc(100% / 2 - 30px);
+    min-width: calc(100% - 30px);
+
+    &:first-child {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1199px) and (min-width: 800px) {
+    .testimonial {
+      min-width: calc(100% / 2 - 30px);
+
+      &:first-child {
+        display: flex;
+      }
+    }
+
   }
 
   // map
@@ -181,30 +204,7 @@
   //delete after cross-check
   .map__pin_eagle {
     left: calc(13% - #{$pin_width} / 2 + 10px);
-  }
-
-  // .map__pin {
-
-  //   &_eagle {
-  //     top: 3%;
-  //     left: 8.5%;
-  //   }
-
-  //   &_crocodile {
-  //     top: 5%;
-  //     left: 17.5%;
-  //   }
-
-  //   &_gorilla {
-  //     top: 24%;
-  //     left: 45%;
-  //   }
-
-  //   &_panda {
-  //     top: 5%;
-  //     left: 71%;
-  //   }
-  // }
+  }  
 
   .tooltip-gorilla {
     left: -175px;
@@ -218,6 +218,7 @@
 
   .footer {
     padding-top: 95px;
+    padding-bottom: 46px;
   }
 
   .footer__top {

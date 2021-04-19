@@ -1536,6 +1536,11 @@ body {
   .small-wrapper {
     width: 93.75%;
   }
+  .header {
+    position: fixed;
+    width: 100%;
+    z-index: 3000;
+  }
   .header__nav {
     position: absolute;
     background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
@@ -1564,6 +1569,7 @@ body {
     display: inline-block;
   }
   .first-screen {
+    padding-top: 94px;
     padding-bottom: 100px;
   }
   .first-screen__title {
@@ -1653,8 +1659,25 @@ body {
     padding-left: 72px;
     padding-right: 72px;
     margin: 0 15px;
+    min-width: calc(100% - 30px);
+  }
+  .testimonial:first-child {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) and (max-width: 1199px) and (min-width: 800px) {
+  .testimonial {
     min-width: calc(100% / 2 - 30px);
   }
+  .testimonial:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 1199px) {
   .map-section {
     padding-bottom: 80px;
   }
@@ -1676,6 +1699,7 @@ body {
   }
   .footer {
     padding-top: 95px;
+    padding-bottom: 46px;
   }
   .footer__top {
     -webkit-box-orient: vertical;
@@ -1743,6 +1767,7 @@ body {
     margin-bottom: 15px;
     font-size: 48px;
     line-height: 56px;
+    max-width: 400px;
   }
   .slider-wrapper {
     top: 459px;
@@ -1874,7 +1899,7 @@ body {
     margin-bottom: 21px;
   }
   .testimonials-slider {
-    margin-bottom: 24px;
+    margin-bottom: -10px;
   }
   .testimonial {
     height: 363px;
@@ -1893,6 +1918,11 @@ body {
     font-size: 16px;
     line-height: 19px;
   }
+  .testimonial:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .testimonials-range {
     margin-bottom: 24px;
   }
@@ -1908,6 +1938,7 @@ body {
   }
   .tooltip {
     width: 238px;
+    display: none;
   }
   .tooltip__inner {
     padding: 16px 15px 19px;
@@ -1936,20 +1967,23 @@ body {
     font-weight: 500;
   }
   .tooltip-eagle {
-    top: 76px;
-    right: 33px;
+    top: 44px;
+    right: auto;
+    left: 5px;
   }
   .tooltip-crocodile {
-    top: 76px;
-    right: 33px;
+    top: 44px;
+    right: auto;
+    left: 5px;
   }
   .tooltip-gorilla {
-    top: 76px;
-    left: 33px;
+    top: 44px;
+    left: -105px;
   }
   .tooltip-panda {
-    top: 76px;
-    left: 33px;
+    top: 44px;
+    left: auto;
+    right: 5px;
   }
   .map__pin {
     background: url(../assets/icons/pin-320-green.svg) no-repeat;

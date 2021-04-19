@@ -1,0 +1,113 @@
+@media (max-width: 639px) {
+
+  .big-wrapper {
+    width: 93.75%;
+  }
+
+  .sidebar {
+    padding: 65px 0;
+  }
+
+  .carousel-zoos {
+    height: 200px;
+    width: 75px;
+    margin: -2.5px 0;
+  }
+
+  .carousel__item {
+    width: 40px;
+    height: 40px;
+    margin: 2.5px 0;
+  }
+
+  .carousel__image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .carousel__item_active {
+    width: 65px;
+    height: 65px;
+
+    .carousel__image {
+      width: 55px;
+      height: 55px;
+    }
+
+    &::before {
+      width: 65px;
+      height: 65px;
+    }
+
+    &::after {
+      width: 59px;
+      height: 59px;
+    }
+  }
+
+  .up-arrow {
+    top: -26px;
+  }
+
+  .main {
+    padding: 33px 0 60px;
+  }
+
+  .main__title {
+    font-size: 24px;
+    line-height: 28px;
+    padding-left: 7px;
+    margin-bottom: 20px;
+  }
+
+  .broadcast {
+    margin-left: 20px;
+  }
+
+  .broadcast__video {
+    margin-bottom: 30px;
+  }
+
+  .broadcast__main-video {
+    max-width: 205px;
+    max-height: 116px;
+    margin-bottom: 10px;
+
+    iframe {
+      height: 116px;
+    }
+  }
+
+  .broadcast__preview-video {
+    margin: 0 -4.5px 20px;
+  }
+
+  .preview-video__item {
+    width: 98px;
+    height: 56px;
+    margin: 0 4.5px;
+
+    iframe {
+      height: 56px;
+    }
+
+    &:last-child {
+      display: none;
+    }
+  }
+  .broadcast__description {
+    max-width: 205px;    
+  }
+
+  .broadcast__subtitle {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .broadcast__text {
+    margin-bottom: 15px;
+    font-size: 12px;
+      line-height: 14px;    
+  }
+}

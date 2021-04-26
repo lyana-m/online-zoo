@@ -1,6 +1,6 @@
 .map-block {
   padding: 60px 0 100px 0;
-  background: #FEFEFE;
+  background: var(--base);
 }
 
 .map-block__title {
@@ -92,7 +92,7 @@
   width: 151px;
   height: 151px;
   border-radius: 50%;
-  background: #FEFEFE;
+  background: var(--bg-1);
   z-index: 1;
 }
 

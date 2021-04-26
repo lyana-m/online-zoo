@@ -5,7 +5,7 @@
 }
 
 .zoos {
-  background: $base;
+  background: var(--base);
 
   &__inner {
     display: flex;
@@ -128,14 +128,14 @@
   &__dot {
     width: 8px;
     height: 8px;
-    background: $grey_5;
+    background: var(--grey_5);
     border-radius: 50%;
     transition: all .4s;
 
     &_active {
       width: 11px;
       height: 11px;
-      background: $base_gradient;
+      background: var(--base)_gradient;
     }
   }
 }

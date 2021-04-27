@@ -1,5 +1,4 @@
 @media (max-width: 1919px) {
-
   .big-wrapper,
   .medium-wrapper {
     width: 75%;
@@ -140,7 +139,7 @@
   .map__pin_panda {
     position: absolute;
     bottom: 63%;
-    left: calc(77% - #{$pin_width} / 2);
+    left: calc(77% - var(--pin_width) / 2);
 }
   
   .tooltip-eagle {

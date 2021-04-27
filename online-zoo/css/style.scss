@@ -1,10 +1,11 @@
 //подключаем шрифты
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@400;500;700;900&display=swap');
-@import 'variables';
 
 html {
   box-sizing: border-box;
   --constant_white: #FEFEFE;
+  --base_gradient: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+  --active_gradient: linear-gradient(160deg, #44cbd4, #2881ef);
   --bg-1: #FFFFFF;
   --bg-2: #F2F2F2;
   --heading: #333333;
@@ -14,6 +15,7 @@ html {
   --testimonial-bg: #FEFEFE;
   --country: #333333;
   --checked-country: #DADADA;
+  --pin_width: 70px;
 }
 
 html[data-theme='dark'] {
@@ -294,7 +296,7 @@ body {
   color: var(--constant_white);
   text-transform: uppercase;
   text-decoration: none;
-  background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+  background: var(--base_gradient);
   border: none;
   border-radius: 3px;
   outline: none;
@@ -309,7 +311,7 @@ body {
 
   &::before {
     border-radius: inherit;
-    background-image: linear-gradient(160deg, #44cbd4, #2881ef);
+    background-image: var(--active_gradient);
     content: '';
     display: block;
     height: 100%;
@@ -330,10 +332,10 @@ body {
 .watch-btn {
   justify-content: start;
   padding-left: 76px;
-  background: url("../assets/icons/watch-btn.svg") no-repeat 39px center, linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+  background: url("../assets/icons/watch-btn.svg") no-repeat 39px center, var(--base_gradient);
 
   &::before {
-    background: url("../assets/icons/watch-btn.svg") no-repeat 39px center, linear-gradient(160deg, #44cbd4, #2881ef);
+    background: url("../assets/icons/watch-btn.svg") no-repeat 39px center, var(--active_gradient);
   }
 }
 
@@ -815,7 +817,7 @@ body {
   align-items: center;
   width: 245px;
   height: 245px;
-  background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+  background: var(--base_gradient);
   border-radius: 50%;
 }
 
@@ -1019,25 +1021,25 @@ body {
     &_eagle {
       position: absolute;
       bottom: 66%;
-      left: calc(13% - #{$pin_width} / 2);
+      left: calc(13% - var(--pin_width) / 2);
     }
 
     &_crocodile {
       position: absolute;
       bottom: 60%;
-      left: calc(23.5% - #{$pin_width} / 2);
+      left: calc(23.5% - var(--pin_width) / 2);
     }
 
     &_gorilla {
       position: absolute;
       bottom: 43%;
-      left: calc(51% - #{$pin_width} / 2);
+      left: calc(51% - var(--pin_width) / 2);
     }
 
     &_panda {
       position: absolute;
       bottom: 63%;
-      left: calc(77.5% - #{$pin_width} / 2);
+      left: calc(77.5% - var(--pin_width) / 2);
     }
 
     &_hover:hover {

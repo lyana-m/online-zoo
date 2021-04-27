@@ -3,6 +3,7 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   --constant_white: #FEFEFE;
+  --base_gradient: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
   --bg-1: #FFFFFF;
   --bg-2: #F2F2F2;
   --heading: #333333;
@@ -308,7 +309,7 @@ body {
   color: var(--constant_white);
   text-transform: uppercase;
   text-decoration: none;
-  background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+  background: var(--base_gradient);
   border: none;
   border-radius: 3px;
   outline: none;
@@ -346,7 +347,7 @@ body {
       -ms-flex-pack: start;
           justify-content: start;
   padding-left: 76px;
-  background: url("../assets/icons/watch-btn.svg") no-repeat 39px center, linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+  background: url("../assets/icons/watch-btn.svg") no-repeat 39px center, var(--base_gradient);
 }
 
 .watch-btn::before {
@@ -872,7 +873,7 @@ body {
           align-items: center;
   width: 245px;
   height: 245px;
-  background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+  background: var(--base_gradient);
   border-radius: 50%;
 }
 

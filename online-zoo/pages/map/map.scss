@@ -1,8 +1,6 @@
-@import '../../css/variables';
-
 .map-block {
   padding: 60px 0 100px 0;
-  background: var(--base);
+  background: var(--bg-1);
   
   &__title {
     margin-bottom: 20px;
@@ -128,13 +126,13 @@
   //delete after cross-check
   &_eagle {          
     bottom: 65%;
-    left: calc(14% - #{$pin_width} / 2);
+    left: calc(14% - var(--pin_width) / 2);
   }
   
   //delete after cross-check
   &_panda {      
     bottom: 61%;
-    left: calc(78.5% - #{$pin_width} / 2);
+    left: calc(78.5% - var(--pin_width) / 2);
   }
 }
 

@@ -1,5 +1,4 @@
 @media (max-width: 1919px) {
-
   .big-wrapper {
     width: 75%;
   }
@@ -43,7 +42,7 @@
 
   .map__pin {
     //delete after cross-check
-    $pin_width: 59px;
+    --pin_width: 59px;
     background: url(../../assets/icons/pin-1200-green.svg) no-repeat;
     width: 59px;
     height: 83px;
@@ -51,13 +50,13 @@
     //delete after cross-check
     &_eagle {
       bottom: 66%;
-      left: calc(13.5% - #{$pin_width} / 2);
+      left: calc(13.5% - var(--pin_width) / 2);
     }    
 
     //delete after cross-check
     &_panda {
       bottom: 63%;
-      left: calc(76.5% - #{$pin_width} / 2);
+      left: calc(76.5% - var(--pin_width) / 2);
     }
   }
 

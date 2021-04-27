@@ -1,5 +1,4 @@
 @media (max-width: 639px) {
-
   .big-wrapper {
     width: 93.75%;
   }
@@ -74,25 +73,25 @@
   }
 
   .map__pin {
-    $pin_width: 33px;
+    --pin_width: 33px;
     background: url(../../assets/icons/pin-320-green.svg) no-repeat;
     width: 33px;
     height: 46px;
 
     &_eagle {
-      left: calc(13% - #{$pin_width} / 2);
+      left: calc(13% - var(--pin_width) / 2);
     }
 
     &_crocodile {
-      left: calc(23.5% - #{$pin_width} / 2);
+      left: calc(23.5% - var(--pin_width) / 2);
     }
 
     &_gorilla {
-      left: calc(51% - #{$pin_width} / 2);
+      left: calc(51% - var(--pin_width) / 2);
     }
 
     &_panda {
-      left: calc(77.5% - #{$pin_width} / 2);
+      left: calc(77.5% - var(--pin_width) / 2);
     }
   }
 

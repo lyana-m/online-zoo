@@ -1,9 +1,13 @@
-.header__nav .nav__list {
-  padding-top: 10px;
+html {
+  --bg-map: #FFFFFF;
+}
+
+html[data-theme='dark'] {
+  --bg-map: #4F4F4F;
 }
 
 .zoos {
-  background: var(--base);
+  background: var(--bg-map);
 
   &__inner {
     display: flex;

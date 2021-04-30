@@ -1,5 +1,4 @@
 @media (max-width: 1199px) {
-
   .big-wrapper,
   .medium-wrapper,
   .small-wrapper {
@@ -14,7 +13,7 @@
 
   .header__nav {
     position: absolute;
-    background: $base_gradient;
+    background: var(--base_gradient);
     top: 94px;
     right: 0;
     border-radius: 0 0 0 5px;

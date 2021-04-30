@@ -64,8 +64,8 @@
   <section class="first-screen">
     <div class="big-wrapper">
       <!-- <div class="medium-wrapper first-screen__medium-wrapper"> -->
-        <h2 class="first-screen__title">Watch your favorite animal online</h2>
-        <a class="btn watch-btn first-watch-btn">watch online</a>
+      <h2 class="first-screen__title">Watch your favorite animal online</h2>
+      <a class="btn watch-btn first-watch-btn">watch online</a>
       <!-- </div> -->
       <div class="social">
         <ul class="social__list">
@@ -90,10 +90,27 @@
     </div>
 
     <div class="slider-wrapper">
+      <div class="circle-line">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
       <div class="main-slider slider">
         <div class="slider__container">
           <div class="slider__item">
             <img src="./assets/images/eagle.jpg" alt="eagle" class="slider__picture">
+            <div class="main-slider__description description">
+              <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
+                bamboos.</p>
+              <a href="./pages/zoos/panda/panda.html" class="description__btn description__btn_watch">watch online</a>
+              <a href="#" class="description__btn description__btn_donate">Donate</a>
+            </div>
           </div>
           <div class="slider__item slider__item_active">
             <img src="./assets/images/panda.jpg" alt="panda" class="slider__picture">
@@ -102,29 +119,65 @@
                 bamboos.</p>
               <a href="./pages/zoos/panda/panda.html" class="description__btn description__btn_watch">watch online</a>
               <a href="#" class="description__btn description__btn_donate">Donate</a>
-            </div>            
+            </div>
           </div>
           <div class="slider__item">
             <img src="./assets/images/gorilla.jpg" alt="gorilla" class="slider__picture">
+            <div class="main-slider__description description">
+              <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
+                bamboos.</p>
+              <a href="./pages/zoos/panda/panda.html" class="description__btn description__btn_watch">watch online</a>
+              <a href="#" class="description__btn description__btn_donate">Donate</a>
+            </div>
           </div>
           <div class="slider__item">
             <img src="./assets/images/crocodile.jpg" alt="crocodile" class="slider__picture">
+            <div class="main-slider__description description">
+              <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
+                bamboos.</p>
+              <a href="./pages/zoos/panda/panda.html" class="description__btn description__btn_watch">watch online</a>
+              <a href="#" class="description__btn description__btn_donate">Donate</a>
+            </div>
           </div>
           <div class="slider__item">
             <img src="./assets/images/fox.jpg" alt="fox" class="slider__picture">
+            <div class="main-slider__description description">
+              <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
+                bamboos.</p>
+              <a href="./pages/zoos/panda/panda.html" class="description__btn description__btn_watch">watch online</a>
+              <a href="#" class="description__btn description__btn_donate">Donate</a>
+            </div>
           </div>
           <div class="slider__item">
             <img src="./assets/images/sloth.jpg" alt="sloth" class="slider__picture">
+            <div class="main-slider__description description">
+              <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
+                bamboos.</p>
+              <a href="./pages/zoos/panda/panda.html" class="description__btn description__btn_watch">watch online</a>
+              <a href="#" class="description__btn description__btn_donate">Donate</a>
+            </div>
           </div>
           <div class="slider__item">
             <img src="./assets/images/map-slider-elephant.jpg" alt="elephant" class="slider__picture">
+            <div class="main-slider__description description">
+              <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
+                bamboos.</p>
+              <a href="./pages/zoos/panda/panda.html" class="description__btn description__btn_watch">watch online</a>
+              <a href="#" class="description__btn description__btn_donate">Donate</a>
+            </div>
           </div>
           <div class="slider__item">
             <img src="./assets/images/leopard.jpg" alt="leopard" class="slider__picture">
+            <div class="main-slider__description description">
+              <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
+                bamboos.</p>
+              <a href="./pages/zoos/panda/panda.html" class="description__btn description__btn_watch">watch online</a>
+              <a href="#" class="description__btn description__btn_donate">Donate</a>
+            </div>
           </div>
         </div>
         <div class="first-screen-range range">
-          <label for="range" class="range__max"><span class="range__value">02/</span>08</label>
+          <label for="range" class="range__max"><output class="range__value">02/</output>08</label>
           <input type="range" min="1" max="8" step="1" value="2" class="range__input" id="range">
         </div>
       </div>
@@ -188,85 +241,104 @@
     <div class="medium-wrapper">
       <h3 class="pets-in-zoo-title title">Pets in Zoo</h3>
       <div class="pets-in-zoo-slider-container">
-        <img src="./assets/icons/left-arrow.svg" alt="" class="arrow left-arrow">
+        <svg class="arrow left-arrow" width="18" height="30" viewBox="0 0 18 30" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0.666298 16.1706L14.0167 29.5207C14.3255 29.8298 14.7376 30 15.1772 30C15.6167 30 16.0289 29.8298 16.3376 29.5207L17.3208 28.5378C17.9605 27.8973 17.9605 26.8564 17.3208 26.2169L6.11016 15.0062L17.3332 3.78314C17.642 3.47412 17.8125 3.06217 17.8125 2.6229C17.8125 2.18315 17.642 1.7712 17.3332 1.46194L16.3501 0.479263C16.0411 0.17024 15.6291 0 15.1896 0C14.7501 0 14.3379 0.17024 14.0291 0.479263L0.666298 13.8416C0.356789 14.1516 0.18679 14.5655 0.187767 15.0055C0.18679 15.4472 0.356789 15.8608 0.666298 16.1706Z"
+            fill="#333333" />
+        </svg>
         <div class="pets-in-zoo-slider">
-          <div class="pets-in-zoo-slider__item">
-            <img src="./assets/images/panda.jpg" alt="panda" class="pets-in-zoo-slider__picture">
-            <div class="pets-in-zoo-slider__description description">
-              <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
-                bamboos.</p>
-              <a href="./pages/zoos/panda/panda.html" class="description__btn description__btn_watch">watch online</a>
-              <a href="#" class="description__btn description__btn_donate">Donate</a>
+          <div class="pets-in-zoo-slider__track">
+            <div class="pets-in-zoo-slider__item pets-in-zoo-slider__item_active">
+              <img src="./assets/images/panda.jpg" alt="panda" class="pets-in-zoo-slider__picture">
+              <div class="pets-in-zoo-slider__description description">
+                <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
+                  bamboos.</p>
+                <a href="./pages/zoos/panda/panda.html" class="description__btn description__btn_watch">watch online</a>
+                <a href="#" class="description__btn description__btn_donate">Donate</a>
+              </div>
             </div>
-          </div>
-          <div class="pets-in-zoo-slider__item">
-            <img src="./assets/images/eagle.jpg" alt="eagle" class="pets-in-zoo-slider__picture">
-            <div class="pets-in-zoo-slider__description description">
-              <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
-                bamboos.</p>
-              <a href="./pages/zoos/eagle/eagle.html" class="description__btn description__btn_watch">watch online</a>
-              <a href="#" class="description__btn description__btn_donate">Donate</a>
+            <div class="pets-in-zoo-slider__item">
+              <img src="./assets/images/eagle.jpg" alt="eagle" class="pets-in-zoo-slider__picture">
+              <div class="pets-in-zoo-slider__description description">
+                <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
+                  bamboos.</p>
+                <a href="./pages/zoos/eagle/eagle.html" class="description__btn description__btn_watch">watch online</a>
+                <a href="#" class="description__btn description__btn_donate">Donate</a>
+              </div>
             </div>
-          </div>
-          <div class="pets-in-zoo-slider__item">
-            <img src="./assets/images/gorilla.jpg" alt="gorilla" class="pets-in-zoo-slider__picture">
-            <div class="pets-in-zoo-slider__description description">
-              <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
-                bamboos.</p>
-              <a href="./pages/zoos/gorilla/gorilla.html" class="description__btn description__btn_watch">watch online</a>
-              <a href="#" class="description__btn description__btn_donate">Donate</a>
+            <div class="pets-in-zoo-slider__item">
+              <img src="./assets/images/gorilla.jpg" alt="gorilla" class="pets-in-zoo-slider__picture">
+              <div class="pets-in-zoo-slider__description description">
+                <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
+                  bamboos.</p>
+                <a href="./pages/zoos/gorilla/gorilla.html" class="description__btn description__btn_watch">watch
+                  online</a>
+                <a href="#" class="description__btn description__btn_donate">Donate</a>
+              </div>
             </div>
-          </div>
-          <div class="pets-in-zoo-slider__item">
-            <img src="./assets/images/crocodile.jpg" alt="crocodile" class="pets-in-zoo-slider__picture">
-            <div class="pets-in-zoo-slider__description description">
-              <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
-                bamboos.</p>
-              <a href="./pages/zoos/alligator/alligator.html" class="description__btn description__btn_watch">watch online</a>
-              <a href="#" class="description__btn description__btn_donate">Donate</a>
+            <div class="pets-in-zoo-slider__item">
+              <img src="./assets/images/crocodile.jpg" alt="crocodile" class="pets-in-zoo-slider__picture">
+              <div class="pets-in-zoo-slider__description description">
+                <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
+                  bamboos.</p>
+                <a href="./pages/zoos/alligator/alligator.html" class="description__btn description__btn_watch">watch
+                  online</a>
+                <a href="#" class="description__btn description__btn_donate">Donate</a>
+              </div>
             </div>
-          </div>
-          <div class="pets-in-zoo-slider__item">
-            <img src="./assets/images/fox.jpg" alt="fox" class="pets-in-zoo-slider__picture">
-            <div class="pets-in-zoo-slider__description description">
-              <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
-                bamboos.</p>
-              <a href="./pages/zoos/alligator/alligator.html" class="description__btn description__btn_watch">watch online</a>
-              <a href="#" class="description__btn description__btn_donate">Donate</a>
+            <div class="pets-in-zoo-slider__item">
+              <img src="./assets/images/fox.jpg" alt="fox" class="pets-in-zoo-slider__picture">
+              <div class="pets-in-zoo-slider__description description">
+                <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
+                  bamboos.</p>
+                <a href="./pages/zoos/alligator/alligator.html" class="description__btn description__btn_watch">watch
+                  online</a>
+                <a href="#" class="description__btn description__btn_donate">Donate</a>
+              </div>
             </div>
-          </div>
-          <div class="pets-in-zoo-slider__item">
-            <img src="./assets/images/sloth.jpg" alt="sloth" class="pets-in-zoo-slider__picture">
-            <div class="pets-in-zoo-slider__description description">
-              <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
-                bamboos.</p>
-              <a href="./pages/zoos/alligator/alligator.html" class="description__btn description__btn_watch">watch online</a>
-              <a href="#" class="description__btn description__btn_donate">Donate</a>
+            <div class="pets-in-zoo-slider__item">
+              <img src="./assets/images/sloth.jpg" alt="sloth" class="pets-in-zoo-slider__picture">
+              <div class="pets-in-zoo-slider__description description">
+                <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
+                  bamboos.</p>
+                <a href="./pages/zoos/alligator/alligator.html" class="description__btn description__btn_watch">watch
+                  online</a>
+                <a href="#" class="description__btn description__btn_donate">Donate</a>
+              </div>
             </div>
-          </div>
-          <div class="pets-in-zoo-slider__item">
-            <img src="./assets/images/map-slider-elephant.jpg" alt="elephant" class="pets-in-zoo-slider__picture">
-            <div class="pets-in-zoo-slider__description description">
-              <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
-                bamboos.</p>
-              <a href="./pages/zoos/alligator/alligator.html" class="description__btn description__btn_watch">watch online</a>
-              <a href="#" class="description__btn description__btn_donate">Donate</a>
+            <div class="pets-in-zoo-slider__item">
+              <img src="./assets/images/map-slider-elephant.jpg" alt="elephant" class="pets-in-zoo-slider__picture">
+              <div class="pets-in-zoo-slider__description description">
+                <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
+                  bamboos.</p>
+                <a href="./pages/zoos/alligator/alligator.html" class="description__btn description__btn_watch">watch
+                  online</a>
+                <a href="#" class="description__btn description__btn_donate">Donate</a>
+              </div>
             </div>
-          </div>
-          <div class="pets-in-zoo-slider__item">
-            <img src="./assets/images/leopard.jpg" alt="leopard" class="pets-in-zoo-slider__picture">
-            <div class="pets-in-zoo-slider__description description">
-              <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
-                bamboos.</p>
-              <a href="./pages/zoos/alligator/alligator.html" class="description__btn description__btn_watch">watch online</a>
-              <a href="#" class="description__btn description__btn_donate">Donate</a>
+            <div class="pets-in-zoo-slider__item">
+              <img src="./assets/images/leopard.jpg" alt="leopard" class="pets-in-zoo-slider__picture">
+              <div class="pets-in-zoo-slider__description description">
+                <p class="description__text">Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves
+                  bamboos.</p>
+                <a href="./pages/zoos/alligator/alligator.html" class="description__btn description__btn_watch">watch
+                  online</a>
+                <a href="#" class="description__btn description__btn_donate">Donate</a>
+              </div>
             </div>
+
           </div>
         </div>
-        <img src="./assets/icons/right-arrow.svg" alt="" class="arrow right-arrow">
+        <svg class="arrow right-arrow" width="18" height="30" viewBox="0 0 18 30" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M17.3337 13.8294L3.98332 0.479264C3.67454 0.170243 3.26235 0 2.82284 0C2.38334 0 1.97114 0.170243 1.66237 0.479264L0.679203 1.46218C0.0394526 2.10267 0.0394526 3.14363 0.679203 3.78314L11.8898 14.9938L0.666764 26.2169C0.357986 26.5259 0.1875 26.9378 0.1875 27.3771C0.1875 27.8168 0.357986 28.2288 0.666764 28.5381L1.64993 29.5207C1.95895 29.8298 2.3709 30 2.81041 30C3.24991 30 3.66211 29.8298 3.97088 29.5207L17.3337 16.1584C17.6432 15.8484 17.8132 15.4345 17.8122 14.9945C17.8132 14.5528 17.6432 14.1392 17.3337 13.8294Z"
+            fill="#333333" />
+        </svg>
       </div>
       <div class="pets-in-zoo-range range">
-        <label for="range" class="range__max"><span class="range__value">01/</span>08</label>
+        <label for="range" class="range__max"><output class="range__value">01/</output>08</label>
         <input type="range" min="1" max="8" step="1" value="1" class="range__input" id="range">
       </div>
       <a class="pets-in-zoo-btn btn" href="./pages/map/map.html">Choose your favorite</a>
@@ -292,7 +364,7 @@
         <picture class="step-arrow">
           <source srcset="./assets/icons/arrow-down.svg" media="(max-width: 1199px)" class="step-arrow_icon">
           <source srcset="./assets/icons/arrow-small.svg" media="(max-width: 1500px)" class="step-arrow_icon">
-          <source srcset="./assets/icons/arrow.svg" media="(max-width: 1920px)" class="step-arrow_icon">          
+          <source srcset="./assets/icons/arrow.svg" media="(max-width: 1920px)" class="step-arrow_icon">
           <img src="./assets/icons/arrow.svg" alt="" class="step-arrow_icon">
         </picture>
         <div class="step">
@@ -308,7 +380,7 @@
         <picture class="step-arrow">
           <source srcset="./assets/icons/arrow-down.svg" media="(max-width: 1199px)" class="step-arrow_icon">
           <source srcset="./assets/icons/arrow-small.svg" media="(max-width: 1500px)" class="step-arrow_icon">
-          <source srcset="./assets/icons/arrow.svg" media="(max-width: 1920px)" class="step-arrow_icon">          
+          <source srcset="./assets/icons/arrow.svg" media="(max-width: 1920px)" class="step-arrow_icon">
           <img src="./assets/icons/arrow.svg" alt="" class="step-arrow_icon">
         </picture>
         <div class="step">
@@ -330,7 +402,12 @@
     <div class="medium-wrapper">
       <h3 class="testimonials__title title">Testimonials</h3>
       <div class="testimonials-slider-contaiter">
-        <img src="./assets/icons/left-arrow.svg" alt="" class="arrow left-arrow">
+        <svg class="arrow left-arrow" width="18" height="30" viewBox="0 0 18 30" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0.666298 16.1706L14.0167 29.5207C14.3255 29.8298 14.7376 30 15.1772 30C15.6167 30 16.0289 29.8298 16.3376 29.5207L17.3208 28.5378C17.9605 27.8973 17.9605 26.8564 17.3208 26.2169L6.11016 15.0062L17.3332 3.78314C17.642 3.47412 17.8125 3.06217 17.8125 2.6229C17.8125 2.18315 17.642 1.7712 17.3332 1.46194L16.3501 0.479263C16.0411 0.17024 15.6291 0 15.1896 0C14.7501 0 14.3379 0.17024 14.0291 0.479263L0.666298 13.8416C0.356789 14.1516 0.18679 14.5655 0.187767 15.0055C0.18679 15.4472 0.356789 15.8608 0.666298 16.1706Z"
+            fill="#333333" />
+        </svg>
         <div class="testimonials-slider">
           <div class="testimonials-slider__item testimonial">
             <div class="testimonial__photo testimonial__photo-1">
@@ -357,7 +434,12 @@
               bushfires on precious species and their habitat.</p>
           </div>
         </div>
-        <img src="./assets/icons/right-arrow.svg" alt="" class="arrow right-arrow">
+        <svg class="arrow right-arrow" width="18" height="30" viewBox="0 0 18 30" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M17.3337 13.8294L3.98332 0.479264C3.67454 0.170243 3.26235 0 2.82284 0C2.38334 0 1.97114 0.170243 1.66237 0.479264L0.679203 1.46218C0.0394526 2.10267 0.0394526 3.14363 0.679203 3.78314L11.8898 14.9938L0.666764 26.2169C0.357986 26.5259 0.1875 26.9378 0.1875 27.3771C0.1875 27.8168 0.357986 28.2288 0.666764 28.5381L1.64993 29.5207C1.95895 29.8298 2.3709 30 2.81041 30C3.24991 30 3.66211 29.8298 3.97088 29.5207L17.3337 16.1584C17.6432 15.8484 17.8132 15.4345 17.8122 14.9945C17.8132 14.5528 17.6432 14.1392 17.3337 13.8294Z"
+            fill="#333333" />
+        </svg>
       </div>
       <div class="testimonials-range range">
         <label for="range" class="range__max"><span class="range__value">01/</span>08</label>
@@ -371,7 +453,8 @@
     <div class="medium-wrapper">
       <h3 class="map-section__title title">Map</h3>
       <div class="map">
-        <svg class="svg-map" width="1200" height="498" viewBox="0 0 1200 498" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="svg-map" width="1200" height="498" viewBox="0 0 1200 498" preserveAspectRatio="none" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
           <path
             d="M742.625 212.977L743.227 212.795L743.438 213.779L746.131 213.219L749.036 213.31L751.157 213.415L753.339 210.995L755.747 208.711L757.748 206.518L758.515 207.743L759.252 210.556L757.477 210.572L757.387 212.886L758.049 213.385L756.529 214.081L756.634 215.533L755.747 217.016L755.762 218.438L755.115 219.194L744.446 217.409L742.821 213.794L742.625 212.977Z"
             fill="#333333" />
@@ -1005,7 +1088,7 @@
           </nav>
         </div>
         <div class="footer__bottom">
-          <div class="footer__left">          
+          <div class="footer__left">
             <form action="#" class="form">
               <h4 class="form__title subtitle">Contact us</h4>
               <input type="text" class="form__input form__name" placeholder="Name" required>
@@ -1019,7 +1102,7 @@
               <input type="submit" class="form__submit" value="send">
             </form>
           </div>
-          <div class="footer__right">            
+          <div class="footer__right">
             <p class="footer__text footer__text_uppercase footer__text_base">ZOO Online Centre</p>
             <address class="address">
               <p class="footer__text_base street">132, Address District, Street</p>
@@ -1046,7 +1129,7 @@
                       src="./assets/icons/youtube.svg" alt="youtube"></a>
                 </li>
               </ul>
-            </div>            
+            </div>
           </div>
         </div>
         <a class="btn footer-btn">donate for volunteers</a>
@@ -1055,7 +1138,8 @@
       <p class="footer__text designer">©Noora Sagnayeva</p>
       <p class="footer__text">©RSSchool and ©Yem Digital - 2021</p>
   </footer>
-<script src="./script.js"></script>
+  <script src="./js/header.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

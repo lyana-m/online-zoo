@@ -1,6 +1,14 @@
+html {
+  --bg-map: #FFFFFF;
+}
+
+html[data-theme='dark'] {
+  --bg-map: #4F4F4F;
+}
+
 .map-block {
   padding: 60px 0 100px 0;
-  background: var(--bg-1);
+  background: var(--bg-map);
   
   &__title {
     margin-bottom: 20px;
@@ -11,10 +19,6 @@
     max-width: 790px;
     margin: 0 auto 50px;
   }
-}
-
-.header__nav .nav__list {
-  padding-top: 0px;
 }
 
 .carousel {
@@ -81,7 +85,7 @@
     width: 151px;
     height: 151px;
     border-radius: 50%;
-    background: var(--bg-1);
+    background: var(--bg-map);
     z-index: 1;
   }
 }

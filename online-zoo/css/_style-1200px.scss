@@ -28,11 +28,7 @@
     left: 51.5%;
   }
 
-  .slider {
-    &__item {
-      margin-top: 0;
-      margin-right: 30px;
-    }
+  .slider {   
 
     &__picture {
       width: 180px;
@@ -41,7 +37,7 @@
   }
 
   .first-screen-range {
-    left: 214px;
+    left: 227px;
     margin-top: 25px;
   }
 
@@ -70,27 +66,13 @@
     margin-bottom: 31px;
   }
 
-  .pets-in-zoo-slider {
-    margin: 0 -10px 30px;
-
-    &__item {
-      margin: 0 10px;
-
-      &:hover {
-        .description {
-          transform: translateY(-118px);
-        }
-      }
-    }
-
-    &__picture {
-      width: 210px;
-      height: 301px;
-    }
-  }
+  // .pets-in-zoo-slider {
+  //   // margin: 0 -10px 30px;
+    
+  // }
 
   .pets-in-zoo-slider__description {
-    top: 300px;
+    // top: 300px;
     left: 9px;
 
     .description__btn_watch {

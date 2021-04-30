@@ -5,7 +5,16 @@ document.querySelector('.header__menu').addEventListener('click', function(){
 });
 
 //themes
+const theme = window.localStorage.getItem('data-theme');
 const checkbox = document.querySelector('.switch__input');
+
+if (theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+}
+if (theme === 'dark') {
+  checkbox.checked = true;
+}
+
 checkbox.addEventListener('change', () => {
   if (checkbox.checked) {  
     document.documentElement.setAttribute('data-theme', 'dark');
@@ -15,4 +24,3 @@ checkbox.addEventListener('change', () => {
     window.localStorage.setItem('data-theme', 'light');
   }
 });
-

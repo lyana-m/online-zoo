@@ -8,15 +8,10 @@ const firstSliderInputValue = document.querySelector('.first-screen-range .range
 
 function firstSliderMove(event) {
   const activeSlide = document.querySelector('.first-screen .slider__item_active');
-  const activeSlideIndex = Array.from(firstSliderSlides).indexOf(activeSlide);
-  const activeSlideWidth = activeSlide.offsetWidth;
+  const activeSlideIndex = Array.from(firstSliderSlides).indexOf(activeSlide);  
   const currentSlide = event.currentTarget;
   const currentSlideIndex = Array.from(firstSliderSlides).indexOf(currentSlide);
-  const currentSlideWidth = currentSlide.offsetWidth;
-  console.log('activeSlideIndex', activeSlideIndex);
-  console.log('activeSlideWidth', activeSlideWidth);
-  console.log('currentSlideIndex', currentSlideIndex);
-  console.log('currentSlideWidth', currentSlideWidth);
+  const currentSlideWidth = currentSlide.offsetWidth;  
   
   activeSlide.classList.remove('slider__item_active');
   currentSlide.classList.add('slider__item_active');  

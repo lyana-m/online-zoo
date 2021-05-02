@@ -17,7 +17,7 @@
   }
 
   .carousel-container {
-    width: 76.33%;
+    // width: 76.33%;
     margin: 0 auto;
   }
 
@@ -68,7 +68,7 @@
     height: 35px;
   }
 
-  .map__pin_panda {
+  .map__pin_active {
     background: url(../../assets/icons/pin-1200-red.svg) no-repeat;
   }
 
@@ -77,6 +77,6 @@
   }
 
   .right-arrow-map {
-    right: -50px;
+    right: -40px;
   }
 }

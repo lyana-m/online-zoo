@@ -381,9 +381,9 @@ body {
 
 .slider-wrapper {
   position: absolute;
-  overflow: hidden;
   top: 500px;
-  left: 50.7%;
+  left: 43.7%;
+  padding-left: 120px;
   right: 0;
   z-index: 1000;
 }
@@ -419,75 +419,75 @@ body {
 }
 
 .circle:first-child::before {
-  left: -135px;
+  left: 0;
 }
 
 .circle:first-child::after {
-  left: -130px;
+  left: 5px;
 }
 
 .circle:nth-child(2)::before {
-  left: 75px;
+  left: 220px;
 }
 
 .circle:nth-child(2)::after {
-  left: 70px;
+  left: 225px;
 }
 
 .circle:nth-child(3)::before {
-  left: 300px;
+  left: 460px;
 }
 
 .circle:nth-child(3)::after {
-  left: 295px;
+  left: 465px;
 }
 
 .circle:nth-child(4)::before {
-  left: 520px;
-}
-
-.circle:nth-child(4)::after {
-  left: 515px;
-}
-
-.circle:nth-child(5)::before {
   left: 700px;
 }
 
+.circle:nth-child(4)::after {
+  left: 705px;
+}
+
+.circle:nth-child(5)::before {
+  left: 915px;
+}
+
 .circle:nth-child(5)::after {
-  left: 695px;
+  left: 920px;
 }
 
 .circle:nth-child(6)::before {
-  left: 870px;
+  left: 1120px;
 }
 
 .circle:nth-child(6)::after {
-  left: 865px;
+  left: 1125px;
 }
 
 .circle:nth-child(7)::before {
-  left: 1035px;
+  left: 1325px;
 }
 
 .circle:nth-child(7)::after {
-  left: 1030px;
+  left: 1330px;
 }
 
 .circle:nth-child(8)::before {
-  left: 1200px;
+  left: 1530px;
 }
 
 .circle:nth-child(8)::after {
-  left: 1195px;
+  left: 1535px;
 }
 
 .circle:nth-child(9)::before {
-  left: 1380px;
+  left: 1735px;
 }
 
 .circle:nth-child(9)::after {
-  left: 1357px;
+  left: 1740px;
 }
 
 .slider {
@@ -1543,7 +1543,6 @@ body {
   }
   .slider-wrapper {
     top: 526px;
-    left: 51.5%;
   }
   .slider__picture {
     width: 180px;

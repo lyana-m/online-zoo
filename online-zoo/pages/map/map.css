@@ -21,23 +21,49 @@ html[data-theme='dark'] {
   margin: 0 auto 50px;
 }
 
-.carousel {
+.carousel-container {
+  position: relative;
+  margin: 0 auto;
+  width: 1120px;
+}
+
+@media (max-width: 1500px) {
+  .carousel-container {
+    width: 970px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .carousel-container {
+    width: 835px;
+  }
+}
+
+.carousel-map {
+  overflow: hidden;
+  margin: 0 auto 33px;
+  padding: 0 10px;
+}
+
+.carousel-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
+  height: 160px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .carousel__item {
   position: relative;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 108px;
-  height: 108px;
-  margin: 0 15px;
+  width: 137px;
+  height: 137px;
+  padding: 15px;
   border-radius: 50%;
   -webkit-transition: all .4s;
   transition: all .4s;
@@ -59,9 +85,8 @@ html[data-theme='dark'] {
 
 .carousel__item_active {
   position: relative;
-  width: 157px;
-  height: 157px;
-  margin: 0 -10px;
+  width: 137px;
+  height: 137px;
   z-index: 2;
   cursor: default;
 }
@@ -100,40 +125,25 @@ html[data-theme='dark'] {
   z-index: 1;
 }
 
-.carousel__item:hover:not(.carousel__item_active) {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
 .carousel__range {
   margin-bottom: 80px;
 }
 
-.carousel-container {
-  position: relative;
-  width: 100%;
-}
-
-.carousel-map {
-  max-width: 1100px;
-  margin: 0 auto 33px;
-}
-
 .left-arrow-map {
   top: calc(50% - 15px);
-  left: 220px;
+  left: -30px;
 }
 
 .right-arrow-map {
   top: calc(50% - 15px);
-  right: 214px;
+  right: -35px;
 }
 
 .map_page {
   margin-bottom: 46px;
 }
 
-.map__pin_panda {
+.map__pin_active {
   background: url(../../assets/icons/pin-red.svg) no-repeat;
 }
 
@@ -162,7 +172,6 @@ html[data-theme='dark'] {
     margin-bottom: 24px;
   }
   .carousel-container {
-    width: 76.33%;
     margin: 0 auto;
   }
   .carousel__item {
@@ -201,14 +210,14 @@ html[data-theme='dark'] {
     width: 35px;
     height: 35px;
   }
-  .map__pin_panda {
+  .map__pin_active {
     background: url(../../assets/icons/pin-1200-red.svg) no-repeat;
   }
   .left-arrow-map {
     left: -50px;
   }
   .right-arrow-map {
-    right: -50px;
+    right: -40px;
   }
 }
 

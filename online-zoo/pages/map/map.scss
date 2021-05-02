@@ -21,18 +21,43 @@ html[data-theme='dark'] {
   }
 }
 
-.carousel {
+.carousel-container {
+  position: relative;
+  margin: 0 auto;
+  width: 1120px;  
+}
+@media (max-width: 1500px) {
+  .carousel-container {    
+    width: 970px;
+  }
+}
+@media (max-width: 1300px) {
+  .carousel-container {    
+    width: 835px;
+  }
+}
+.carousel-map {
+  overflow: hidden;
+  margin: 0 auto 33px;
+  padding: 0 10px;
+}
+
+.carousel-track {
   display: flex;
   align-items: center;
-  overflow: hidden;
+  height: 160px;
+  transition: all .4s;
 }
 
 .carousel__item {
   position: relative;
   flex-shrink: 0;  
-  width: 108px;
-  height: 108px;
-  margin: 0 15px;
+  // width: 108px;
+  // height: 108px;
+  width: 137px;
+  height: 137px;
+  // margin: 0 15px;
+  padding: 15px;
   border-radius: 50%;
   transition: all .4s;
   cursor: pointer;
@@ -51,9 +76,11 @@ html[data-theme='dark'] {
 
 .carousel__item_active {
   position: relative;
-  width: 157px;
-  height: 157px;
-  margin: 0 -10px;
+  // width: 157px;
+  // height: 157px;
+  width: 137px;
+  height: 137px;
+  // margin: 0 -10px;
   z-index: 2;
   cursor: default;
 
@@ -90,39 +117,29 @@ html[data-theme='dark'] {
   }
 }
 
-.carousel__item:hover:not(.carousel__item_active) {
-  transform: scale(1.05);
-}
+// .carousel__item:hover:not(.carousel__item_active) {
+//   transform: scale(1.05);
+// }
 
 .carousel__range {
   margin-bottom: 80px;
 }
 
-.carousel-container {
-  position: relative;
-  width: 100%;
-}
-
-.carousel-map {
-  max-width: 1100px;
-  margin: 0 auto 33px;
-}
-
 .left-arrow-map {
   top: calc(50% - 15px);
-  left: 220px;
+  left: -30px;
 }
 
 .right-arrow-map {
   top: calc(50% - 15px);
-  right: 214px;
+  right: -35px;
 }
 
 .map_page {
   margin-bottom: 46px;
 }
 
-.map__pin_panda {
+.map__pin_active {
   background: url(../../assets/icons/pin-red.svg) no-repeat;
 }
 

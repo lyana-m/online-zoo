@@ -55,6 +55,9 @@
             <span class="switch__slider round"></span>
           </label>
         </div>
+        <div class="header__menu">
+          <span></span>
+        </div>
       </div>
     </div>
   </header>
@@ -65,38 +68,40 @@
         <div class="carousel-container carousel-container-zoos">
           <img src="../../../assets/icons/up-arrow.svg" alt="" class="arrow up-arrow">
           <div class="carousel carousel-zoos">
-            <div class="carousel__item" title="Panda">
-              <img src="../../../assets/images/map-slider-panda.jpg" alt="Panda" class="carousel__image">
-            </div>
-            <div class="carousel__item" title="Alligator">
-              <img src="../../../assets/images/map-slider-crocodile.jpg" alt="Alligator" class="carousel__image">
-            </div>
-            <div class="carousel__item carousel__item_active" title="Eagle">
-              <img src="../../../assets/images/map-slider-eagle.jpg" alt="Eagle" class="carousel__image">
-            </div>
-            <div class="carousel__item" title="Gorilla">
-              <img src="../../../assets/images/map-slider-gorilla.jpg" alt="Gorilla" class="carousel__image">
-            </div>
-            <div class="carousel__item" title="Tiger">
-              <img src="../../../assets/images/map-slider-tiger.jpg" alt="Tiger" class="carousel__image">
-            </div>
-            <div class="carousel__item" title="Elephant">
-              <img src="../../../assets/images/map-slider-elephant.jpg" alt="Elephant" class="carousel__image">
-            </div>
-            <div class="carousel__item" title="Lion">
-              <img src="../../../assets/images/map-slider-lion.jpg" alt="Lion" class="carousel__image">
-            </div>
-            <div class="carousel__item" title="Zebra">
-              <img src="../../../assets/images/map-slider-zebra.jpg" alt="Zebra" class="carousel__image">
+            <div class="carousel-zoos-track">
+              <div class="carousel__item" title="Panda">
+                <img src="../../../assets/images/map-slider-panda.jpg" alt="Panda" class="carousel__image">
+              </div>
+              <div class="carousel__item" title="Alligator">
+                <img src="../../../assets/images/map-slider-crocodile.jpg" alt="Alligator" class="carousel__image">
+              </div>
+              <div class="carousel__item carousel__item_active" title="Eagle">
+                <img src="../../../assets/images/map-slider-eagle.jpg" alt="Eagle" class="carousel__image">
+              </div>
+              <div class="carousel__item" title="Gorilla">
+                <img src="../../../assets/images/map-slider-gorilla.jpg" alt="Gorilla" class="carousel__image">
+              </div>
+              <div class="carousel__item" title="Tiger">
+                <img src="../../../assets/images/map-slider-tiger.jpg" alt="Tiger" class="carousel__image">
+              </div>
+              <div class="carousel__item" title="Elephant">
+                <img src="../../../assets/images/map-slider-elephant.jpg" alt="Elephant" class="carousel__image">
+              </div>
+              <div class="carousel__item" title="Lion">
+                <img src="../../../assets/images/map-slider-lion.jpg" alt="Lion" class="carousel__image">
+              </div>
+              <div class="carousel__item" title="Zebra">
+                <img src="../../../assets/images/map-slider-zebra.jpg" alt="Zebra" class="carousel__image">
+              </div>
             </div>
           </div>
           <img src="../../../assets/icons/down-arrow.svg" alt="" class="arrow down-arrow">
         </div>
       </aside>
       <main class="main">
-        <h3 class="title main__title">West End Bald Eagle Cam</h3>
         <div class="broadcast">
           <div class="broadcast__video">
+            <h3 class="title main__title">Bald Eagle Cam</h3>
             <div class="broadcast__main-video">
               <iframe width="790" height="442" src="https://www.youtube-nocookie.com/embed/XfoUF8YkB7A"
                 title="YouTube video player" frameborder="0" style="border-radius: 5px"
@@ -104,23 +109,61 @@
                 allowfullscreen></iframe>
             </div>
             <div class="broadcast__preview-video preview-video">
-              <div class="preview-video__item">
-                <iframe width="246" height="141" style="border-radius: 5px"
-                  src="https://www.youtube-nocookie.com/embed/7utMaDb1W08" title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-              </div>
-              <div class="preview-video__item">
-                <iframe width="246" height="141" style="border-radius: 5px"
-                  src="https://www.youtube.com/embed/hTfbB02IRLQ" title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-              </div>
-              <div class="preview-video__item">
-                <iframe width="246" height="141" style="border-radius: 5px" src="https://www.youtube-nocookie.com/embed/eY0dvOvGM1A"
-                  title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
+              <div class="preview-video-track">
+                <div class="preview-video__item">
+                  <iframe width="246" height="141" style="border-radius: 5px"
+                    src="https://www.youtube-nocookie.com/embed/7utMaDb1W08" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                  <div class="plug"></div>
+                </div>
+                <div class="preview-video__item">
+                  <iframe width="246" height="141" style="border-radius: 5px"
+                    src="https://www.youtube.com/embed/hTfbB02IRLQ" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                  <div class="plug"></div>
+                </div>
+                <div class="preview-video__item">
+                  <iframe width="246" height="141" style="border-radius: 5px"
+                    src="https://www.youtube-nocookie.com/embed/eY0dvOvGM1A" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                  <div class="plug"></div>
+                </div>
+                <div class="preview-video__item">
+                  <iframe width="246" height="141" style="border-radius: 5px"
+                    src="https://www.youtube-nocookie.com/embed/7utMaDb1W08" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                  <div class="plug"></div>
+                </div>
+                <div class="preview-video__item">
+                  <iframe width="246" height="141" style="border-radius: 5px"
+                    src="https://www.youtube-nocookie.com/embed/eY0dvOvGM1A" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                  <div class="plug"></div>
+                </div>
+                <div class="preview-video__item">
+                  <iframe width="246" height="141" style="border-radius: 5px"
+                    src="https://www.youtube.com/embed/hTfbB02IRLQ" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                  <div class="plug"></div>
+                </div>
+                <div class="preview-video__item">
+                  <iframe width="246" height="141" style="border-radius: 5px"
+                    src="https://www.youtube-nocookie.com/embed/eY0dvOvGM1A" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                  <div class="plug"></div>
+                </div>
               </div>
             </div>
             <div class="switcher">
@@ -180,7 +223,7 @@
           </nav>
         </div>
         <div class="footer__bottom">
-          <div class="footer__left">          
+          <div class="footer__left">
             <form action="#" class="form">
               <h4 class="form__title subtitle">Contact us</h4>
               <input type="text" class="form__input form__name" placeholder="Name" required>
@@ -194,7 +237,7 @@
               <input type="submit" class="form__submit" value="send">
             </form>
           </div>
-          <div class="footer__right">            
+          <div class="footer__right">
             <p class="footer__text footer__text_uppercase footer__text_base">ZOO Online Centre</p>
             <address class="address">
               <p class="footer__text_base street">132, Address District, Street</p>
@@ -221,7 +264,7 @@
                       src="../../../assets/icons/youtube.svg" alt="youtube"></a>
                 </li>
               </ul>
-            </div>            
+            </div>
           </div>
         </div>
         <a class="btn footer-btn">donate for volunteers</a>

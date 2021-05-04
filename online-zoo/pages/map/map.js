@@ -30,8 +30,7 @@ function move(direction) {
   if (direction === 'right') {
     activeSlide.classList.remove('carousel__item_active');
     if (count <= slidesCount - 1) {
-      count++;
-      console.log('111', count);
+      count++;      
       nextSlide.classList.add('carousel__item_active');
       // TODO: доработать условие для translate
       if (nextSlideIndex > lastSlideIndex) {
@@ -82,11 +81,9 @@ input.addEventListener('input', () => {
   slides[count - 1].classList.add('carousel__item_active');
   inputValue.value = `0${count}/`;
 
-  if (input.value > oldCount && count > lastSlideIndex) {
-    console.log('lastSlideIndex', lastSlideIndex);
-    console.log('count', count);
+  if (input.value > oldCount && count > lastSlideIndex) {    
     offset = count - lastSlideIndex;
-    track.style.transform = `translateX(-${slideWidth + slideWidth * (count - (lastSlideIndex + 2))}px)`;    
+    track.style.transform = `translateX(-${slideWidth + slideWidth * (count - (lastSlideIndex + 2))}px)`;
   }
   if (input.value < oldCount && count <= offset) {
     track.style.transform = `translateX(${slideWidth + slideWidth * (0 - count)}px)`;
@@ -117,14 +114,22 @@ function makePinActive() {
     const targetPin = document.getElementById(`${activeSlideId}-pin`);
     targetPin.classList.add('map__pin_active');
   }
+  setBtnLink();
 }
 
 const pins = document.querySelectorAll('.map__pin');
 
 pins.forEach(pin => pin.addEventListener('click', (event) => {
-  const targetSlideId = event.currentTarget.getAttribute('id').replace('-pin', '');
-  console.log(event.currentTarget.getAttribute('id').replace('-pin', ''));
+  const targetSlideId = event.currentTarget.getAttribute('id').replace('-pin', '');  
   const targetSlide = document.getElementById(`${targetSlideId}`);
   targetSlide.click();
-  
 }));
+
+function setBtnLink() {
+  const btn = document.querySelector('.watch-btn-map');
+  const activePin = document.querySelector('.map__pin_active');
+  if (activePin) {
+    const activePinId = activePin.getAttribute('id').replace('-pin', '');
+    btn.setAttribute('href', `../zoos/${activePinId}/${activePinId}.html`);
+  }
+}

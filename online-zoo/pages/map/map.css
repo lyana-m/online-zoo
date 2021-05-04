@@ -29,13 +29,13 @@ html[data-theme='dark'] {
 
 @media (max-width: 1500px) {
   .carousel-container {
-    width: 970px;
+    width: 980px;
   }
 }
 
 @media (max-width: 1300px) {
   .carousel-container {
-    width: 835px;
+    width: 845px;
   }
 }
 
@@ -145,6 +145,8 @@ html[data-theme='dark'] {
 
 .map__pin_active {
   background: url(../../assets/icons/pin-red.svg) no-repeat;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .map__pin_eagle {

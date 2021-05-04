@@ -28,12 +28,12 @@ html[data-theme='dark'] {
 }
 @media (max-width: 1500px) {
   .carousel-container {    
-    width: 970px;
+    width: 980px;
   }
 }
 @media (max-width: 1300px) {
   .carousel-container {    
-    width: 835px;
+    width: 845px;
   }
 }
 .carousel-map {
@@ -52,11 +52,8 @@ html[data-theme='dark'] {
 .carousel__item {
   position: relative;
   flex-shrink: 0;  
-  // width: 108px;
-  // height: 108px;
   width: 137px;
   height: 137px;
-  // margin: 0 15px;
   padding: 15px;
   border-radius: 50%;
   transition: all .4s;
@@ -76,11 +73,8 @@ html[data-theme='dark'] {
 
 .carousel__item_active {
   position: relative;
-  // width: 157px;
-  // height: 157px;
   width: 137px;
   height: 137px;
-  // margin: 0 -10px;
   z-index: 2;
   cursor: default;
 
@@ -141,6 +135,7 @@ html[data-theme='dark'] {
 
 .map__pin_active {
   background: url(../../assets/icons/pin-red.svg) no-repeat;
+  transition: all .4s;
 }
 
 .map__pin {

@@ -102,6 +102,10 @@ html[data-theme='dark'] {
   margin-right: 26px;
   position: relative;
   flex-shrink: 0;
+
+  iframe {
+  pointer-events: none;
+}
 }
 
 .plug {

@@ -126,6 +126,10 @@ html[data-theme='dark'] {
       flex-shrink: 0;
 }
 
+.preview-video__item iframe {
+  pointer-events: none;
+}
+
 .plug {
   background: transparent;
   top: 0;

@@ -26,8 +26,7 @@ function move(direction) {
   const nextSlide = slides[activeSlideIndex + 1];
   const nextSlideIndex = Array.from(slides).indexOf(nextSlide);
   const prevSlide = slides[activeSlideIndex - 1];
-  const prevSlideIndex = Array.from(slides).indexOf(prevSlide);
-  nextBtn.style.pointerEvents = 'none';
+  const prevSlideIndex = Array.from(slides).indexOf(prevSlide);  
 
   if (direction === 'right') {
     activeSlide.classList.remove('carousel__item_active');
@@ -65,10 +64,7 @@ function move(direction) {
 
   inputValue.value = `0${count}/`;
   input.value = count;
-  makePinActive();
-  setTimeout(() => {
-    nextBtn.style.pointerEvents = 'auto';
-  }, 400);
+  makePinActive();  
 }
 
 nextBtn.addEventListener('click', () => move('right'));

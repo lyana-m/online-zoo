@@ -10,8 +10,7 @@ plugs.forEach(plug => plug.addEventListener('click', (event) => {
   const previewVideo = event.target.previousElementSibling;
   const previewVideoSrc = previewVideo.src;
   const mainVideo = document.querySelector('.broadcast__main-video iframe');
-  const mainVideoSrc = mainVideo.src;
-  console.log(mainVideo);
+  const mainVideoSrc = mainVideo.src;  
   mainVideo.src = previewVideoSrc;
   previewVideo.src = mainVideoSrc;
 }));

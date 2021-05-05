@@ -62,6 +62,10 @@ html[data-theme='dark'] {
   height: 157px;
 }
 
+.carousel__item_active .carousel__link {
+  pointer-events: none;
+}
+
 .up-arrow {
   top: -36px;
   left: calc(50% - 11px);

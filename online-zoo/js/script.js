@@ -53,7 +53,7 @@ function drawCircles() {
       dot.innerHTML = `<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="6.5" cy="6.5" r="2.5" fill="#FEFEFE"/>
 <circle cx="6.5" cy="6.5" r="6" stroke="#FEFEFE"/>
-</svg>;`;
+</svg>`;
       wrapper.append(dot);
     }
   }
@@ -134,6 +134,7 @@ prevBtn.addEventListener('click', () => {
 });
 
 function petsInputChange() {
+  console.log(count);
   petsInputValue.value = `0${count + 1}/`;
   petsInput.value = count + 1;
 }
@@ -143,8 +144,10 @@ petsInput.addEventListener('input', () => {
   if (Number(petsInput.value) > count) {
     count++;
     moveRight();
+    petsInputChange();
   } else {
     count--;
     moveLeft();
+    petsInputChange();
   }
 });

@@ -430,7 +430,6 @@ body {
 }
 
 .slider__item {
-  opacity: .5;
   padding: 0 15px;
   cursor: pointer;
   -webkit-transition: all .4s;

@@ -94,16 +94,19 @@ html[data-theme='dark'] {
 .broadcast__preview-video {
   width: 790px;
   overflow: hidden;
+  position: relative;
 }
 
 .preview-video-track {
   display: flex;
   margin-bottom: 28px;
+  transition: all .4s;
 }
 
 .preview-video__item {
   // margin: 0 13px;
-  margin-right: 26px;
+  // margin-right: 26px;
+  padding-right: 26px;
   position: relative;
   flex-shrink: 0;
 
@@ -149,6 +152,7 @@ html[data-theme='dark'] {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 12px;
   width: 37px;
   margin: 0 auto;
   cursor: pointer;

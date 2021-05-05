@@ -68,10 +68,11 @@
   }
   
   .preview-video__item {    
-    width: 164px;
+    width: 182px;
     height: 94px;
     // margin: 0 9px;
-    margin-right: 18px;
+    // margin-right: 18px;
+    padding-right: 18px;
 
     iframe {
       width: 100%;

@@ -68,6 +68,10 @@ html[data-theme='dark'] {
   -webkit-transition: all .4s;
   transition: all .4s;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .carousel__image {
@@ -126,6 +130,10 @@ html[data-theme='dark'] {
 }
 
 .carousel__range {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   margin-bottom: 80px;
 }
 

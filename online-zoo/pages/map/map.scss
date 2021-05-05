@@ -58,6 +58,7 @@ html[data-theme='dark'] {
   border-radius: 50%;
   transition: all .4s;
   cursor: pointer;
+  user-select: none;
 }
 
 .carousel__image {
@@ -116,6 +117,7 @@ html[data-theme='dark'] {
 // }
 
 .carousel__range {
+  user-select: none;
   margin-bottom: 80px;
 }
 

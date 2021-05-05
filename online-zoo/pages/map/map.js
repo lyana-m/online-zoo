@@ -20,12 +20,14 @@ window.addEventListener('resize', lastSlideFind);
 
 
 function move(direction) {
+ 
   const activeSlide = document.querySelector('.carousel__item_active');
   const activeSlideIndex = Array.from(slides).indexOf(activeSlide);
   const nextSlide = slides[activeSlideIndex + 1];
   const nextSlideIndex = Array.from(slides).indexOf(nextSlide);
   const prevSlide = slides[activeSlideIndex - 1];
   const prevSlideIndex = Array.from(slides).indexOf(prevSlide);
+  nextBtn.style.pointerEvents = 'none';
 
   if (direction === 'right') {
     activeSlide.classList.remove('carousel__item_active');
@@ -60,9 +62,13 @@ function move(direction) {
       track.style.transform = `translateX(${-slideWidth * offset}px)`;
     }
   }
+
   inputValue.value = `0${count}/`;
   input.value = count;
   makePinActive();
+  setTimeout(() => {
+    nextBtn.style.pointerEvents = 'auto';
+  }, 400);
 }
 
 nextBtn.addEventListener('click', () => move('right'));

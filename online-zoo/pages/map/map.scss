@@ -1,0 +1,159 @@
+html {
+  --bg-map: #FFFFFF;
+}
+
+html[data-theme='dark'] {
+  --bg-map: #4F4F4F;
+}
+
+.map-block {
+  padding: 60px 0 100px 0;
+  background: var(--bg-map);
+  
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    display: block;
+    max-width: 790px;
+    margin: 0 auto 50px;
+  }
+}
+
+.carousel-container {
+  position: relative;
+  margin: 0 auto;
+  width: 1120px;  
+}
+@media (max-width: 1500px) {
+  .carousel-container {    
+    width: 980px;
+  }
+}
+@media (max-width: 1300px) {
+  .carousel-container {    
+    width: 845px;
+  }
+}
+.carousel-map {
+  overflow: hidden;
+  margin: 0 auto 33px;
+  padding: 0 10px;
+}
+
+.carousel-track {
+  display: flex;
+  align-items: center;
+  height: 160px;
+  transition: all .4s;
+}
+
+.carousel__item {
+  position: relative;
+  flex-shrink: 0;  
+  width: 137px;
+  height: 137px;
+  padding: 15px;
+  border-radius: 50%;
+  transition: all .4s;
+  cursor: pointer;
+  user-select: none;
+}
+
+.carousel__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.carousel__item_active {
+  position: relative;
+  width: 137px;
+  height: 137px;
+  z-index: 2;
+  cursor: default;
+
+  .carousel__image {
+    width: 137px;
+    height: 137px;
+    z-index: 2;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 157px;
+    height: 157px;
+    border-radius: 50%;
+    background: linear-gradient(103.3deg, #07EEE0 -15.1%, #DF496D 92.15%);
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 151px;
+    height: 151px;
+    border-radius: 50%;
+    background: var(--bg-map);
+    z-index: 1;
+  }
+}
+
+// .carousel__item:hover:not(.carousel__item_active) {
+//   transform: scale(1.05);
+// }
+
+.carousel__range {
+  user-select: none;
+  margin-bottom: 80px;
+}
+
+.left-arrow-map {
+  top: calc(50% - 15px);
+  left: -30px;
+}
+
+.right-arrow-map {
+  top: calc(50% - 15px);
+  right: -35px;
+}
+
+.map_page {
+  margin-bottom: 46px;
+}
+
+.map__pin_active {
+  background: url(../../assets/icons/pin-red.svg) no-repeat;
+  transition: all .4s;
+}
+
+.map__pin {
+  //delete after cross-check
+  &_eagle {          
+    bottom: 65%;
+    left: calc(14% - var(--pin_width) / 2);
+  }
+  
+  //delete after cross-check
+  &_panda {      
+    bottom: 61%;
+    left: calc(78.5% - var(--pin_width) / 2);
+  }
+}
+
+@import 'map-1200px';
+@import 'map-640px';
+@import 'map-320px';

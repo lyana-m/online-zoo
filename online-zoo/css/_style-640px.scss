@@ -1,0 +1,276 @@
+@media (max-width: 1199px) {
+  .big-wrapper,
+  .medium-wrapper,
+  .small-wrapper {
+    width: 93.75%;
+  }
+  
+  .header {
+    position: fixed;
+    width: 100%;
+    z-index: 3000;
+  }
+
+  .header__nav {
+    position: absolute;
+    background: var(--base_gradient);
+    top: 94px;
+    right: 0;
+    border-radius: 0 0 0 5px;
+    display: none;
+  }
+
+  .header {
+    .nav__list {
+      flex-direction: column;
+      width: 250px;
+    }
+
+    .nav__link {
+      display: inline-block;
+      text-align: right;
+      color: var(--base);
+      padding: 20px 0 20px 20px;
+
+    }
+  }
+
+  .switch {
+    margin-right: 75px;
+  }
+
+  .header__menu {
+    display: inline-block;  
+  }
+
+  .first-screen {
+    padding-top: 94px;
+    padding-bottom: 100px;
+  }
+
+  .first-screen__title {
+    padding-top: 125px;
+    margin-bottom: 30px;
+    font-size: 64px;
+    line-height: 75px;
+  }
+
+  .first-watch-btn {
+    margin-bottom: 370px;
+  }
+
+  .slider-wrapper {
+    // top: calc(50% + 5px);
+    top: 502px;
+    left: 19%;
+
+    &::before {
+      top: calc(50% + 7px);
+      left: -70px;
+    }
+
+    &::after {
+      top: calc(50% + 13px);
+      left: -65px;
+    }
+  }
+
+  // how it works
+
+  .how-it-works__text {
+    margin-bottom: 30px;
+  }
+
+  .how-it-works {
+    padding-bottom: 68px;
+  }
+
+  // what is inspire us
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+    margin: -25px 0;
+  }
+
+  .card {
+    margin: 25px 0;
+
+    &__text {
+      margin-bottom: 0;
+    }
+  }
+
+  // pets in zoo
+
+  .pets-in-zoo {
+    .arrow {
+      display: none;
+    }
+  }
+
+  .pets-in-zoo-title {
+    margin-bottom: 35px;
+  }
+
+  .pets-in-zoo-slider {
+    margin: 0 0 35px;
+
+    &__item {
+      margin: 0 20px 0 0;
+    }
+  }
+
+  .pets-in-zoo-range {
+    margin-bottom: 35px;
+  }
+
+  // pay and feed
+
+  .pay-and-feed {
+    padding-top: 102px;
+  }
+
+  .pay-and-feed__title {
+    margin-bottom: 16px;
+  }
+
+  .pay-and-feed__text {
+    max-width: 538px;
+    margin: 0 auto 48px;
+  }
+
+  .steps {
+    flex-direction: column;
+  }
+
+  .step-arrow {
+    margin: 30px 0;
+  }
+
+  // testimonials
+
+  .testimonials__title {
+    margin-bottom: 30px;
+  }
+
+  .testimonials {
+    .arrow {
+      display: none;
+    }
+  }  
+
+  .testimonial {   
+    
+    padding-left: 72px;
+    padding-right: 72px;    
+    margin: 0 15px;
+    min-width: calc(100% - 30px);
+
+    &:first-child {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1199px) and (min-width: 800px) {
+    .testimonial {
+      min-width: calc(100% / 2 - 30px);
+
+      &:first-child {
+        display: flex;
+      }
+    }
+
+  }
+
+  // map
+
+  .map-section {
+    padding-bottom: 80px;
+  }
+
+  .map-section__title {
+    margin-bottom: 50px;
+  }
+
+  .svg-map {
+    max-height: 436px;
+    min-height: 290px;   
+  }
+
+  //delete after cross-check
+  .map__pin_eagle {
+    left: calc(13% - var(--pin_width) / 2 + 10px);
+  }  
+
+  .tooltip-gorilla {
+    left: -175px;
+  }
+
+  .map__pin:hover .tooltip {
+    z-index: 110;
+  }
+
+  // footer
+
+  .footer {
+    padding-top: 95px;
+    padding-bottom: 46px;
+  }
+
+  .footer__top {
+    flex-direction: column;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+  }
+
+  .footer__right {
+    padding: 0;
+  }
+
+  .footer__logo {
+    margin-bottom: 27px;
+  }
+
+  .footer-btn {
+    top: 0;
+    right: 0;
+  }
+
+  .footer {
+    .nav {
+      margin-bottom: 17px;
+    }
+
+    .nav__list {
+      flex-direction: column;
+    }
+
+    .nav__item {
+      margin-bottom: 5px;
+    }
+
+    .nav__link {
+      display: inline-block;
+    }
+
+    .social__list {
+      height: auto;
+      margin-bottom: 20px;
+    }
+  }
+
+  .form {
+    margin-bottom: 80px;
+  }
+
+  .form__title {
+    margin-bottom: 33px;
+  }
+
+  .form__fieldset {
+    margin-bottom: 20px;
+  }
+}

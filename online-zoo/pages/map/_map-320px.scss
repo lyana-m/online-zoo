@@ -1,0 +1,110 @@
+@media (max-width: 639px) {
+  .big-wrapper {
+    width: 93.75%;
+  }
+
+  .map-block {
+    padding: 129px 0 60px;
+
+    &__title {
+      margin-bottom: 10px;
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    &__text {
+      font-size: 12px;
+      line-height: 14px;
+      padding: 0 10px;
+    }
+  }
+
+  .carousel-container {
+    width: 78%;
+    margin-bottom: 23px;
+  }  
+
+  .carousel__item {
+    width: 60px;
+    height: 60px;
+    margin: 0 5px;
+  }
+
+  .carousel__image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .carousel__item_active {
+    width: 85px;
+    height: 85px;
+
+    .carousel__image {
+      width: 75px;
+      height: 75px;
+    }
+
+    &::before {
+      width: 85px;
+      height: 85px;
+    }
+
+    &::after {
+      width: 79px;
+      height: 79px;
+    }
+  }
+
+  .left-arrow-map {
+    left: -20px;
+  }
+
+  .right-arrow-map {
+    right: -20px;
+  }
+
+  .carousel__range {
+    margin-bottom: 35px;
+  }
+
+  .svg-map {
+    max-height: 290px;
+    min-height: 146px;
+  }
+
+  .map__pin {
+    --pin_width: 33px;
+    background: url(../../assets/icons/pin-320-green.svg) no-repeat;
+    width: 33px;
+    height: 46px;
+
+    &_eagle {
+      left: calc(13% - var(--pin_width) / 2);
+    }
+
+    &_crocodile {
+      left: calc(23.5% - var(--pin_width) / 2);
+    }
+
+    &_gorilla {
+      left: calc(51% - var(--pin_width) / 2);
+    }
+
+    &_panda {
+      left: calc(77.5% - var(--pin_width) / 2);
+    }
+  }
+
+  .map__pin_panda {
+    background: url(../../assets/icons/pin-320-red.svg) no-repeat;
+  }
+
+  .map__picture {
+    background-size: contain;
+    top: 6.76px;
+    left: 5.5px;
+    width: 22px;
+    height: 22px;
+  }
+
+}

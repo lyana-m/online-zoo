@@ -1,0 +1,174 @@
+@media (max-width: 1919px) {
+  .big-wrapper,
+  .medium-wrapper {
+    width: 75%;
+  }
+
+  .small-wrapper {
+    max-width: 746px;
+  }
+
+  .first-screen {
+    padding-bottom: 70px;
+
+    &__title {
+      margin-left: 0;
+      padding-top: 128px;
+    }
+  }
+
+  .first-watch-btn {
+    margin-left: 0;
+    margin-bottom: 320px;
+  }
+
+  .slider-wrapper {
+    top: 526px;
+    // top: 52.5%;
+    // left: 51.5%;
+  }
+
+  .slider {   
+
+    &__picture {
+      width: 180px;
+      height: 261px;
+    }
+  }
+
+  .first-screen-range {
+    left: 347px;
+    margin-top: 25px;
+  }
+
+  // how it works
+
+  .how-it-works__text {
+    margin-bottom: 14px;
+  }
+  // what is inspire us
+
+  .row {
+    margin: 0 -5px;
+  }
+
+  .card {
+    max-width: 287px;
+    margin: 0 5px;
+
+    &__text {
+      margin-bottom: 18px;
+    }
+  }
+
+  // pets in zoo
+  .pets-in-zoo-title {
+    margin-bottom: 31px;
+  }
+
+  // .pets-in-zoo-slider {
+  //   // margin: 0 -10px 30px;
+    
+  // }
+
+  .pets-in-zoo-slider__description {
+    // top: 300px;
+    left: 9px;
+
+    .description__btn_watch {
+      margin-right: 7px;
+    }
+
+  }
+
+  // pay and feed
+
+  .pay-and-feed {
+    &__text {
+      margin-bottom: 50px;
+    }
+  }
+
+  .steps {
+    margin-bottom: 50px;
+  }
+
+  // testimonials 
+
+  .testimonials-slider {    
+    margin: 0 -10px 34px;    
+  }
+
+  .testimonial {
+    margin: 0 10px;
+    padding: 47px 56px 89px;
+    min-width: calc(100% / 2 - 20px);   
+  }
+
+  // map
+
+  .svg-map {    
+    max-height: 500px;
+    min-height: 436px;    
+  }
+
+  //delete after cross-check
+  .map__pin_crocodile {
+    bottom: calc(60% + 10px);
+  }
+
+  //delete after cross-check
+  .map__pin_panda {
+    position: absolute;
+    bottom: 63%;
+    left: calc(77% - var(--pin_width) / 2);
+}
+  
+  .tooltip-eagle {
+    left: 33px;
+  }
+
+  .tooltip-crocodile {
+    left: 33px;
+  }
+
+  .tooltip-gorilla {
+    left: 33px;
+  }
+
+  .tooltip-panda {
+    right: 33px;
+    left: auto;
+  }
+
+  // footer
+
+  .footer {
+    padding-bottom: 52px;    
+  }
+
+  .footer__right {
+    padding-left: 12px;
+  }
+
+  .footer__nav {
+    margin-bottom: 61px;
+  }
+
+  .footer__inner {
+    margin-bottom: 48px;
+  }
+
+  .footer__text_uppercase {
+    margin-top: -14px;
+  }
+
+  .footer-btn {
+    top: 323px;
+    right: 165px;    
+  }
+
+  .line {
+    margin-bottom: 31px;
+  }
+}

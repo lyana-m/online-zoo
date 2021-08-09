@@ -1,0 +1,67 @@
+@media (max-width: 1199px) {
+
+  .big-wrapper {
+    width: 93.75%;
+  }
+
+  .medium-wrapper {
+    padding: 0;
+  }
+
+  .map-block {
+    padding-top: 154px;
+    padding-bottom: 80px;
+  }
+  
+
+  .carousel-container {
+    width: 88%;
+    margin-bottom: 23px;
+  }  
+
+  .carousel__item {
+    margin: 0 7.5px;
+  }
+
+  .carousel__item_active {
+    margin: 0;
+  }
+
+  .left-arrow-map {
+    left: -30px;
+  }
+
+  .right-arrow-map {
+    right: -30px;
+  }
+
+  .carousel__range {
+    margin-bottom: 38px;
+  }
+
+  .svg-map {
+    max-height: 387px;
+    min-height: 290px;
+    width: 100%;
+  }
+
+  .map__pin {
+    //delete after cross-check
+    background: url(../../assets/icons/pin-green.svg) no-repeat;
+    width: 70px;
+    height: 94px;
+  }
+
+  .map__pin_panda {
+    background: url(../../assets/icons/pin-red.svg) no-repeat;
+  }
+
+  .map__picture {
+    position: absolute;
+    top: 12.47px;
+    left: 12px;
+    width: 43px;
+    height: 43px;
+  }
+
+}
